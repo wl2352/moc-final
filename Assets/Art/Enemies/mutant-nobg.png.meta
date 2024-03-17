@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5bc5d9ca7eff92547a842358bd5d5a9a
+guid: 9831ff71afc05b04da8ecca5a1cc9302
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,244 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_0
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 272
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a370c80f3cab0c349aacbb4abd8f4534
-      internalID: -144430689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_1
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 272
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dce4b3e796532f344a906093f600e67f
-      internalID: 1831743675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_2
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 272
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02c25073ae37e1741a866d18aefdb3ad
-      internalID: 1833252461
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_3
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 272
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91944340e613d894fa5aba818674e812
-      internalID: -1355777048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_4
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 272
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7f3d09109b34924d9ac46e60f93599f
-      internalID: -1571374325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_5
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 272
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54437db580fa1974aaedf8dfb3b05fa3
-      internalID: -660971160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_6
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 272
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f15cb5c60277bf0498238320155b36fd
-      internalID: -581128873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_7
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 272
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 674093726bde8604db435feea5dd147f
-      internalID: 144661451
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_8
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 242
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d8a85767688d544196c9c7e4c39fbf5
-      internalID: -221569894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_9
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 242
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a5bc0ffd7f5e254b91b40dc139332aa
-      internalID: -147119942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_10
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 242
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bf9a39ca1f8a9142908c611a91d7041
-      internalID: 607693490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_11
+      name: mutant-nobg_0
       rect:
         serializedVersion: 2
         x: 50
-        y: 242
-        width: 11
-        height: 16
+        y: 323
+        width: 31
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 444de947c7b35904c9ff16f4136d6958
-      internalID: -242606763
+      spriteID: c67d54fe70caf024d9666877130d2f9c
+      internalID: 117612171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_12
+      name: mutant-nobg_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 242
-        width: 13
-        height: 16
+        x: 94
+        y: 321
+        width: 34
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 563556d77df85cc40ba7024ec84a9b64
-      internalID: 1818596474
+      spriteID: d3035125e28b5bd4691a5ffbcb5ee70a
+      internalID: 677514629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_13
+      name: mutant-nobg_2
       rect:
         serializedVersion: 2
-        x: 81
-        y: 242
-        width: 13
-        height: 16
+        x: 146
+        y: 327
+        width: 32
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,20 +153,734 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 463a139c9f6408842a080682ca10718e
-      internalID: -869619709
+      spriteID: c9a0ddab3f7464741ac63bc5d8990d52
+      internalID: 2012149127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_14
+      name: mutant-nobg_3
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 326
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cd6ab7c2e1adb449de507d5fababaf
+      internalID: -1211923672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_4
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 324
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5be2c5d77a8e943928374493104236
+      internalID: 1297530618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_5
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 325
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f35bb72d38071d4bb8dda5827d318c9
+      internalID: -1859744510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_6
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 326
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4debd8fe0f5828443abacd72e1a02985
+      internalID: 689145029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_7
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 324
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8210734031d800743bf4b6a18f7d3d54
+      internalID: -266606460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_8
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 324
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a7dc1933bc2ae4092dc63219f55f31
+      internalID: -1567725687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_9
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 324
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f59206de1ce41448960c81ffee88fef
+      internalID: 1029375270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_10
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 325
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17be6ed0a2eed644ea0cdac07bc7beee
+      internalID: 123568758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_11
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 324
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e1e91147e920d4ab07eb445ccf7d82
+      internalID: 1820822138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 277
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3b71581ebfc6b4a9f2ae267bae5228
+      internalID: 604034440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 279
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee7c2ca7308a634a8580d0ad44dae66
+      internalID: -1772084662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_14
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 279
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf89fdbe378d1d429989fba0cc26561
+      internalID: -1266638265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_15
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 278
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3889e401f3e861d46a7f23d1ee2344a9
+      internalID: -1868175128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_16
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 277
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4015ac64a54be424f859c77f5795574b
+      internalID: 1977073584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_17
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 276
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4364d6ae51f021e45b6da0f40fc89529
+      internalID: -2007181352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_18
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 276
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3ddc030fea4604c99ced6c33672725
+      internalID: 666335225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_19
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 276
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2587f520fdaf0b408ac1db8f56870cb
+      internalID: 260324733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_20
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 282
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2474011b746e56e43adeba9cd6e699f9
+      internalID: 1664639999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 283
+        width: 33
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47073f56f7d682d459081cb4118d9c85
+      internalID: -645136557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_22
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 281
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528de2a4b0eeebf469fc34995e0f4cff
+      internalID: -1869340031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_23
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 282
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011221cd48a84184da389f7d28f99654
+      internalID: 2086938839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_24
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 227
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef018e467915a234d92bbd1ef4a4fed8
+      internalID: -1728474257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_25
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 226
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa367a0675b33945b25bd65adadf435
+      internalID: 521931468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_26
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 225
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50ad1b211d8a9b4f954350577ec40fb
+      internalID: -2089969060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_27
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 224
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf9b07a1be37a2489916e18e6a60770
+      internalID: 1850432504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_28
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 229
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b41439b61f79124fa3823e585f45fd0
+      internalID: 645528633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_29
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 229
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432d85da5a2b6ea4381dfdc576dbd2aa
+      internalID: -377843503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_30
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 230
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2d7c8f416796a458eb50e515d5a52f
+      internalID: 182180374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_31
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 230
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce929fcc7d6cca040ac56baf857902f7
+      internalID: -575082981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_32
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 240
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a34d462f037c64798917689cf92505
+      internalID: 1518058460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_33
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 199
+        width: 40
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e37168ebf022c541a6de84ffea162cc
+      internalID: -1510291083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_34
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 241
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d508001c517d82418079d0379eb8bda
+      internalID: 953973791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_35
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 241
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545f4abb24f1abc4a98ca5b2ea12e33b
+      internalID: -1843483017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_36
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 177
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d06ff6d122e414da786176efb4d007
+      internalID: 1396370760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_37
       rect:
         serializedVersion: 2
         x: 98
-        y: 242
-        width: 11
-        height: 16
+        y: 180
+        width: 27
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,20 +888,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6b69612f535c2e44864389b1fda5436
-      internalID: 700158435
+      spriteID: 48c76156b9aeee04594002886df413fb
+      internalID: -266593496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_15
+      name: mutant-nobg_38
       rect:
         serializedVersion: 2
-        x: 114
-        y: 242
-        width: 11
-        height: 16
+        x: 148
+        y: 184
+        width: 25
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,20 +909,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb9d48ffe2b2ead4fa2976a0d120ec37
-      internalID: 640931084
+      spriteID: 6356fd383d4ef7b43aa1350907c83b75
+      internalID: 884933330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_16
+      name: mutant-nobg_39
       rect:
         serializedVersion: 2
-        x: 1
-        y: 218
-        width: 13
-        height: 17
+        x: 194
+        y: 187
+        width: 30
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,20 +930,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 692af7f6c21fa51448cb62726b1294a1
-      internalID: 1243334272
+      spriteID: c00e20f999772264ca2699e140c5f9c1
+      internalID: -1553459443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_17
+      name: mutant-nobg_40
       rect:
         serializedVersion: 2
-        x: 18
-        y: 218
-        width: 11
-        height: 17
+        x: 246
+        y: 181
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +951,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02ce903b1fb17be47be05f99b5d4cfb9
-      internalID: -869843079
+      spriteID: 7258fccfe7035204aa81b9baf3669931
+      internalID: 410553296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_18
+      name: mutant-nobg_41
       rect:
         serializedVersion: 2
-        x: 34
-        y: 218
-        width: 11
-        height: 17
+        x: 294
+        y: 182
+        width: 32
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,20 +972,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b81b0901316ee04d8911d1e49e637a3
-      internalID: 1870930168
+      spriteID: e30b06d2f56b3d14dbddc6c39cbf6e3d
+      internalID: -142036239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_19
+      name: mutant-nobg_42
       rect:
         serializedVersion: 2
-        x: 50
-        y: 218
-        width: 11
-        height: 17
+        x: 342
+        y: 181
+        width: 31
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,20 +993,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3537702572734843ac9903835eabf37
-      internalID: -1387733045
+      spriteID: d888a646fad4e26468b8d732c2f24030
+      internalID: -759661052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_20
+      name: mutant-nobg_43
       rect:
         serializedVersion: 2
-        x: 65
-        y: 218
-        width: 13
-        height: 17
+        x: 389
+        y: 181
+        width: 32
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,20 +1014,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7504853fc44e62b4bb2ce1311dc6d22f
-      internalID: -2126600815
+      spriteID: 0b163c766e055d54d8ea0e347a2848f1
+      internalID: 669738576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_21
+      name: mutant-nobg_44
       rect:
         serializedVersion: 2
-        x: 82
-        y: 218
-        width: 11
-        height: 17
+        x: 445
+        y: 199
+        width: 37
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,20 +1035,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acad4970284f1ec4392fd78b9b035fb7
-      internalID: -1961531890
+      spriteID: f5174ad2b787e0c46a013cc33391fc01
+      internalID: 1940779749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_22
+      name: mutant-nobg_45
       rect:
         serializedVersion: 2
-        x: 98
-        y: 218
-        width: 11
-        height: 17
+        x: 547
+        y: 199
+        width: 42
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,20 +1056,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222132b75ba4a4a4db028eba9b40a13c
-      internalID: 1193888863
+      spriteID: c286b31c6cbbb644a850325ae15c5a8b
+      internalID: -240328506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_23
+      name: mutant-nobg_46
       rect:
         serializedVersion: 2
-        x: 114
-        y: 218
-        width: 11
-        height: 17
+        x: 596
+        y: 199
+        width: 42
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,20 +1077,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c993f852d418cc45b3ffcc5fc034362
-      internalID: 1615566587
+      spriteID: 5a118ca7a069acb4fbd5677d3d4cbbb5
+      internalID: 2068110659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_24
+      name: mutant-nobg_47
       rect:
         serializedVersion: 2
-        x: 1
-        y: 194
-        width: 13
-        height: 16
+        x: 56
+        y: 137
+        width: 23
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,20 +1098,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3673a800bbbecdb4eac9a6f8e5843de7
-      internalID: 1902727012
+      spriteID: d691a8adaeba4944cb2805235683a724
+      internalID: -133984102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_25
+      name: mutant-nobg_48
       rect:
         serializedVersion: 2
-        x: 18
-        y: 194
-        width: 11
-        height: 16
+        x: 96
+        y: 137
+        width: 25
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,20 +1119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0ea824ef30f0c64dbc4505ddd11051f
-      internalID: 383042799
+      spriteID: f7bd77d78aedf674daf5ca015d2bb6d5
+      internalID: 704875487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_26
+      name: mutant-nobg_49
       rect:
         serializedVersion: 2
-        x: 34
-        y: 194
-        width: 11
-        height: 16
+        x: 140
+        y: 137
+        width: 23
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -657,20 +1140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf7449b0e0498684db650627abf64d9f
-      internalID: 32909306
+      spriteID: 66d236d6689d87a44b52ce0e5e4b425c
+      internalID: 463901929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_27
+      name: mutant-nobg_50
       rect:
         serializedVersion: 2
-        x: 49
-        y: 194
-        width: 13
-        height: 16
+        x: 183
+        y: 137
+        width: 28
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -678,20 +1161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28620166d58d99d46ab05e6566d3cd12
-      internalID: -1358612481
+      spriteID: aa1d47514df1f9d4695c086cc3febc1c
+      internalID: 218971764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_28
+      name: mutant-nobg_51
       rect:
         serializedVersion: 2
-        x: 65
-        y: 194
-        width: 13
-        height: 16
+        x: 248
+        y: 138
+        width: 21
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -699,20 +1182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94a0d63d3597fa447a9b45f81d209621
-      internalID: -42886236
+      spriteID: e110107da3193804a8299109e362a0a8
+      internalID: -132296080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_29
+      name: mutant-nobg_52
       rect:
         serializedVersion: 2
-        x: 82
-        y: 194
-        width: 11
-        height: 16
+        x: 291
+        y: 139
+        width: 24
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,20 +1203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a2c5df50ae69904690a64318757f907
-      internalID: -992712179
+      spriteID: 2ba559697454e0340aea793801fe7e3b
+      internalID: 1759783077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_30
+      name: mutant-nobg_53
       rect:
         serializedVersion: 2
-        x: 98
-        y: 194
-        width: 11
-        height: 16
+        x: 338
+        y: 141
+        width: 32
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,20 +1224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 921ac8c349ca17b4db57419aed7ea9a9
-      internalID: -1739781714
+      spriteID: 3d195a4fc09bb7844ac7b98893880ec0
+      internalID: -512404570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_31
+      name: mutant-nobg_54
       rect:
         serializedVersion: 2
-        x: 113
-        y: 194
-        width: 13
-        height: 16
+        x: 379
+        y: 139
+        width: 31
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -762,20 +1245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21d460dc52d3dab468239c8fcf0f7c23
-      internalID: -569695555
+      spriteID: ef7f5cd4591e6b04895e5ca86050313a
+      internalID: -407156219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_32
+      name: mutant-nobg_55
       rect:
         serializedVersion: 2
-        x: 4
-        y: 176
-        width: 8
-        height: 8
+        x: 453
+        y: 146
+        width: 38
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -783,20 +1266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 343f6b3f2dfb547488f07ea3fb4414b8
-      internalID: 2016373338
+      spriteID: 177e38c66cc1c9342b252072ecda0f45
+      internalID: -717956505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_33
+      name: mutant-nobg_56
       rect:
         serializedVersion: 2
-        x: 20
-        y: 176
-        width: 8
-        height: 8
+        x: 500
+        y: 146
+        width: 40
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,20 +1287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6387216d458101040953fab3133e7887
-      internalID: -1122699269
+      spriteID: b96d3f6474f2f1540a4820b1edc12a12
+      internalID: -210070170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_34
+      name: mutant-nobg_57
       rect:
         serializedVersion: 2
-        x: 36
-        y: 176
-        width: 8
-        height: 8
+        x: 546
+        y: 146
+        width: 40
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -825,20 +1308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02d1a5071a08f054091a31dfbc6817c2
-      internalID: 1340522546
+      spriteID: d6f9854db48ceb74da2b10098586c58f
+      internalID: 738590547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_35
+      name: mutant-nobg_58
       rect:
         serializedVersion: 2
-        x: 52
-        y: 176
-        width: 8
-        height: 8
+        x: 603
+        y: 149
+        width: 38
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -846,20 +1329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3db4f659afa7d446a00a4786c6491dc
-      internalID: -616437213
+      spriteID: 7626b398719fd184986cd7024564f9b4
+      internalID: 1580845157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_36
+      name: mutant-nobg_59
       rect:
         serializedVersion: 2
-        x: 68
-        y: 176
-        width: 8
-        height: 8
+        x: 53
+        y: 95
+        width: 24
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -867,20 +1350,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8d38451194167a489b86c86c4eb010b
-      internalID: 2108513738
+      spriteID: bafb808c051067d4e8b25f17c449b2ab
+      internalID: 1441868693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_37
+      name: mutant-nobg_60
       rect:
         serializedVersion: 2
-        x: 83
-        y: 176
-        width: 8
-        height: 8
+        x: 97
+        y: 95
+        width: 24
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -888,20 +1371,251 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 308dcc6e55cbdc34db5cb645a74f356c
-      internalID: -960119439
+      spriteID: 157e42a084f8ef043b68463bf5094b13
+      internalID: 1119896869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_38
+      name: mutant-nobg_61
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 95
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdecf3705e9b8c46bf8bb39fa08dddd
+      internalID: 460375142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_62
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 95
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9388bc3178122448a95fc4f457c1ba3
+      internalID: -510388994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_63
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 97
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8addcbf827d267947b72a5887ee448a2
+      internalID: 288171302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_64
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 95
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7208fc811542341888de6c59f03314
+      internalID: -1206543796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_65
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 95
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf33a386d1abbf4bad2e46ae1a1cd6a
+      internalID: -1603875365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_66
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 95
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7632a4a43bb60b4bbdce043e04ee173
+      internalID: 463249097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_67
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 103
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d38d017fca5a26439413b67bbdd98b5
+      internalID: 1653412475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_68
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 103
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fd1213d59a9874da0914ea565fc1db
+      internalID: 1685343910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_69
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 102
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77e11619988b104f88ed037bd0e04ad
+      internalID: -1879227176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_70
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 105
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4245371642f7940a2f88af17f99a3d
+      internalID: -1965075382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_71
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 12
+        width: 32
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1f236c4829d3140989ca98c8febba6
+      internalID: 1086238781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mutant-nobg_72
       rect:
         serializedVersion: 2
         x: 99
-        y: 176
-        width: 8
-        height: 8
+        y: 53
+        width: 23
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -909,20 +1623,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b906c337f957d44b9b4f06fedd4c209
-      internalID: 1803914338
+      spriteID: e8feb11059c34d241878e8c607120478
+      internalID: -1263296002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_39
+      name: mutant-nobg_73
       rect:
         serializedVersion: 2
-        x: 115
-        y: 176
-        width: 8
-        height: 8
+        x: 138
+        y: 53
+        width: 29
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -930,20 +1644,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06462b74ea5771148bef097df26fc26b
-      internalID: 1959955929
+      spriteID: 319c8393d725bfa43b5e7c26817ebc27
+      internalID: 1994803941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_40
+      name: mutant-nobg_74
       rect:
         serializedVersion: 2
-        x: 1
-        y: 146
-        width: 13
-        height: 16
+        x: 184
+        y: 53
+        width: 23
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -951,20 +1665,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a795ab13ce168f24d94f86940a0959a6
-      internalID: 1768575551
+      spriteID: 26385934678c2ab408661600d8b7a600
+      internalID: -2110450335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_41
+      name: mutant-nobg_75
       rect:
         serializedVersion: 2
-        x: 16
-        y: 146
-        width: 14
-        height: 16
+        x: 243
+        y: 51
+        width: 36
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -972,20 +1686,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf8cec22a910ded43b4cf7f2dd0861eb
-      internalID: -190633132
+      spriteID: 0d196d5c420263e4a9623376fac5734a
+      internalID: 194084361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_42
+      name: mutant-nobg_76
       rect:
         serializedVersion: 2
-        x: 32
-        y: 146
-        width: 15
-        height: 16
+        x: 293
+        y: 51
+        width: 31
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -993,20 +1707,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2b683df091e2d54ba5d98f17e0f3faa
-      internalID: -277889530
+      spriteID: 960e26ed6ea49ac48b17714d94061d69
+      internalID: 1276165418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_43
+      name: mutant-nobg_77
       rect:
         serializedVersion: 2
-        x: 49
-        y: 146
-        width: 13
-        height: 16
+        x: 336
+        y: 51
+        width: 28
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1014,20 +1728,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ab321d773f2f44e8c1db0f894d4182
-      internalID: 1401176701
+      spriteID: 526b69c0401db6e49ac7a69c12a31ada
+      internalID: 1791963209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_44
+      name: mutant-nobg_78
       rect:
         serializedVersion: 2
-        x: 65
-        y: 146
-        width: 13
-        height: 16
+        x: 388
+        y: 51
+        width: 32
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1035,20 +1749,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 770680bd86cd7a94fb4bcf114d15ed16
-      internalID: 1699458188
+      spriteID: 838428edb93784845b2faa74c34ba212
+      internalID: -145601258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_45
+      name: mutant-nobg_79
       rect:
         serializedVersion: 2
-        x: 81
-        y: 146
-        width: 13
-        height: 16
+        x: 452
+        y: 57
+        width: 33
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1056,20 +1770,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1022346764acbbc4e99fabd1c12100c7
-      internalID: -63004287
+      spriteID: bbd632bc5341ae14ba4a6f75d68a1bbf
+      internalID: 729088056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_46
+      name: mutant-nobg_80
       rect:
         serializedVersion: 2
-        x: 96
-        y: 146
-        width: 15
-        height: 16
+        x: 505
+        y: 57
+        width: 35
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1077,20 +1791,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 949d9cf14463a9f4f9526155b39408e7
-      internalID: -1507658751
+      spriteID: c2776687eab387946987dba65dcca9b3
+      internalID: 1073176601
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_47
+      name: mutant-nobg_81
       rect:
         serializedVersion: 2
-        x: 113
-        y: 146
-        width: 14
-        height: 16
+        x: 548
+        y: 59
+        width: 40
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1098,20 +1812,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02db0696b1608954e9e49370e2e1c130
-      internalID: 1105736515
+      spriteID: c957b604f75e66943bfbb1c6bdf332bd
+      internalID: -1063171665
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_48
+      name: mutant-nobg_82
       rect:
         serializedVersion: 2
-        x: 1
-        y: 122
-        width: 13
-        height: 17
+        x: 601
+        y: 59
+        width: 38
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1119,20 +1833,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9040c0f910db95147925f0aa5181e6ae
-      internalID: -869899070
+      spriteID: 859d7db7db182be4c98c4d31638121ab
+      internalID: 978351567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_49
+      name: mutant-nobg_83
       rect:
         serializedVersion: 2
-        x: 16
-        y: 122
-        width: 14
-        height: 17
+        x: 95
+        y: 12
+        width: 35
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1140,20 +1854,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9b1b77748527654993331718f0e8c44
-      internalID: 900037219
+      spriteID: 4fe476aefa5364146b4276c19d37beaf
+      internalID: 1164950908
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_50
+      name: mutant-nobg_84
       rect:
         serializedVersion: 2
-        x: 32
-        y: 122
-        width: 15
-        height: 17
+        x: 138
+        y: 12
+        width: 36
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1161,20 +1875,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6faa459686544fa49b40ea1c799eb9ea
-      internalID: 801905516
+      spriteID: a8f38970b7710104db41987aa570c0a4
+      internalID: -1388547742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_51
+      name: mutant-nobg_85
       rect:
         serializedVersion: 2
-        x: 49
-        y: 122
-        width: 13
-        height: 17
+        x: 178
+        y: 31
+        width: 4
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1182,20 +1896,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6540b38e90a216f4aa00d571794a649b
-      internalID: 1449498970
+      spriteID: a8e16cf7fad6fad4d8fac617cf121569
+      internalID: -487539704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_52
+      name: mutant-nobg_86
       rect:
         serializedVersion: 2
-        x: 65
-        y: 122
-        width: 13
-        height: 17
+        x: 182
+        y: 12
+        width: 24
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1203,20 +1917,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 575725679afb5a9409211c81eed39076
-      internalID: -1810394202
+      spriteID: 9b4558981d2f8b142be49e1d7a8eac1b
+      internalID: 25284793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_53
+      name: mutant-nobg_87
       rect:
         serializedVersion: 2
-        x: 81
-        y: 122
-        width: 13
-        height: 17
+        x: 241
+        y: 8
+        width: 31
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1224,20 +1938,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ba1e7391ed25064984b7a225044ba6d
-      internalID: 94564380
+      spriteID: 1f2c93708e60ac64bad26168ace3b170
+      internalID: 954003704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_54
+      name: mutant-nobg_88
       rect:
         serializedVersion: 2
-        x: 96
-        y: 122
-        width: 15
-        height: 17
+        x: 285
+        y: 8
+        width: 34
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1245,20 +1959,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba1cdbd6f0124f34bb75f451a6293390
-      internalID: -1716712779
+      spriteID: 08317bd48715a72438815ac0d35422e7
+      internalID: 1064433890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_55
+      name: mutant-nobg_89
       rect:
         serializedVersion: 2
-        x: 113
-        y: 122
-        width: 14
-        height: 17
+        x: 332
+        y: 8
+        width: 32
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1266,20 +1980,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f625c61953c2b447bdb56c88436fd45
-      internalID: -643365769
+      spriteID: e066b846ba15d504ea19d2aaef203e8f
+      internalID: 1012785941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_56
+      name: mutant-nobg_90
       rect:
         serializedVersion: 2
-        x: 1
-        y: 98
-        width: 13
-        height: 16
+        x: 385
+        y: 9
+        width: 32
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1287,20 +2001,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28ccbc40645b53a47b6e40218cbade11
-      internalID: 2077785239
+      spriteID: 5800296f662a12a4e9da57e3e8eca876
+      internalID: 885144239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_57
+      name: mutant-nobg_91
       rect:
         serializedVersion: 2
-        x: 16
-        y: 98
-        width: 14
-        height: 16
+        x: 445
+        y: 19
+        width: 43
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1308,20 +2022,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37ad534b98d5229419fe305ff8641be1
-      internalID: 601575908
+      spriteID: 858fc0e9eb2bf044fa3dce5ec9db3670
+      internalID: 163926577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_58
+      name: mutant-nobg_92
       rect:
         serializedVersion: 2
-        x: 32
-        y: 98
-        width: 15
-        height: 16
+        x: 495
+        y: 18
+        width: 41
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1329,20 +2043,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0dfee78746e3b74a890cf068460c290
-      internalID: -1748787453
+      spriteID: 91dd2edd3ec30964d91be3c5aa3677c9
+      internalID: 1745715709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_59
+      name: mutant-nobg_93
       rect:
         serializedVersion: 2
-        x: 49
-        y: 98
-        width: 13
-        height: 16
+        x: 549
+        y: 16
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1350,20 +2064,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f1b5820d728600438d820ca4bd77318
-      internalID: -1202257508
+      spriteID: 2c571c854f87cdd4dbc9d985ccbfe93d
+      internalID: 20196259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_60
+      name: mutant-nobg_94
       rect:
         serializedVersion: 2
-        x: 65
-        y: 98
-        width: 13
-        height: 16
+        x: 598
+        y: 14
+        width: 40
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1371,743 +2085,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c36cee6282f9954695edf8c02a4ab8a
-      internalID: 204028292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_61
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 98
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43a25055d85da744fb8a456d71ae2642
-      internalID: -788053707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_62
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 98
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f33eed22b9b63d459799c66fc3ffd60
-      internalID: 2049848294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_63
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 98
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43b0f376c6699fd4a8ccdbe3d6860a14
-      internalID: -1072095657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_64
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 80
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3565cad15966b0c4ead0e051c52d6bfc
-      internalID: 894697048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_65
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 80
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 919f3e3fe3d36df48bb03cfb7caf1ca9
-      internalID: -868596836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_66
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 80
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 376740cbdb988e944b42ccc21de4298f
-      internalID: -581256561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_67
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 80
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12c73e1bb15bd4246871daf784804015
-      internalID: 727971984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_68
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 80
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4dc6c22987eb43b42a20f28b83acde42
-      internalID: -434505618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_69
-      rect:
-        serializedVersion: 2
-        x: 83
-        y: 80
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 81536f6b421d0df429b435fb678c8fa9
-      internalID: -215893360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_70
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 80
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b82707d378f77404cb56e30965259b07
-      internalID: 1708638610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_71
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 80
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0eb05a1be95c7e4ea0cdd0e4df9fd16
-      internalID: -72792651
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_72
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 50
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d9e11d0a2fee2a47a1f94e969a25da0
-      internalID: 1005114823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_73
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 50
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd42ed42905240242b18cf1652f79e48
-      internalID: 395777049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_74
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 50
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efee457a262808a43910922037d58f9e
-      internalID: -151884536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_75
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 50
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fadf8f7c5ed7dd4eb078471f170fbd4
-      internalID: 1191987397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_76
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 50
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d10a4f2a5ea75bf40b39e6764c7a321a
-      internalID: -554753816
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_77
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 50
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2aff81ce6f44544438052f8792be8a65
-      internalID: 228123898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_78
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 50
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66d5420e6c1232745803602e988607d4
-      internalID: 1521328352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_79
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 50
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2e363c08b564504caccded307c79666
-      internalID: -820973496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_80
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 26
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfc2084f910476b4ca932dec32dce288
-      internalID: -1233321607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_81
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 26
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec641e486b6df3442bfa694c1d35c3fb
-      internalID: 514455579
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_82
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 26
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c84a34335757be43943ca5edeaf2041
-      internalID: 1263980710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_83
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 26
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 885639f0557db11428d9397d0bbf1a4c
-      internalID: -648118289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_84
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 26
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f60452bae028333419724f09fdab52ab
-      internalID: -1234047321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_85
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 26
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 601652b56e7f4764b809a61c8c7468aa
-      internalID: -1793304977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_86
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 26
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9ef5b26ddf016942a5f9929eba35f2e
-      internalID: 1228962131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_87
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 26
-        width: 12
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 432b5d31922752342906c6979fd427d2
-      internalID: 1019328646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_88
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 2
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d72a111beb00674c94ab778bcc64967
-      internalID: 492663729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_89
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 2
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b27c02fc61a8d024a9879c75439869fa
-      internalID: 271747271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_90
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 2
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 512d625cb6d6a4d4b8f9ec1b243dd9a3
-      internalID: -528116185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_91
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 2
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7665c5fb97181749b82499c1dc122f1
-      internalID: 1093421932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_92
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 2
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26c26b3513df9c84eb4a8bbd48261e92
-      internalID: 1792356793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_93
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 2
-        width: 12
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 175319c761ebee648969dfaae53ead45
-      internalID: 1903540245
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_94
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 2
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b799f35552e0054b8f48be030cbb67f
-      internalID: 1794329083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Small-8-Direction-Characters_by_AxulArt_95
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 2
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d1017e346792524eb68b9750efe97d8
-      internalID: 447988543
+      spriteID: 39701afcae1307544abf04de2fdf7aee
+      internalID: -964204085
       vertices: []
       indices: 
       edges: []
@@ -2123,102 +2102,101 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Small-8-Direction-Characters_by_AxulArt_0: -144430689
-      Small-8-Direction-Characters_by_AxulArt_1: 1831743675
-      Small-8-Direction-Characters_by_AxulArt_10: 607693490
-      Small-8-Direction-Characters_by_AxulArt_11: -242606763
-      Small-8-Direction-Characters_by_AxulArt_12: 1818596474
-      Small-8-Direction-Characters_by_AxulArt_13: -869619709
-      Small-8-Direction-Characters_by_AxulArt_14: 700158435
-      Small-8-Direction-Characters_by_AxulArt_15: 640931084
-      Small-8-Direction-Characters_by_AxulArt_16: 1243334272
-      Small-8-Direction-Characters_by_AxulArt_17: -869843079
-      Small-8-Direction-Characters_by_AxulArt_18: 1870930168
-      Small-8-Direction-Characters_by_AxulArt_19: -1387733045
-      Small-8-Direction-Characters_by_AxulArt_2: 1833252461
-      Small-8-Direction-Characters_by_AxulArt_20: -2126600815
-      Small-8-Direction-Characters_by_AxulArt_21: -1961531890
-      Small-8-Direction-Characters_by_AxulArt_22: 1193888863
-      Small-8-Direction-Characters_by_AxulArt_23: 1615566587
-      Small-8-Direction-Characters_by_AxulArt_24: 1902727012
-      Small-8-Direction-Characters_by_AxulArt_25: 383042799
-      Small-8-Direction-Characters_by_AxulArt_26: 32909306
-      Small-8-Direction-Characters_by_AxulArt_27: -1358612481
-      Small-8-Direction-Characters_by_AxulArt_28: -42886236
-      Small-8-Direction-Characters_by_AxulArt_29: -992712179
-      Small-8-Direction-Characters_by_AxulArt_3: -1355777048
-      Small-8-Direction-Characters_by_AxulArt_30: -1739781714
-      Small-8-Direction-Characters_by_AxulArt_31: -569695555
-      Small-8-Direction-Characters_by_AxulArt_32: 2016373338
-      Small-8-Direction-Characters_by_AxulArt_33: -1122699269
-      Small-8-Direction-Characters_by_AxulArt_34: 1340522546
-      Small-8-Direction-Characters_by_AxulArt_35: -616437213
-      Small-8-Direction-Characters_by_AxulArt_36: 2108513738
-      Small-8-Direction-Characters_by_AxulArt_37: -960119439
-      Small-8-Direction-Characters_by_AxulArt_38: 1803914338
-      Small-8-Direction-Characters_by_AxulArt_39: 1959955929
-      Small-8-Direction-Characters_by_AxulArt_4: -1571374325
-      Small-8-Direction-Characters_by_AxulArt_40: 1768575551
-      Small-8-Direction-Characters_by_AxulArt_41: -190633132
-      Small-8-Direction-Characters_by_AxulArt_42: -277889530
-      Small-8-Direction-Characters_by_AxulArt_43: 1401176701
-      Small-8-Direction-Characters_by_AxulArt_44: 1699458188
-      Small-8-Direction-Characters_by_AxulArt_45: -63004287
-      Small-8-Direction-Characters_by_AxulArt_46: -1507658751
-      Small-8-Direction-Characters_by_AxulArt_47: 1105736515
-      Small-8-Direction-Characters_by_AxulArt_48: -869899070
-      Small-8-Direction-Characters_by_AxulArt_49: 900037219
-      Small-8-Direction-Characters_by_AxulArt_5: -660971160
-      Small-8-Direction-Characters_by_AxulArt_50: 801905516
-      Small-8-Direction-Characters_by_AxulArt_51: 1449498970
-      Small-8-Direction-Characters_by_AxulArt_52: -1810394202
-      Small-8-Direction-Characters_by_AxulArt_53: 94564380
-      Small-8-Direction-Characters_by_AxulArt_54: -1716712779
-      Small-8-Direction-Characters_by_AxulArt_55: -643365769
-      Small-8-Direction-Characters_by_AxulArt_56: 2077785239
-      Small-8-Direction-Characters_by_AxulArt_57: 601575908
-      Small-8-Direction-Characters_by_AxulArt_58: -1748787453
-      Small-8-Direction-Characters_by_AxulArt_59: -1202257508
-      Small-8-Direction-Characters_by_AxulArt_6: -581128873
-      Small-8-Direction-Characters_by_AxulArt_60: 204028292
-      Small-8-Direction-Characters_by_AxulArt_61: -788053707
-      Small-8-Direction-Characters_by_AxulArt_62: 2049848294
-      Small-8-Direction-Characters_by_AxulArt_63: -1072095657
-      Small-8-Direction-Characters_by_AxulArt_64: 894697048
-      Small-8-Direction-Characters_by_AxulArt_65: -868596836
-      Small-8-Direction-Characters_by_AxulArt_66: -581256561
-      Small-8-Direction-Characters_by_AxulArt_67: 727971984
-      Small-8-Direction-Characters_by_AxulArt_68: -434505618
-      Small-8-Direction-Characters_by_AxulArt_69: -215893360
-      Small-8-Direction-Characters_by_AxulArt_7: 144661451
-      Small-8-Direction-Characters_by_AxulArt_70: 1708638610
-      Small-8-Direction-Characters_by_AxulArt_71: -72792651
-      Small-8-Direction-Characters_by_AxulArt_72: 1005114823
-      Small-8-Direction-Characters_by_AxulArt_73: 395777049
-      Small-8-Direction-Characters_by_AxulArt_74: -151884536
-      Small-8-Direction-Characters_by_AxulArt_75: 1191987397
-      Small-8-Direction-Characters_by_AxulArt_76: -554753816
-      Small-8-Direction-Characters_by_AxulArt_77: 228123898
-      Small-8-Direction-Characters_by_AxulArt_78: 1521328352
-      Small-8-Direction-Characters_by_AxulArt_79: -820973496
-      Small-8-Direction-Characters_by_AxulArt_8: -221569894
-      Small-8-Direction-Characters_by_AxulArt_80: -1233321607
-      Small-8-Direction-Characters_by_AxulArt_81: 514455579
-      Small-8-Direction-Characters_by_AxulArt_82: 1263980710
-      Small-8-Direction-Characters_by_AxulArt_83: -648118289
-      Small-8-Direction-Characters_by_AxulArt_84: -1234047321
-      Small-8-Direction-Characters_by_AxulArt_85: -1793304977
-      Small-8-Direction-Characters_by_AxulArt_86: 1228962131
-      Small-8-Direction-Characters_by_AxulArt_87: 1019328646
-      Small-8-Direction-Characters_by_AxulArt_88: 492663729
-      Small-8-Direction-Characters_by_AxulArt_89: 271747271
-      Small-8-Direction-Characters_by_AxulArt_9: -147119942
-      Small-8-Direction-Characters_by_AxulArt_90: -528116185
-      Small-8-Direction-Characters_by_AxulArt_91: 1093421932
-      Small-8-Direction-Characters_by_AxulArt_92: 1792356793
-      Small-8-Direction-Characters_by_AxulArt_93: 1903540245
-      Small-8-Direction-Characters_by_AxulArt_94: 1794329083
-      Small-8-Direction-Characters_by_AxulArt_95: 447988543
+      mutant-nobg_0: 117612171
+      mutant-nobg_1: 677514629
+      mutant-nobg_10: 123568758
+      mutant-nobg_11: 1820822138
+      mutant-nobg_12: 604034440
+      mutant-nobg_13: -1772084662
+      mutant-nobg_14: -1266638265
+      mutant-nobg_15: -1868175128
+      mutant-nobg_16: 1977073584
+      mutant-nobg_17: -2007181352
+      mutant-nobg_18: 666335225
+      mutant-nobg_19: 260324733
+      mutant-nobg_2: 2012149127
+      mutant-nobg_20: 1664639999
+      mutant-nobg_21: -645136557
+      mutant-nobg_22: -1869340031
+      mutant-nobg_23: 2086938839
+      mutant-nobg_24: -1728474257
+      mutant-nobg_25: 521931468
+      mutant-nobg_26: -2089969060
+      mutant-nobg_27: 1850432504
+      mutant-nobg_28: 645528633
+      mutant-nobg_29: -377843503
+      mutant-nobg_3: -1211923672
+      mutant-nobg_30: 182180374
+      mutant-nobg_31: -575082981
+      mutant-nobg_32: 1518058460
+      mutant-nobg_33: -1510291083
+      mutant-nobg_34: 953973791
+      mutant-nobg_35: -1843483017
+      mutant-nobg_36: 1396370760
+      mutant-nobg_37: -266593496
+      mutant-nobg_38: 884933330
+      mutant-nobg_39: -1553459443
+      mutant-nobg_4: 1297530618
+      mutant-nobg_40: 410553296
+      mutant-nobg_41: -142036239
+      mutant-nobg_42: -759661052
+      mutant-nobg_43: 669738576
+      mutant-nobg_44: 1940779749
+      mutant-nobg_45: -240328506
+      mutant-nobg_46: 2068110659
+      mutant-nobg_47: -133984102
+      mutant-nobg_48: 704875487
+      mutant-nobg_49: 463901929
+      mutant-nobg_5: -1859744510
+      mutant-nobg_50: 218971764
+      mutant-nobg_51: -132296080
+      mutant-nobg_52: 1759783077
+      mutant-nobg_53: -512404570
+      mutant-nobg_54: -407156219
+      mutant-nobg_55: -717956505
+      mutant-nobg_56: -210070170
+      mutant-nobg_57: 738590547
+      mutant-nobg_58: 1580845157
+      mutant-nobg_59: 1441868693
+      mutant-nobg_6: 689145029
+      mutant-nobg_60: 1119896869
+      mutant-nobg_61: 460375142
+      mutant-nobg_62: -510388994
+      mutant-nobg_63: 288171302
+      mutant-nobg_64: -1206543796
+      mutant-nobg_65: -1603875365
+      mutant-nobg_66: 463249097
+      mutant-nobg_67: 1653412475
+      mutant-nobg_68: 1685343910
+      mutant-nobg_69: -1879227176
+      mutant-nobg_7: -266606460
+      mutant-nobg_70: -1965075382
+      mutant-nobg_71: 1086238781
+      mutant-nobg_72: -1263296002
+      mutant-nobg_73: 1994803941
+      mutant-nobg_74: -2110450335
+      mutant-nobg_75: 194084361
+      mutant-nobg_76: 1276165418
+      mutant-nobg_77: 1791963209
+      mutant-nobg_78: -145601258
+      mutant-nobg_79: 729088056
+      mutant-nobg_8: -1567725687
+      mutant-nobg_80: 1073176601
+      mutant-nobg_81: -1063171665
+      mutant-nobg_82: 978351567
+      mutant-nobg_83: 1164950908
+      mutant-nobg_84: -1388547742
+      mutant-nobg_85: -487539704
+      mutant-nobg_86: 25284793
+      mutant-nobg_87: 954003704
+      mutant-nobg_88: 1064433890
+      mutant-nobg_89: 1012785941
+      mutant-nobg_9: 1029375270
+      mutant-nobg_90: 885144239
+      mutant-nobg_91: 163926577
+      mutant-nobg_92: 1745715709
+      mutant-nobg_93: 20196259
+      mutant-nobg_94: -964204085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
