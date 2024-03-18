@@ -7,10 +7,12 @@ public class PlayerAnimator : MonoBehaviour
     Animator animator;
     PlayerMovement player_movement;
     SpriteRenderer sprite_renderer;
+    PlayerStats player_stats;
     bool isIdle = true;
     // Start is called before the first frame update
     void Start()
     {
+        player_stats = FindObjectOfType<PlayerStats>();
         animator = GetComponent<Animator>();
         player_movement = GetComponent<PlayerMovement>();
         sprite_renderer = GetComponent<SpriteRenderer>();
@@ -115,12 +117,14 @@ public class PlayerAnimator : MonoBehaviour
         {
             DisableIdleOrientations();
             animator.SetBool("Attack_H", true);
+            player_stats.isAttacking = true;
         }
         else
         {
             if (isAnimationFinished())
             {
                 animator.SetBool("Attack_H", false);
+                player_stats.isAttacking = false;
             }
         }
 
@@ -128,12 +132,14 @@ public class PlayerAnimator : MonoBehaviour
         {
             DisableIdleOrientations();
             animator.SetBool("Attack_Up", true);
+            player_stats.isAttacking = true;
         }
         else
         {
             if (isAnimationFinished())
             {
                 animator.SetBool("Attack_Up", false);
+                player_stats.isAttacking = false;
             }
         }
 
@@ -141,12 +147,14 @@ public class PlayerAnimator : MonoBehaviour
         {
             DisableIdleOrientations();
             animator.SetBool("Attack_Down", true);
+            player_stats.isAttacking = true;
         }
         else
         {
             if (isAnimationFinished())
             {
                 animator.SetBool("Attack_Down", false);
+                player_stats.isAttacking = false;
             }
         }
 
@@ -154,12 +162,14 @@ public class PlayerAnimator : MonoBehaviour
         {
             DisableIdleOrientations();
             animator.SetBool("Attack_UD", true);
+            player_stats.isAttacking = true;
         }
         else
         {
             if (isAnimationFinished())
             {
                 animator.SetBool("Attack_UD", false);
+                player_stats.isAttacking = false;
             }
         }
 
@@ -167,13 +177,28 @@ public class PlayerAnimator : MonoBehaviour
         {
             DisableIdleOrientations();
             animator.SetBool("Attack_DD", true);
+            player_stats.isAttacking = true;
         }
         else
         {
             if (isAnimationFinished())
             {
                 animator.SetBool("Attack_DD", false);
+                player_stats.isAttacking = false;
             }
+        }
+
+        // Change color -- FOR TESTING PURPOSES ONLY
+        switch (player_stats.currState)
+        {
+            case "red":
+                sprite_renderer.color = Color.red; break;
+            case "yellow":
+                sprite_renderer.color = Color.yellow; break;
+            case "blue":
+                sprite_renderer.color = Color.blue; break;
+            default:
+                sprite_renderer.color = Color.white; break;
         }
 
         SpriteDirectionCheck();

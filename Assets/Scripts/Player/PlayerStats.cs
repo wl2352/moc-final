@@ -10,9 +10,12 @@ public class PlayerStats : MonoBehaviour
     [SerializeField]
     public int slots = 0;
     [SerializeField]
-    public float damage, health, block, critChance, stamina, movementSpeed, luck, duration;
+    public float damage, health, block, critChance, stamina, movementSpeed, luck, duration, atkDur;
     [SerializeField]
     public float prevHealth;
+    [SerializeField]
+    public bool isAttacking = false;
+    public GameObject attackPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -73,6 +76,18 @@ public class PlayerStats : MonoBehaviour
             prevHealth = health;
         }
 
+        // Attacking Action
+        // Meant to test if attacking state is tracking properly and also test ability to spawn an object as a result
+        // of the player attack. If an item spawns, this means we can spawn some type of collider
+        if (isAttacking && GameObject.FindGameObjectWithTag("atk") == null)
+        {
+            Instantiate(attackPrefab, new Vector2(gameObject.transform.position.x + 1, gameObject.transform.position.y + 1), Quaternion.identity);
+        }
+        else if(!isAttacking && GameObject.FindGameObjectWithTag("atk") != null)
+        {
+            DestroyImmediate(GameObject.FindGameObjectWithTag("atk"), true);
+        }
+
         // Update Durations
         if (duration > 0)
         {
@@ -109,10 +124,11 @@ public class PlayerStats : MonoBehaviour
     {
         // Debug.Log(states.states["base"]["damage"]);
         if (!currentStates.Contains(ability)) { Debug.Log("Player does not have " + ability + " ability"); return; }
+        if (ability != "base" && currState == ability) { Debug.Log("Already in " + currState + " state."); return; }
         switch (ability)
         {
             case "red":
-                if (duration == 0)
+                if (duration != allStates.states["red"]["duration"])
                 {
                     currState = "red";
                     damage = damage + allStates.states["red"]["damage"];
@@ -122,7 +138,7 @@ public class PlayerStats : MonoBehaviour
                 
                 break;
             case "yellow":
-                if (duration == 0)
+                if (duration != allStates.states["yellow"]["duration"])
                 {
                     currState = "yellow";
                     stamina = stamina + allStates.states["yellow"]["stamina"];
@@ -132,7 +148,7 @@ public class PlayerStats : MonoBehaviour
                 
                 break;
             case "blue":
-                if (duration == 0)
+                if (duration != allStates.states["blue"]["duration"])
                 {
                     currState = "blue";
                     block = block + allStates.states["blue"]["block"];

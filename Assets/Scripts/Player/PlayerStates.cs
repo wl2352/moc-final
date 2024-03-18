@@ -98,7 +98,6 @@ public class PlayerStates : MonoBehaviour
                     }
             }
         };
-        Debug.Log(states["base"]["damage"]);
     }
 
     private void Update()

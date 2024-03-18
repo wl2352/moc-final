@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 1213241277588235063}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,3 +236,5 @@ MonoBehaviour:
   luck: 0
   duration: 0
   prevHealth: 0
+  isAttacking: 0
+  attackPrefab: {fileID: 0}
