@@ -68,12 +68,19 @@ public class PlayerStats : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             health -= 1.0f;
-            prevHealth = health;
+            if (currState != "blue") prevHealth = health;
+            else
+            {
+                if (health < prevHealth)
+                {
+                    prevHealth = health;
+                }
+            }
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
             health += 1.0f;
-            prevHealth = health;
+            if (currState != "blue") prevHealth = health;
         }
 
         // Attacking Action
@@ -128,37 +135,46 @@ public class PlayerStats : MonoBehaviour
         switch (ability)
         {
             case "red":
-                if (duration != allStates.states["red"]["duration"])
+                if (duration == 0)
                 {
                     currState = "red";
-                    damage = damage + allStates.states["red"]["damage"];
-                    critChance = critChance + allStates.states["red"]["critChance"];
+                    damage = allStates.states["base"]["damage"] + allStates.states["red"]["damage"];
+                    critChance = allStates.states["base"]["critChance"] + allStates.states["red"]["critChance"];
                     duration = allStates.states["red"]["duration"];
                 }
                 
                 break;
             case "yellow":
-                if (duration != allStates.states["yellow"]["duration"])
+                if (duration == 0)
                 {
                     currState = "yellow";
-                    stamina = stamina + allStates.states["yellow"]["stamina"];
-                    movementSpeed = movementSpeed + allStates.states["yellow"]["movementSpeed"];
+                    stamina = allStates.states["base"]["stamina"] + allStates.states["yellow"]["stamina"];
+                    movementSpeed = allStates.states["base"]["movementSpeed"] + allStates.states["yellow"]["movementSpeed"];
                     duration = allStates.states["yellow"]["duration"];
                 }
                 
                 break;
             case "blue":
-                if (duration != allStates.states["blue"]["duration"])
+                if (duration == 0)
                 {
                     currState = "blue";
-                    block = block + allStates.states["blue"]["block"];
+                    block = allStates.states["base"]["block"] + allStates.states["blue"]["block"];
                     prevHealth = health;
-                    health = health + allStates.states["blue"]["health"];
+                    if (health + allStates.states["blue"]["health"] > allStates.states["base"]["health"] + allStates.states["blue"]["health"])
+                    {
+                        health = allStates.states["base"]["health"] + allStates.states["blue"]["health"];
+                    }
+                    else
+                    {
+                        health = health + allStates.states["blue"]["health"];
+                    }
                     duration = allStates.states["blue"]["duration"];
                 }
                 
                 break;
             default:
+                currState = "base";
+                if (prevHealth > allStates.states["base"]["health"]) prevHealth = allStates.states["base"]["health"];
                 health = prevHealth;
                 damage = allStates.states["base"]["damage"];
                 block = allStates.states["base"]["block"];
@@ -167,7 +183,7 @@ public class PlayerStats : MonoBehaviour
                 movementSpeed = allStates.states["base"]["movementSpeed"];
                 break;
         }
-        currState = ability;
+        // currState = ability;
     }
 
     void UpgradeAbility(string choice, int stat)

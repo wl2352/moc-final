@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     PlayerStats stats;
+    [SerializeField]
+    float sprintSpeedMultiplier = 1.4f;
     public float movementSpeed;
     [HideInInspector]
     public float last_horizontal_vector;
@@ -45,6 +47,14 @@ public class PlayerMovement : MonoBehaviour
         {
             last_moved_vector = new Vector2(last_horizontal_vector, last_vertical_vector);
         }
-        rb.velocity = movement_dir * stats.movementSpeed;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            rb.velocity = movement_dir * stats.movementSpeed * sprintSpeedMultiplier;
+        }
+        else
+        {
+            rb.velocity = movement_dir * stats.movementSpeed;
+        }
+        
     }
 }
