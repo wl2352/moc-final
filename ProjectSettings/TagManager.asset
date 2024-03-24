@@ -45,3 +45,9 @@ TagManager:
   - name: Ground
     uniqueID: 1419603385
     locked: 0
+  - name: Environment
+    uniqueID: 2977197563
+    locked: 0
+  - name: Sprites
+    uniqueID: 1232525325
+    locked: 0
