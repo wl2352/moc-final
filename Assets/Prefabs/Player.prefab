@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100ff1c43cdd3b9459b11106a80a2d4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprintSpeedMultiplier: 1.4
   movementSpeed: 3
   last_horizontal_vector: 0
   last_vertical_vector: 0
@@ -235,6 +236,7 @@ MonoBehaviour:
   movementSpeed: 0
   luck: 0
   duration: 0
+  atkDur: 0
   prevHealth: 0
   isAttacking: 0
-  attackPrefab: {fileID: 0}
+  attackPrefab: {fileID: 6311764036690060189, guid: dabd1bb674a944649b4ca12b02594772, type: 3}
