@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     PlayerStates allStates;
+    GameManager gameManager;
     public string currState;
     public List<string> currentStates;
     [SerializeField]
@@ -20,6 +21,7 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         allStates = FindObjectOfType<PlayerStates>();
+        gameManager = FindObjectOfType<GameManager>();
         currentStates = new List<string>()
         {
             "base"
@@ -45,43 +47,47 @@ public class PlayerStats : MonoBehaviour
         {
             ApplyAbility("blue");
         }
-       
-        // Testing Adding New Ability
-        if (Input.GetKeyDown(KeyCode.I))
+        
+        if (gameManager.devMode)
         {
-            AddNewState("red");
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            AddNewState("yellow");
-        }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            AddNewState("blue");
-        }
-
-        // Dev Controls / Manipulate Player Stats
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            slots++;
-        }
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            health -= 1.0f;
-            if (currState != "blue") prevHealth = health;
-            else
+            // Testing Adding New Ability
+            if (Input.GetKeyDown(KeyCode.I))
             {
-                if (health < prevHealth)
+                AddNewState("red");
+            }
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                AddNewState("yellow");
+            }
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                AddNewState("blue");
+            }
+
+            // Dev Controls / Manipulate Player Stats
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                slots++;
+            }
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                health -= 1.0f;
+                if (currState != "blue") prevHealth = health;
+                else
                 {
-                    prevHealth = health;
+                    if (health < prevHealth)
+                    {
+                        prevHealth = health;
+                    }
                 }
             }
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                health += 1.0f;
+                if (currState != "blue") prevHealth = health;
+            }
         }
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            health += 1.0f;
-            if (currState != "blue") prevHealth = health;
-        }
+        
 
         // Attacking Action
         // Meant to test if attacking state is tracking properly and also test ability to spawn an object as a result
