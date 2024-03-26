@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     PlayerStates allStates;
+    GameManager gameManager;
     public string currState;
     public List<string> currentStates;
     [SerializeField]
@@ -16,10 +17,16 @@ public class PlayerStats : MonoBehaviour
     [SerializeField]
     public bool isAttacking = false;
     public GameObject attackPrefab;
+
+    // Attack Area
+    public LayerMask enemyLayers;
+    public Transform attackPoint;
+    public float attackRadius;
     // Start is called before the first frame update
     void Start()
     {
         allStates = FindObjectOfType<PlayerStates>();
+        gameManager = FindObjectOfType<GameManager>();
         currentStates = new List<string>()
         {
             "base"
@@ -27,6 +34,7 @@ public class PlayerStats : MonoBehaviour
         currState = currentStates[0];
         prevHealth = 100.0f;
         health = 100.0f;
+        atkDur = 0f;
     }
 
     // Update is called once per frame
@@ -45,54 +53,63 @@ public class PlayerStats : MonoBehaviour
         {
             ApplyAbility("blue");
         }
-       
-        // Testing Adding New Ability
-        if (Input.GetKeyDown(KeyCode.I))
+        
+        if (gameManager.devMode)
         {
-            AddNewState("red");
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            AddNewState("yellow");
-        }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            AddNewState("blue");
-        }
-
-        // Dev Controls / Manipulate Player Stats
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            slots++;
-        }
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            health -= 1.0f;
-            if (currState != "blue") prevHealth = health;
-            else
+            // Testing Adding New Ability
+            if (Input.GetKeyDown(KeyCode.I))
             {
-                if (health < prevHealth)
+                AddNewState("red");
+            }
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                AddNewState("yellow");
+            }
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                AddNewState("blue");
+            }
+
+            // Dev Controls / Manipulate Player Stats
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                slots++;
+            }
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                health -= 1.0f;
+                if (currState != "blue") prevHealth = health;
+                else
                 {
-                    prevHealth = health;
+                    if (health < prevHealth)
+                    {
+                        prevHealth = health;
+                    }
                 }
             }
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                health += 1.0f;
+                if (currState != "blue") prevHealth = health;
+            }
         }
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            health += 1.0f;
-            if (currState != "blue") prevHealth = health;
-        }
+        
 
         // Attacking Action
         // Meant to test if attacking state is tracking properly and also test ability to spawn an object as a result
         // of the player attack. If an item spawns, this means we can spawn some type of collider
-        if (isAttacking && GameObject.FindGameObjectWithTag("atk") == null)
+        /*if (isAttacking && GameObject.FindGameObjectWithTag("atk") == null)
         {
             Instantiate(attackPrefab, new Vector2(gameObject.transform.position.x + 1, gameObject.transform.position.y + 1), Quaternion.identity);
         }
         else if(!isAttacking && GameObject.FindGameObjectWithTag("atk") != null)
         {
             DestroyImmediate(GameObject.FindGameObjectWithTag("atk"), true);
+        }*/
+        if (isAttacking && atkDur == 0f)
+        {
+            Attack();
+            atkDur += 1.0f;
         }
 
         // Update Durations
@@ -185,6 +202,38 @@ public class PlayerStats : MonoBehaviour
         }
         // currState = ability;
     }
+
+    void Attack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, enemyLayers);
+
+        foreach(Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("We hit " + enemy.name);
+            enemy.GetComponent<EnemyMovement>().TakeDamage(damage);
+            Debug.Log("After we hit: " + enemy.GetComponent<EnemyMovement>().health.ToString());
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Debug.Log(this.name + " died!");
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+    }
+
 
     void UpgradeAbility(string choice, int stat)
     {
