@@ -125,6 +125,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_H", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 
@@ -140,6 +141,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_Up", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 
@@ -155,6 +157,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_Down", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 
@@ -170,6 +173,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_UD", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 
@@ -185,6 +189,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_DD", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 

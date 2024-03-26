@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ public class EnemyMovement : MonoBehaviour
 
     // Enemy stats
     public float damage, health, speed, cooldown, ttCooldown;
-    public bool isAttacking, isHowling, isDead, isIdle, isRunning;
+    public bool isAttacking, isHowling, isDead, isIdle, isRunning, collidedWithPlayer;
 
     // Enemy movement & collision
     Rigidbody2D rb;
@@ -38,6 +39,8 @@ public class EnemyMovement : MonoBehaviour
 
     Dictionary<string, Color> colors;
 
+    public static event Action<EnemyMovement> OnEnemyKilled;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,9 +59,10 @@ public class EnemyMovement : MonoBehaviour
         EnemyStatSetter();
 
         ttCooldown = cooldown;
-        enemyColorState = colors.Keys.ToList()[Random.Range(0, colors.Keys.ToList().Count)];
+        enemyColorState = colors.Keys.ToList()[UnityEngine.Random.Range(0, colors.Keys.ToList().Count)];
         rend.color = colors[enemyColorState];
         isIdle = true;
+        collidedWithPlayer = false;
     }
 
     // Update is called once per frame
@@ -97,22 +101,15 @@ public class EnemyMovement : MonoBehaviour
                 last_moved_vector = new Vector2(last_horizontal_vector, last_vertical_vector);
             }
 
-            if (Vector2.Distance(transform.position, player.position) < 0.5f)
+            if (collidedWithPlayer)
             {
                 isAttacking = true;
-                isRunning = false;
                 ttCooldown -= Time.deltaTime;
-                if (ttCooldown <= 0)
-                {
-                    ttCooldown = cooldown;
-                    isAttacking = false;
-                }
                 _playerAwareness.AwareOfPlayer = false;
             }
             else
             {
                 isAttacking = false;
-                isRunning = false;
             }
         }
         else
@@ -120,6 +117,19 @@ public class EnemyMovement : MonoBehaviour
             isIdle = true;
             isRunning = false;
         }
+
+        if (isAttacking && 0 <= ttCooldown && ttCooldown < cooldown)
+        {
+            isIdle = false;
+            isRunning = false;
+            Attack();
+        }
+        else
+        {
+            ttCooldown = cooldown;
+            isAttacking = false;
+        }
+        // Debug.Log(health.ToString());
     }
 
     void EnemyStatSetter()
@@ -141,5 +151,39 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Debug.Log(this.name + " died!");
+            Destroy(gameObject);
+            OnEnemyKilled?.Invoke(this);
+        }
+    }
 
+    void Attack()
+    {
+        if (isAttacking && ttCooldown == 0f)
+        {
+            GetComponent<PlayerStats>().TakeDamage(damage);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collidedWithPlayer = true;
+        }
+        else
+        {
+            collidedWithPlayer = false;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        collidedWithPlayer = false;
+    }
 }

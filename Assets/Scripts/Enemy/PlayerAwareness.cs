@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAwareness : MonoBehaviour
 {
-    public bool AwareOfPlayer { get; set; }
+    public bool AwareOfPlayer;
     public Vector2 dir_to_player {  get; set; }
 
     [SerializeField]
