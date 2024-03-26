@@ -210,14 +210,42 @@ public class PlayerStats : MonoBehaviour
         foreach(Collider2D enemy in hitEnemies)
         {
             Debug.Log("We hit " + enemy.name);
-            enemy.GetComponent<EnemyMovement>().TakeDamage(damage);
+            
+            // If the damage applied to the enemy can not kill the enemy --> do damage as is
+            // If the damage applied to the enemy CAN kill the enemy --> if the colors are the same --> do damage as is
+            if (enemy.GetComponent<EnemyMovement>().health - damage > 0)
+            {
+                enemy.GetComponent<EnemyMovement>().TakeDamage(damage);
+            }
+            else
+            {
+                if (gameObject.GetComponent<SpriteRenderer>().color == enemy.GetComponent<EnemyMovement>().currColor)
+                {
+                    enemy.GetComponent<EnemyMovement>().TakeDamage(damage);
+                }
+                else
+                {
+                    Debug.Log("Cannot kill enemy because they are not the same color");
+                }
+            }
+            
+
             Debug.Log("After we hit: " + enemy.GetComponent<EnemyMovement>().health.ToString());
         }
     }
 
     public void TakeDamage(float damage)
     {
+        Debug.Log("Reached at player level");
         health -= damage;
+        if (currState != "blue") prevHealth = health;
+        else
+        {
+            if (health < prevHealth)
+            {
+                prevHealth = health;
+            }
+        }
         if (health <= 0)
         {
             Debug.Log(this.name + " died!");

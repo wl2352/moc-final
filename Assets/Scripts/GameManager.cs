@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 {
     public bool devMode = false;
     public int enemyCount = 0;
+    public int maxCount = 5;
+    public bool maxReached = false;
     TextMeshProUGUI textMeshProUGUI;
     List<EnemyMovement> enemies = new List<EnemyMovement>();
 
@@ -31,22 +33,47 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                SceneManager.LoadScene(1);
+            }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            if (Input.GetKeyDown(KeyCode.Comma))
+            {
+                devMode = !devMode;
+            }
+            if (gameObject.name == "Enemies Left")
+            {
+                textMeshProUGUI.text = enemies.Count.ToString();
+            }
+            if (FindObjectsOfType<PlayerStats>().ToList().Count == 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            enemies = GameObject.FindObjectsOfType<EnemyMovement>().ToList();
+            enemyCount = enemies.Count;
+            if (enemyCount >= maxCount)
+            {
+                maxReached = true;
+            }
+            else
+            {
+                maxReached = false;
+            }
         }
-        if (Input.GetKeyDown(KeyCode.Comma))
+        else
         {
-            devMode = !devMode;
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                SceneManager.LoadScene(0);
+            }
         }
-        if (gameObject.name == "Enemies Left")
-        {
-            textMeshProUGUI.text = enemies.Count.ToString();
-        }
-        if (FindObjectsOfType<PlayerStats>().ToList().Count == 0)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        
     }
 
     void HandleEnemyDefeated(EnemyMovement enemy)
