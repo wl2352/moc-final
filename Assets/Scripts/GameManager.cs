@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.M))
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(4);
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -66,14 +66,79 @@ public class GameManager : MonoBehaviour
                 maxReached = false;
             }
         }
-        else
+
+        else if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             if (Input.GetKeyDown(KeyCode.M))
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(4);
+            }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            if (Input.GetKeyDown(KeyCode.Comma))
+            {
+                devMode = !devMode;
             }
         }
-        
+
+        else if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                SceneManager.LoadScene(4);
+            }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            if (Input.GetKeyDown(KeyCode.Comma))
+            {
+                devMode = !devMode;
+            }
+        }
+
+        else if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                SceneManager.LoadScene(4);
+            }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            if (Input.GetKeyDown(KeyCode.Comma))
+            {
+                devMode = !devMode;
+            }
+        }
+
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                SceneManager.LoadScene(0);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                SceneManager.LoadScene(1);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                SceneManager.LoadScene(2);
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                SceneManager.LoadScene(3);
+            }
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+
     }
 
     void HandleEnemyDefeated(EnemyMovement enemy)

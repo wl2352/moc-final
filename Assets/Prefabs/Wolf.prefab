@@ -186,6 +186,11 @@ MonoBehaviour:
   movement_dir: {x: 0, y: 0}
   last_moved_vector: {x: 0, y: 0}
   awareness: 0
+  loot:
+  - {fileID: 4180551200742116058, guid: 12373046cf69314449289435903ec147, type: 3}
+  - {fileID: 208127681022748249, guid: 3983f19d2029a3145a3e64e9bc7af9d8, type: 3}
+  - {fileID: 433438975439157060, guid: 94456e8c66e03704793b1b550baa410c, type: 3}
+  lootRate: 2
 --- !u!50 &6785443947582396947
 Rigidbody2D:
   serializedVersion: 4

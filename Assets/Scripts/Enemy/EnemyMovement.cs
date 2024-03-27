@@ -36,6 +36,10 @@ public class EnemyMovement : MonoBehaviour
     public Vector2 last_moved_vector;
     [SerializeField]
     public float awareness;
+    [SerializeField]
+    List<GameObject> loot = new List<GameObject>();
+    [SerializeField]
+    float lootRate = 2f;
 
     private PlayerAwareness _playerAwareness;
 
@@ -147,7 +151,7 @@ public class EnemyMovement : MonoBehaviour
         {
             case "Wolf":       
                 damage = 2.0f;
-                health = 5.0f;
+                health = 4.0f;
                 speed = 1.0f;
                 break;
             case "Flyer":
@@ -166,6 +170,11 @@ public class EnemyMovement : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log(this.name + " died!");
+            float num = UnityEngine.Random.Range(0, 10);
+            if (num <= lootRate)
+            {
+                Instantiate(loot[UnityEngine.Random.Range(0, loot.Count)], transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
             OnEnemyKilled?.Invoke(this);
         }
