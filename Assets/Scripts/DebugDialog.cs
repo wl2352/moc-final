@@ -46,7 +46,15 @@ public class DebugDialog : MonoBehaviour
         }
         else
         {
-            m_DebugGUI.text = "";
+            if (m_DebugGUI.gameObject.name == "Errors")
+            {
+                m_DebugGUI.text = m_PlayerStats.errorMsg;
+            }
+            else
+            {
+                m_DebugGUI.text = "";
+            }
+            
         }
         
     }

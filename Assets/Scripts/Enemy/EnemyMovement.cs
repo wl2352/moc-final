@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour
 
     // Stuff for color state of enemy
     SpriteRenderer rend;
-    public Color RandomColor;
+    public Color currColor;
     public Color red = Color.red;
     public Color yellow = Color.yellow;
     public Color blue = Color.blue;
@@ -23,7 +23,9 @@ public class EnemyMovement : MonoBehaviour
     // Enemy movement & collision
     Rigidbody2D rb;
     Transform player;
+    PlayerMovement playerMovement;
     Vector2 movementDir;
+    PlayerStats ps;
     [HideInInspector]
     public float last_horizontal_vector;
     [HideInInspector]
@@ -34,6 +36,10 @@ public class EnemyMovement : MonoBehaviour
     public Vector2 last_moved_vector;
     [SerializeField]
     public float awareness;
+    [SerializeField]
+    List<GameObject> loot = new List<GameObject>();
+    [SerializeField]
+    float lootRate = 2f;
 
     private PlayerAwareness _playerAwareness;
 
@@ -47,7 +53,9 @@ public class EnemyMovement : MonoBehaviour
         rend = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         _playerAwareness = FindObjectOfType<PlayerAwareness>();
+        playerMovement = FindObjectOfType<PlayerMovement>();
         player = FindObjectOfType<PlayerMovement>().transform;
+        ps = FindObjectOfType<PlayerStats>();
 
         // Gets a random color
         colors = new Dictionary<string, Color>()
@@ -61,6 +69,7 @@ public class EnemyMovement : MonoBehaviour
         ttCooldown = cooldown;
         enemyColorState = colors.Keys.ToList()[UnityEngine.Random.Range(0, colors.Keys.ToList().Count)];
         rend.color = colors[enemyColorState];
+        currColor = rend.color;
         isIdle = true;
         collidedWithPlayer = false;
     }
@@ -129,6 +138,10 @@ public class EnemyMovement : MonoBehaviour
             ttCooldown = cooldown;
             isAttacking = false;
         }
+        /*if (collidedWithPlayer && isAttacking)
+        {
+            ps.TakeDamage(damage);
+        }*/
         // Debug.Log(health.ToString());
     }
 
@@ -138,7 +151,7 @@ public class EnemyMovement : MonoBehaviour
         {
             case "Wolf":       
                 damage = 2.0f;
-                health = 5.0f;
+                health = 4.0f;
                 speed = 1.0f;
                 break;
             case "Flyer":
@@ -157,6 +170,11 @@ public class EnemyMovement : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log(this.name + " died!");
+            float num = UnityEngine.Random.Range(0, 10);
+            if (num <= lootRate)
+            {
+                Instantiate(loot[UnityEngine.Random.Range(0, loot.Count)], transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
             OnEnemyKilled?.Invoke(this);
         }
@@ -166,19 +184,22 @@ public class EnemyMovement : MonoBehaviour
     {
         if (isAttacking && ttCooldown == 0f)
         {
-            GetComponent<PlayerStats>().TakeDamage(damage);
+            ps.TakeDamage(damage);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" && !playerMovement.isDashing)
         {
             collidedWithPlayer = true;
+            rb.MovePosition(transform.position);
+            ps.TakeDamage(damage);
         }
         else
         {
             collidedWithPlayer = false;
+            // Physics2D.IgnoreCollision(gameObject, collision);
         }
     }
 
