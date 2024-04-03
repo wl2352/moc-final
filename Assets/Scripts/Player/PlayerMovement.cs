@@ -17,6 +17,13 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 movement_dir;
     [HideInInspector]
     public Vector2 last_moved_vector;
+
+    public bool canDash = true;
+    public bool isDashing;
+    float dashingPower = 24f;
+    float dashingTime = .2f;
+    float dashingCooldown = 1f;
+    [SerializeField] private TrailRenderer tr;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         moveY = Input.GetAxisRaw("Vertical");
 
         movement_dir = new Vector2(moveX, moveY).normalized;
+        if (isDashing) return;
         if (movement_dir.x != 0)
         {
             last_horizontal_vector = movement_dir.x;
@@ -55,6 +63,28 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = movement_dir * stats.movementSpeed;
         }
+
+        // Does not work
+        if (Input.GetKeyDown(KeyCode.Space) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
         
+    }
+
+    // Does not work
+    private IEnumerator Dash()
+    {
+        Debug.Log("reached");
+        canDash = false;
+        isDashing = true;
+        rb.velocity = new Vector2(transform.localScale.x * last_horizontal_vector * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
+
     }
 }

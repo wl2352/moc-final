@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - atk
+  - Wolf
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Enemies
   - 
   - 
   - 
@@ -45,9 +46,12 @@ TagManager:
   - name: Ground
     uniqueID: 1419603385
     locked: 0
+  - name: Sprites
+    uniqueID: 1232525325
+    locked: 0
   - name: Environment
     uniqueID: 2977197563
     locked: 0
-  - name: Sprites
-    uniqueID: 1232525325
+  - name: UI
+    uniqueID: 1463137759
     locked: 0

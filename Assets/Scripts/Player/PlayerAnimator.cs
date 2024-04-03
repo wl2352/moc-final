@@ -9,6 +9,10 @@ public class PlayerAnimator : MonoBehaviour
     SpriteRenderer sprite_renderer;
     PlayerStats player_stats;
     bool isIdle = true;
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private AudioSource attackSound;
+    [SerializeField] private AudioClip attackClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -118,6 +122,16 @@ public class PlayerAnimator : MonoBehaviour
             DisableIdleOrientations();
             animator.SetBool("Attack_H", true);
             player_stats.isAttacking = true;
+            if (player_movement.last_moved_vector.x <= 0)
+            {
+                attackPoint.transform.position = new Vector3(player_movement.transform.position.x - 1.0f, player_movement.transform.position.y, 0);
+            }
+            else
+            {
+                attackPoint.transform.position = new Vector3(player_movement.transform.position.x + 1.0f, player_movement.transform.position.y, 0);
+            }
+            attackSound.PlayOneShot(attackClip);
+            
         }
         else
         {
@@ -125,6 +139,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_H", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 
@@ -133,6 +148,8 @@ public class PlayerAnimator : MonoBehaviour
             DisableIdleOrientations();
             animator.SetBool("Attack_Up", true);
             player_stats.isAttacking = true;
+            attackPoint.transform.position = new Vector3(player_movement.transform.position.x, player_movement.transform.position.y + 1.0f, 0);
+            attackSound.PlayOneShot(attackClip);
         }
         else
         {
@@ -140,6 +157,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_Up", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 
@@ -148,6 +166,8 @@ public class PlayerAnimator : MonoBehaviour
             DisableIdleOrientations();
             animator.SetBool("Attack_Down", true);
             player_stats.isAttacking = true;
+            attackPoint.transform.position = new Vector3(player_movement.transform.position.x, player_movement.transform.position.y - 1.0f, 0);
+            attackSound.PlayOneShot(attackClip);
         }
         else
         {
@@ -155,6 +175,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_Down", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 
@@ -163,6 +184,15 @@ public class PlayerAnimator : MonoBehaviour
             DisableIdleOrientations();
             animator.SetBool("Attack_UD", true);
             player_stats.isAttacking = true;
+            if (player_movement.last_moved_vector.x <= 0)
+            {
+                attackPoint.transform.position = new Vector3(player_movement.transform.position.x - 1.0f, player_movement.transform.position.y + 1.0f, 0);
+            }
+            else
+            {
+                attackPoint.transform.position = new Vector3(player_movement.transform.position.x + 1.0f, player_movement.transform.position.y + 1.0f, 0);
+            }
+            attackSound.PlayOneShot(attackClip);
         }
         else
         {
@@ -170,6 +200,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_UD", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 
@@ -178,6 +209,15 @@ public class PlayerAnimator : MonoBehaviour
             DisableIdleOrientations();
             animator.SetBool("Attack_DD", true);
             player_stats.isAttacking = true;
+            if (player_movement.last_moved_vector.x <= 0)
+            {
+                attackPoint.transform.position = new Vector3(player_movement.transform.position.x - 1.0f, player_movement.transform.position.y - 1.0f, 0);
+            }
+            else
+            {
+                attackPoint.transform.position = new Vector3(player_movement.transform.position.x + 1.0f, player_movement.transform.position.y - 1.0f, 0);
+            }
+            attackSound.PlayOneShot(attackClip);
         }
         else
         {
@@ -185,6 +225,7 @@ public class PlayerAnimator : MonoBehaviour
             {
                 animator.SetBool("Attack_DD", false);
                 player_stats.isAttacking = false;
+                player_stats.atkDur = 0f;
             }
         }
 

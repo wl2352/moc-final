@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     PlayerStates allStates;
+    GameManager gameManager;
     public string currState;
     public List<string> currentStates;
     [SerializeField]
@@ -16,10 +17,17 @@ public class PlayerStats : MonoBehaviour
     [SerializeField]
     public bool isAttacking = false;
     public GameObject attackPrefab;
+    public string errorMsg;
+
+    // Attack Area
+    public LayerMask enemyLayers;
+    public Transform attackPoint;
+    public float attackRadius;
     // Start is called before the first frame update
     void Start()
     {
         allStates = FindObjectOfType<PlayerStates>();
+        gameManager = FindObjectOfType<GameManager>();
         currentStates = new List<string>()
         {
             "base"
@@ -27,6 +35,7 @@ public class PlayerStats : MonoBehaviour
         currState = currentStates[0];
         prevHealth = 100.0f;
         health = 100.0f;
+        atkDur = 0f;
     }
 
     // Update is called once per frame
@@ -45,54 +54,63 @@ public class PlayerStats : MonoBehaviour
         {
             ApplyAbility("blue");
         }
-       
-        // Testing Adding New Ability
-        if (Input.GetKeyDown(KeyCode.I))
+        
+        if (gameManager.devMode)
         {
-            AddNewState("red");
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            AddNewState("yellow");
-        }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            AddNewState("blue");
-        }
-
-        // Dev Controls / Manipulate Player Stats
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            slots++;
-        }
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            health -= 1.0f;
-            if (currState != "blue") prevHealth = health;
-            else
+            // Testing Adding New Ability
+            if (Input.GetKeyDown(KeyCode.I))
             {
-                if (health < prevHealth)
+                AddNewState("red");
+            }
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                AddNewState("yellow");
+            }
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                AddNewState("blue");
+            }
+
+            // Dev Controls / Manipulate Player Stats
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                slots++;
+            }
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                health -= 1.0f;
+                if (currState != "blue") prevHealth = health;
+                else
                 {
-                    prevHealth = health;
+                    if (health < prevHealth)
+                    {
+                        prevHealth = health;
+                    }
                 }
             }
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                health += 1.0f;
+                if (currState != "blue") prevHealth = health;
+            }
         }
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            health += 1.0f;
-            if (currState != "blue") prevHealth = health;
-        }
+        
 
         // Attacking Action
         // Meant to test if attacking state is tracking properly and also test ability to spawn an object as a result
         // of the player attack. If an item spawns, this means we can spawn some type of collider
-        if (isAttacking && GameObject.FindGameObjectWithTag("atk") == null)
+        /*if (isAttacking && GameObject.FindGameObjectWithTag("atk") == null)
         {
             Instantiate(attackPrefab, new Vector2(gameObject.transform.position.x + 1, gameObject.transform.position.y + 1), Quaternion.identity);
         }
         else if(!isAttacking && GameObject.FindGameObjectWithTag("atk") != null)
         {
             DestroyImmediate(GameObject.FindGameObjectWithTag("atk"), true);
+        }*/
+        if (isAttacking && atkDur == 0f)
+        {
+            Attack();
+            atkDur += 1.0f;
         }
 
         // Update Durations
@@ -118,11 +136,13 @@ public class PlayerStats : MonoBehaviour
             else
             {
                 Debug.Log("State slots FULL. Slots: " + slots.ToString() + ", State count: " + currentStates.Count);
+                errorMsg = "State slots FULL. Slots: " + slots.ToString() + ", State count: " + currentStates.Count.ToString();
             }
         }
         else
         {
             Debug.Log("State already exists");
+            errorMsg = "State already exists";
         }
 
     }
@@ -130,8 +150,8 @@ public class PlayerStats : MonoBehaviour
     void ApplyAbility(string ability)
     {
         // Debug.Log(states.states["base"]["damage"]);
-        if (!currentStates.Contains(ability)) { Debug.Log("Player does not have " + ability + " ability"); return; }
-        if (ability != "base" && currState == ability) { Debug.Log("Already in " + currState + " state."); return; }
+        if (!currentStates.Contains(ability)) { Debug.Log("Player does not have " + ability + " ability"); errorMsg = "Player does not have " + ability + " ability";  return; }
+        if (ability != "base" && currState == ability) { Debug.Log("Already in " + currState + " state."); errorMsg = "Already in " + currState + " state.";  return; }
         switch (ability)
         {
             case "red":
@@ -186,6 +206,67 @@ public class PlayerStats : MonoBehaviour
         // currState = ability;
     }
 
+    void Attack()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, enemyLayers);
+
+        foreach(Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("We hit " + enemy.name);
+            
+            // If the damage applied to the enemy can not kill the enemy --> do damage as is
+            // If the damage applied to the enemy CAN kill the enemy --> if the colors are the same --> do damage as is
+            if (enemy.GetComponent<EnemyMovement>().health - damage > 0)
+            {
+                enemy.GetComponent<EnemyMovement>().TakeDamage(damage);
+            }
+            else
+            {
+                if (gameObject.GetComponent<SpriteRenderer>().color == enemy.GetComponent<EnemyMovement>().currColor)
+                {
+                    enemy.GetComponent<EnemyMovement>().TakeDamage(damage);
+                }
+                else
+                {
+                    Debug.Log("Cannot kill enemy because they are not the same color");
+                    errorMsg = "Cannot kill enemy because they are not the same color";
+                }
+            }
+            
+
+            Debug.Log("After we hit: " + enemy.GetComponent<EnemyMovement>().health.ToString());
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        Debug.Log("Reached at player level");
+        health -= damage;
+        if (currState != "blue") prevHealth = health;
+        else
+        {
+            if (health < prevHealth)
+            {
+                prevHealth = health;
+            }
+        }
+        if (health <= 0)
+        {
+            Debug.Log(this.name + " died!");
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+    }
+
+
     void UpgradeAbility(string choice, int stat)
     {
         switch (choice)
@@ -211,6 +292,58 @@ public class PlayerStats : MonoBehaviour
                 }
                 else { allStates.UpdateBlue(0.0f, 1.0f); }
                 break;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "RedBoost")
+        {
+            if (currentStates.Contains("red"))
+            {
+                UpgradeAbility("red", Random.Range(0, 2));
+                errorMsg = "Upgraded red ability!\n" +
+                    "toggle dev mode to see changes.";
+            }
+            else
+            {
+                slots++;
+                AddNewState("red");
+                errorMsg = "Red granted!";
+            }
+            Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.tag == "YellowBoost")
+        {
+            if (currentStates.Contains("yellow"))
+            {
+                UpgradeAbility("yellow", Random.Range(0, 2));
+                errorMsg = "Upgraded yellow ability!\n" +
+                    "toggle dev mode to see changes.";
+            }
+            else
+            {
+                slots++;
+                AddNewState("yellow");
+                errorMsg = "Yellow granted!";
+            }
+            Destroy(collision.gameObject);
+        }
+        else if (collision.gameObject.tag == "BlueBoost")
+        {
+            if (currentStates.Contains("blue"))
+            {
+                UpgradeAbility("blue", Random.Range(0, 2));
+                errorMsg = "Upgraded blue ability!\n" +
+                    "toggle dev mode to see changes.";
+            }
+            else
+            {
+                slots++;
+                AddNewState("blue");
+                errorMsg = "Blue granted!";
+            }
+            Destroy(collision.gameObject);
         }
     }
 }
