@@ -240,8 +240,8 @@ public class PlayerStats : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Debug.Log("Reached at player level");
         health -= damage;
+        Debug.Log(health);
         if (currState != "blue") prevHealth = health;
         else
         {
