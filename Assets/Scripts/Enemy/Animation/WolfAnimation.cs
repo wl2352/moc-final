@@ -6,6 +6,7 @@ public class WolfAnimation : MonoBehaviour
 {
     Animator animator;
     E_Movement enemyMovement;
+    E_Attack enemyAttack;
     SpriteRenderer sprite_renderer;
     public bool up;
 
@@ -13,12 +14,14 @@ public class WolfAnimation : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         sprite_renderer = GetComponent<SpriteRenderer>();
-        enemyMovement = GetComponent<E_Movement>();
+        enemyMovement = FindObjectOfType<E_Movement>();
+        enemyAttack = FindObjectOfType<E_Attack>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(enemyMovement.E_direction);
         // State handling
         if (enemyMovement.E_direction.y > 0)
         {
@@ -28,9 +31,11 @@ public class WolfAnimation : MonoBehaviour
         {
             up = false;
         }
+        Debug.Log(up);
 
-        if (enemyMovement.isIdle)
+        if (enemyMovement.E_velocity == Vector2.zero)
         {
+            Debug.Log("is idling");
             if (up)
             {
                 animator.SetBool("IdleUp", true);
@@ -46,9 +51,29 @@ public class WolfAnimation : MonoBehaviour
         else
         {
             animator.SetBool("IdleUp", false);
-        } 
+            if (enemyAttack.canAttack)
+            {
+                if (up)
+                {
+                    animator.SetBool("RunningUp", true);
+                    animator.SetBool("Running", false);
+                    Debug.Log("is moving up");
+                }
+                else
+                {
+                    animator.SetBool("Running", true);
+                    animator.SetBool("RunningUp", false);
+                    Debug.Log("is moving down");
+                }
+            }
+            else
+            {
+                animator.SetBool("RunningUp", false);
+                animator.SetBool("Running", false);
+            }
+        }
 
-        if (enemyMovement.isAttacking)
+        /*if (enemyMovement.isAttacking)
         {
             if (up)
             {
@@ -103,7 +128,7 @@ public class WolfAnimation : MonoBehaviour
         {
             animator.SetBool("RunningUp", false);
             animator.SetBool("Running", false);
-        }
+        }*/
 
         SpriteDirectionCheck();
     }

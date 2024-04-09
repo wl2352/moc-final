@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 8582063970916916495}
   - component: {fileID: 1003710703630852157}
   - component: {fileID: 1216953502764211701}
+  - component: {fileID: 3758784861374258432}
   - component: {fileID: 4237388090214012968}
   - component: {fileID: 9197255450089066286}
   m_Layer: 6
@@ -130,8 +131,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1232525325
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: -775914824, guid: b82a826f0a96e9e40bf337e5aa09ec3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -184,12 +185,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  atkCooldown: 2
-  atkRange: 1
+  attackCooldown: 2
+  attackRange: 0.5
   attackPoint: {fileID: 8669158053888955785}
   playerLayer:
     serializedVersion: 2
     m_Bits: 1
+  canAttack: 1
 --- !u!114 &1216953502764211701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +208,23 @@ MonoBehaviour:
   followDistance: 5
   target: {fileID: 0}
   E_direction: {x: 0, y: 0}
+--- !u!114 &3758784861374258432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5846318472912269119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53cb402525628d46a9c898a00a2cc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currColor: {r: 0, g: 0, b: 0, a: 0}
+  health: 0
+  damage: 0
+  speed: 0
+  lootRate: 2
 --- !u!50 &4237388090214012968
 Rigidbody2D:
   serializedVersion: 4

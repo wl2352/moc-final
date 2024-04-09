@@ -9,7 +9,7 @@ public class E_Movement : MonoBehaviour
     public Transform target;
     [HideInInspector]
     public Vector2 E_direction;
-    private Vector2 E_velocity;
+    public Vector2 E_velocity;
     private Rigidbody2D enemy;
 
     // Start is called before the first frame update
@@ -36,12 +36,14 @@ public class E_Movement : MonoBehaviour
 
             else 
             {
-                enemy.velocity = Vector2.zero;
+                E_velocity = Vector2.zero;
+                enemy.velocity = E_velocity;
             }
         }
         else 
         {
-            enemy.velocity = Vector2.zero;
+            E_velocity = Vector2.zero;
+            enemy.velocity = E_velocity;
         }
 
     }
