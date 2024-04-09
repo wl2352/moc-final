@@ -23,13 +23,14 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        enemies = GameObject.FindObjectsOfType<E_Stats>().ToList();
+        enemies = FindObjectsOfType<E_Stats>().ToList();
         textMeshProUGUI = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        enemies = FindObjectsOfType<E_Stats>().ToList();
         /*if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             if (Input.GetKeyDown(KeyCode.M))
