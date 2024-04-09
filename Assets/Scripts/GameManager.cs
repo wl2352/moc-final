@@ -8,9 +8,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public bool devMode = false;
-    public int enemyCount = 0;
-    public int maxCount = 5;
-    public bool maxReached = false;
     TextMeshProUGUI textMeshProUGUI;
     List<EnemyMovement> enemies = new List<EnemyMovement>();
 
@@ -54,16 +51,6 @@ public class GameManager : MonoBehaviour
             if (FindObjectsOfType<PlayerStats>().ToList().Count == 0)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-            enemies = GameObject.FindObjectsOfType<EnemyMovement>().ToList();
-            enemyCount = enemies.Count;
-            if (enemyCount >= maxCount)
-            {
-                maxReached = true;
-            }
-            else
-            {
-                maxReached = false;
             }
         }
 
