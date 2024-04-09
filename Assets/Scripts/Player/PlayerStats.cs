@@ -216,15 +216,15 @@ public class PlayerStats : MonoBehaviour
             
             // If the damage applied to the enemy can not kill the enemy --> do damage as is
             // If the damage applied to the enemy CAN kill the enemy --> if the colors are the same --> do damage as is
-            if (enemy.GetComponent<EnemyMovement>().health - damage > 0)
+            if (enemy.GetComponent<E_Stats>().health - damage > 0)
             {
-                enemy.GetComponent<EnemyMovement>().TakeDamage(damage);
+                enemy.GetComponent<E_Stats>().TakeDamage(damage);
             }
             else
             {
-                if (gameObject.GetComponent<SpriteRenderer>().color == enemy.GetComponent<EnemyMovement>().currColor)
+                if (gameObject.GetComponent<SpriteRenderer>().color == enemy.GetComponent<E_Stats>().currColor)
                 {
-                    enemy.GetComponent<EnemyMovement>().TakeDamage(damage);
+                    enemy.GetComponent<E_Stats>().TakeDamage(damage);
                 }
                 else
                 {
@@ -234,14 +234,14 @@ public class PlayerStats : MonoBehaviour
             }
             
 
-            Debug.Log("After we hit: " + enemy.GetComponent<EnemyMovement>().health.ToString());
+            Debug.Log("After we hit: " + enemy.GetComponent<E_Stats>().health.ToString());
         }
     }
 
     public void TakeDamage(float damage)
     {
-        Debug.Log("Reached at player level");
         health -= damage;
+        Debug.Log(health);
         if (currState != "blue") prevHealth = health;
         else
         {

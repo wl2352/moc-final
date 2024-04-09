@@ -8,32 +8,30 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public bool devMode = false;
-    public int enemyCount = 0;
-    public int maxCount = 5;
-    public bool maxReached = false;
     TextMeshProUGUI textMeshProUGUI;
-    List<EnemyMovement> enemies = new List<EnemyMovement>();
+    List<E_Stats> enemies = new List<E_Stats>();
 
     private void OnEnable()
     {
-        EnemyMovement.OnEnemyKilled += HandleEnemyDefeated;
+        E_Stats.OnEnemyKilled += HandleEnemyDefeated;
     }
 
     private void OnDisable()
     {
-        EnemyMovement.OnEnemyKilled -= HandleEnemyDefeated;
+        E_Stats.OnEnemyKilled -= HandleEnemyDefeated;
     }
 
     void Start()
     {
-        enemies = GameObject.FindObjectsOfType<EnemyMovement>().ToList();
+        enemies = FindObjectsOfType<E_Stats>().ToList();
         textMeshProUGUI = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        enemies = FindObjectsOfType<E_Stats>().ToList();
+        /*if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             if (Input.GetKeyDown(KeyCode.M))
             {
@@ -54,16 +52,6 @@ public class GameManager : MonoBehaviour
             if (FindObjectsOfType<PlayerStats>().ToList().Count == 0)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-            enemies = GameObject.FindObjectsOfType<EnemyMovement>().ToList();
-            enemyCount = enemies.Count;
-            if (enemyCount >= maxCount)
-            {
-                maxReached = true;
-            }
-            else
-            {
-                maxReached = false;
             }
         }
 
@@ -113,9 +101,13 @@ public class GameManager : MonoBehaviour
             {
                 devMode = !devMode;
             }
+        }*/
+        if (SceneManager.GetActiveScene().buildIndex != 4)
+        {
+            GameControls();
         }
 
-        else
+        else 
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
@@ -141,8 +133,32 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void HandleEnemyDefeated(EnemyMovement enemy)
+    void HandleEnemyDefeated(E_Stats enemy)
     {
         enemies.Remove(enemy);
+    }
+
+    void GameControls()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SceneManager.LoadScene(4);
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        if (Input.GetKeyDown(KeyCode.Comma))
+        {
+            devMode = !devMode;
+        }
+        if (gameObject.name == "Enemies Left")
+        {
+            textMeshProUGUI.text = enemies.Count.ToString();
+        }
+        if (FindObjectsOfType<PlayerStats>().ToList().Count == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }
