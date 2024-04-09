@@ -5,7 +5,7 @@ using UnityEngine;
 public class WolfAnimation : MonoBehaviour
 {
     Animator animator;
-    EnemyMovement enemyMovement;
+    E_Movement enemyMovement;
     SpriteRenderer sprite_renderer;
     public bool up;
 
@@ -13,14 +13,14 @@ public class WolfAnimation : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         sprite_renderer = GetComponent<SpriteRenderer>();
-        enemyMovement = GetComponent<EnemyMovement>();
+        enemyMovement = GetComponent<E_Movement>();
     }
 
     // Update is called once per frame
     void Update()
     {
         // State handling
-        if (enemyMovement.last_moved_vector.y > 0)
+        if (enemyMovement.E_direction.y > 0)
         {
             up = true;
         }
@@ -110,7 +110,7 @@ public class WolfAnimation : MonoBehaviour
 
     void SpriteDirectionCheck()
     {
-        if (enemyMovement.last_horizontal_vector < 0)
+        if (enemyMovement.E_direction.x < 0)
         {
             sprite_renderer.flipX = false;
         }
