@@ -23897,11 +23897,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   devMode: 0
   enemyCount: 0
-<<<<<<< Updated upstream
-=======
-  maxCount: 5
-  maxReached: 0
->>>>>>> Stashed changes
 --- !u!4 &744218421
 Transform:
   m_ObjectHideFlags: 0
@@ -24368,11 +24363,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1317769733
-<<<<<<< Updated upstream
   m_SortingLayer: 3
-=======
-  m_SortingLayer: 1
->>>>>>> Stashed changes
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -26394,7 +26385,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
-<<<<<<< Updated upstream
 --- !u!20 &2075142727 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 8696036844413562914, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
@@ -26501,8 +26491,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b0efa6499c3b7f40800c67336c22df9, type: 3}
-=======
->>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
