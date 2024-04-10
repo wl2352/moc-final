@@ -375,6 +375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Maingame: {fileID: 1027336705}
   PauseUI: {fileID: 1213478700}
+  isPaused: 0
 --- !u!4 &812248963
 Transform:
   m_ObjectHideFlags: 0

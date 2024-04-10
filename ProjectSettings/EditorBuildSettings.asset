@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Jada stuff/Assets/Scenes/Menu Screne.unity
+    guid: c93ac2cfba21ff54a9f866e4b4fa2a69
+  - enabled: 1
+    path: Assets/Jada stuff/Assets/Scenes/intro scene.unity
+    guid: b125ec020e1234e4f8f266c25c19eff5
+  - enabled: 1
     path: Assets/Scenes/Demo.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

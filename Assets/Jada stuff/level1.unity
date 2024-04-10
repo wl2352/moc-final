@@ -5457,9 +5457,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   devMode: 0
-  enemyCount: 0
-  maxCount: 5
-  maxReached: 0
 --- !u!1 &1601553844
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
@@ -24,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     float dashingTime = .2f;
     float dashingCooldown = 1f;
     [SerializeField] private TrailRenderer tr;
+
+    public SimplePauseScript pauseScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,10 +59,13 @@ public class PlayerMovement : MonoBehaviour
         {
             last_moved_vector = new Vector2(last_horizontal_vector, last_vertical_vector);
         }
+        
+        
         if (Input.GetKey(KeyCode.LeftShift))
-        {
-            rb.velocity = movement_dir * stats.movementSpeed * sprintSpeedMultiplier;
-        }
+            {
+                rb.velocity = movement_dir * stats.movementSpeed * sprintSpeedMultiplier;
+            }
+        
         else
         {
             rb.velocity = movement_dir * stats.movementSpeed;

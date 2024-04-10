@@ -9,6 +9,12 @@ TagManager:
   - YellowBoost
   - RedBoost
   - BlueBoost
+  - UI
+  - Copyright
+  - Version
+  - Button
+  - Button Manager
+  - Panel
   layers:
   - Default
   - TransparentFX
