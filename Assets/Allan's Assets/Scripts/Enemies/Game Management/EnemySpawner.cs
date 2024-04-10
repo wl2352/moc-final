@@ -21,12 +21,12 @@ public class EnemySpawner : MonoBehaviour
     {
         if (SpawnedEnemies < MaxEnemies)
         {
-        float SpawnPosition = UnityEngine.Random.Range(1f, offset);
+            float SpawnPosition = UnityEngine.Random.Range(1f, offset);
 
-        UnityEngine.Vector3 SpawnerPosition = new UnityEngine.Vector3(transform.position.x + SpawnPosition, transform.position.y + SpawnPosition, 0f);
+            UnityEngine.Vector3 SpawnerPosition = new UnityEngine.Vector3(transform.position.x + SpawnPosition, transform.position.y + SpawnPosition, 0f);
 
-        Instantiate(enemyPrefab, SpawnerPosition, Quaternion.identity);
-        SpawnedEnemies++;
+            Instantiate(enemyPrefab, SpawnerPosition, Quaternion.identity);
+            SpawnedEnemies++;
         }
 
     }

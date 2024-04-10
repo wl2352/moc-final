@@ -1,0 +1,6463 @@
+fileFormatVersion: 2
+guid: 6a43c6c7c45634245b6cc46527acc746
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GUMDROP.GBC_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 3024
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c9f62866cd3ff48a7231f95f9e87c8
+      internalID: 1417861129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 3024
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7186b73cbd7d3f4dbce5a0462379707
+      internalID: -1219755776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 3024
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c662343d4de1b154f8708d32035e68d0
+      internalID: 25193451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 3024
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988feb0c29e18fa4c9a064ba9bcded26
+      internalID: -2095110078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 3024
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc67a393fccf31c42a15dc7e6765969d
+      internalID: -1057456214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_5
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 3024
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b07c6e0cd6c81c4fb12328459038b5f
+      internalID: -255962446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 3024
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d75b98abbe4ad419bb616b43f6071e
+      internalID: 135397965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3024
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d84d19fce55e6942a059bc5af24ae59
+      internalID: 1239937010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2959
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f46b8ff275611478e507f8188b53f8
+      internalID: -1639784643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_9
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2959
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0ee572b9da2364291b705245f1076c
+      internalID: -1278198588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 2959
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e45831d72c0a6c4781b08136f0e8867
+      internalID: -1490249946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_11
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2959
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfb7c8f1eb8b0b40b97a9841ca888cf
+      internalID: 1848173965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_12
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 2959
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3034bbbf128fad543ab5eb68d602759a
+      internalID: -177831324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_13
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2959
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9de128ec75c005459187751b3253e29
+      internalID: 1307400156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_14
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2959
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6659de0b10b04b34fbd1d1b3ea2c5595
+      internalID: 373184770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_15
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2959
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be551f8ad2126b4482d96cd103f8e94
+      internalID: 1646669806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2896
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c474fc0ebc06104caec1c4589781e52
+      internalID: 1299677067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_17
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2896
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbab0e66cb71414dbcecb276479438d
+      internalID: 1444685784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_18
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2896
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68577e633e877348b504ed51c4218e8
+      internalID: 1176150462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_19
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2896
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17c680f859527f489be9fb5d1e0360f
+      internalID: -240625620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_20
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 2896
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cde8066525cafa44833700326bc45c5
+      internalID: 1451923160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_21
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 2896
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7611b875e5246c34fab7a7a6c90a9480
+      internalID: -723056982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_22
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2896
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1548cee7ea957418706f58149755e3
+      internalID: -1912208738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_23
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 2896
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64561178dd341474496ec49eeb91651d
+      internalID: -2083151879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_24
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 2832
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830c0187f511fd64f8c7fce92391cee7
+      internalID: -286866954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_25
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2832
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08b4881781a0fe409f6d8a0df7c3fcd
+      internalID: 188290804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_26
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2832
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5752b8144e37b4584fde1d700af6f0
+      internalID: -494950372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_27
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 2832
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcab4b442ebe32a48bb3dae3965ac403
+      internalID: -178953054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_28
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2832
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a12b94abfca6148a8d61f0977a5239
+      internalID: -1378969180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_29
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 2832
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7834849e4efd8d9448aa5322419686d1
+      internalID: 631454175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_30
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 2832
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f635b380982ae46954fdccab44c733
+      internalID: -134444881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_31
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2832
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99f1e9e6f2238a4f82ea1265a489fd2
+      internalID: 119023644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_32
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2767
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a1d538b4db84a45a1d149bef4f43cf
+      internalID: -1672303974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_33
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2769
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54ec251d35890440a567e1b4ba293ae
+      internalID: 707545610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_34
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2770
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337c68a206bcaaf48a0df6b70a6d3660
+      internalID: -1099583001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_35
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2770
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4ae9c0df767cd4b9ed6f5e26fb68b0
+      internalID: -1635269278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_36
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 2767
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7476cf44bd7ae468683ac519628ec2
+      internalID: -70259781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_37
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2769
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a20abb18378f245b6895c19d35c18b
+      internalID: -1239504729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_38
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2770
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed66f71c47456ea428e7dc0d678450d6
+      internalID: -697448162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_39
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2770
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39492f416a851f744aa5ecad8eed12db
+      internalID: -97491827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_40
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2704
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726f64c80a912c54fba4f9e281d8cd4b
+      internalID: 1633995960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2704
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4deb5b645b148742861d408e6353ee7
+      internalID: -1513780303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_42
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2704
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406cf5921308c8e458851cb1836210f7
+      internalID: -306936244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_43
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2704
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2970fcf1cdedbd345a5f8fe52f7ecadb
+      internalID: -245967955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_44
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2704
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ee2e9501dca360418be283134e9b562
+      internalID: 1718414787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_45
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2704
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a058b9dc8ffd0429c74ca7f96d52a9
+      internalID: 781503606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_46
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2704
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe43c0015550b6f448ae83a188f0bb63
+      internalID: -28309958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_47
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2704
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b5c6e96117ad0489c75c28f87ad594
+      internalID: 843939521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_48
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2641
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b591f21d8107245ae680b3601529d8
+      internalID: -2059091182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_49
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2640
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2542110631faa47b38a139b971d727
+      internalID: -733410567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_50
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2638
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848a60aa938d13b4f9c8336ed1dc81ad
+      internalID: 815342663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_51
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2638
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3673b33d6ca95a41a524f174bff67a8
+      internalID: -2064850370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_52
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 2641
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c656433c935b9428504496a497e99c
+      internalID: 253380121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_53
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2640
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2af2b4e7b7b6146b965457b613a011
+      internalID: -1619061849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_54
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2638
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf011d3039501e1428be2a898a039186
+      internalID: -280313419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_55
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 2638
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aacf3e020782a54da7de80a87a4e1e4
+      internalID: 796045968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_56
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2575
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c0952257bfc4c44bdfcdb0fc592385
+      internalID: 1011738472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_57
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 2575
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9fffa2c42e7e142be080d0e6052136
+      internalID: -745968083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_58
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 2575
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530067d62b9b7234486d7ad62f04c264
+      internalID: 1930672181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_59
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2575
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4ca60d94403764bbcc216f6d7a9af7
+      internalID: -540550229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_60
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2575
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f744e3cbff38b541b66855d150152a3
+      internalID: 1418184545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_61
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 2575
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbaa36dda9a6a34280320ab0a512d89
+      internalID: 418364342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_62
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 2575
+        width: 19
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbfca09c7f8c43458c2d6a04fe8f51a
+      internalID: 278992261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_63
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 2575
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9de782036801e4c9688bc101b54abb
+      internalID: -2078017066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_64
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2511
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5bfe8e983e96b47a738f7bb87cf4d5
+      internalID: -833408575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_65
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2512
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66570cffdcdab7e4bb70e971dd2267ac
+      internalID: -1954169263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_66
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2515
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1370e83744502542b31576af5bb7ee1
+      internalID: -923467173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_67
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 2517
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badf2fb808a522b4e80da0611e4525e1
+      internalID: -1131483544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_68
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 2511
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc131d9489019443ae8d1c3fca6aae9
+      internalID: 884025298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_69
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2512
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf934719b53e0344781b1e243d525b71
+      internalID: -794348252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_70
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2515
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7fa6b09b382a374ea2864f14d6ba0d4
+      internalID: 185109685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_71
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 2517
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aaad499798eca343a828b2a9dbefa56
+      internalID: -2057318341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_72
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 2449
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bd0ee35fea4964a87e66f8fbec8757
+      internalID: -367604184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_73
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2449
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcac7b0fbffea46479eeb6fbf2d7c114
+      internalID: 2128117750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_74
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 2448
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f54d394e3972b34a9ead41eafc0d16f
+      internalID: 541885141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_75
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 2448
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289bdafd33dc5f845b035868fa2d9481
+      internalID: -2087861361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_76
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2449
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d98184cf68315941b95aee01d3444dd
+      internalID: 285072643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_77
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 2449
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73e247179e8f54469650616ecf07549
+      internalID: 253357125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_78
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 2448
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1c9979d91671443b2dfd20a1774b9f
+      internalID: -1872646531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_79
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 2448
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121a1a53ca284d843a1d4a16aaabef4b
+      internalID: -1932378500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_80
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2380
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b284c3fbc2d6f46991c97a701bb219
+      internalID: -201821788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_81
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2383
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8222402e32f3b4892ad4d396eaedfe
+      internalID: 1320266719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_82
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2380
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c152da996b8e44c9f858261a05713c
+      internalID: -1772100353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_83
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 2380
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653a0f942fd528445b19f0eb525139f1
+      internalID: 271163088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_84
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2380
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff9d39a3d30f484ba0d16adeab02a19
+      internalID: -1812215565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_85
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2383
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c88be25b8eaae4f871ebe6c2e993a5
+      internalID: -125092373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_86
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 2380
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f324e2c7c9c720145ae7ba606e097bac
+      internalID: -779651736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_87
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2380
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba6d58d50c58b740b3deaa41f3d08fd
+      internalID: 1929754111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_88
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2320
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b32ee9deb05f75499c21572527dd53f
+      internalID: 785222506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_89
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2320
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e44472f1511d3d48bd66fbb053d0cf4
+      internalID: 394464066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_90
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 2320
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa802e2c6a1ed26408a8868e98c7afca
+      internalID: -2104984060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_91
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2320
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8beb75a0e345ed4583782144fc2755e
+      internalID: -822902226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_92
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 2320
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ec6e335e7b21841844afe3eee1383a
+      internalID: -2042756175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_93
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2320
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fdca60bafffb040bb1ae39111ea8f5
+      internalID: -522557890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_94
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2320
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e7f45932159db49ab157a3435d1f8e
+      internalID: -1107283712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_95
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 2320
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea3d2a5d6ffe2e4b968cbe46df8fdad
+      internalID: 1773897754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_96
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2257
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077bc1c2e9d4b7c43ad753e02f7ab546
+      internalID: 1982765827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_97
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 2253
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba4bf52af799854791ff0a28cc7cdaa
+      internalID: -954573454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_98
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2242
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8119ca263d4016e47acdc5c66fc158d2
+      internalID: -1775994658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2242
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ba3db40abcb374b9db006ce28af4fd
+      internalID: -1136248759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_100
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 2245
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb05d8f36682084584196df0ad956d6
+      internalID: 1676255953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_101
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 2256
+        width: 47
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcfdaa3202d01640aa1a5fcd7b399f3
+      internalID: 1395719607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_102
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2191
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937aef99deb31d84bafbb92eede51703
+      internalID: 1570510393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_103
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 2191
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f70701d59ebc74a9ae00f20fae4ba6
+      internalID: 1949109809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_104
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 2191
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e945cb6b33656c48b7b0e554f59de7e
+      internalID: -1589154026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_105
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 2179
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878e2704c546da6439b693baba644114
+      internalID: 1562047632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_106
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 2179
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8434b4b6901fab64bb1f5e920ea42a4d
+      internalID: 1579067902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_107
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 2179
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abf2815138ac5a44965e2e210fa2462
+      internalID: 1547753908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_108
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2125
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3a65f5cde5b14438c08cc7333c3845
+      internalID: 2121600008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_109
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2125
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371aae41847254a41a9319681cf4105d
+      internalID: 105324235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_110
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2127
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2056d7b0d5bcd46aa81a4a8c7fd5d4
+      internalID: 179862253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_111
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2127
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d9f683d3835f945b2b23141cce0ba8
+      internalID: 1503888401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_112
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 2125
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c0bc2d8e9aeca4eb7247e5f1dd3b3c
+      internalID: 1074420356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_113
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2125
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7036f3da44d8ddc4ca3bc010dfb9d124
+      internalID: 1075373390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_114
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2062
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee7eca41a6e4f7428cd32055364eb2a
+      internalID: 480094328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_115
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2062
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91f036c94d6558408c71f046f0fdd33
+      internalID: 1605245083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_116
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2062
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e667796600bc4aa4f98f54d335815c7a
+      internalID: -331991842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_117
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 2050
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745c6f9a3650817449c0af38e0515b46
+      internalID: 1401502738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_118
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 2050
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd9ffb8ea7b5e146a73ad83283d79ea
+      internalID: 1181167749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_119
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 2052
+        width: 19
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76ce3d9cf7faf5408953024feafca8e
+      internalID: 1070005762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2001
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c224cffa3e27a549aa5c5558510ca5c
+      internalID: 1219751138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_121
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2001
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef01608cf039ce4bb2e1f23c37af882
+      internalID: 1609201032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_122
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1984
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56586173a36e9f241af2eff8fe42f0b3
+      internalID: 47508745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_123
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1984
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d1656d7c00a7744ad112ca05e3c479
+      internalID: 2126790697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_124
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1984
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e254dacf320a3b4b8852bf510a42a28
+      internalID: -1629445036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_125
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1999
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34814df6dc91c6e4884a0cc5bf4cc371
+      internalID: -702811559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_126
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1924
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5c3411cd0a9484ea6cfba836fa7844
+      internalID: -357988900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_127
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1924
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcb26d804f939b478b19455aa7a1086
+      internalID: 721984130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_128
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1923
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2949df7cd64934840b3ccb7f6afa4d78
+      internalID: -2146861239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_129
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1924
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9db4c3c79df47a4bb7144a9b45eca01
+      internalID: -268408388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_130
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1935
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eff90a12b151494c9a12e7c8fcaa646
+      internalID: -356089892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_131
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1935
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6eabef35732ea54190facb94b3a7964
+      internalID: 801763910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_132
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1870
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989163f5346e0f44bb43062b3b04e57e
+      internalID: 238063986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_133
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1870
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea1133eda3839b46bd815759e443afe
+      internalID: 806641082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_134
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1870
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a8fccd9f924bd45b12b69db7bf969b
+      internalID: -515696113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_135
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1870
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206af0b7a65737a4885ef632295543a4
+      internalID: -1558651062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_136
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1870
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affb48b14abb9664389f6e9495827efe
+      internalID: -1497508576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_137
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1870
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669b91df76c8fca4c849487da81b5f0a
+      internalID: -1116139665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_138
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1797
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f77c990e3f59ef4b8cf7076bf020d0d
+      internalID: -473080616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_139
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1797
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f57eb3e7450d5478462ff96011e4ad
+      internalID: -952983742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_140
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1795
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309b7aac1839bdf478d9fead9d841e01
+      internalID: 1131353868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_141
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1797
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38cd4d19943bc94cbb46da9f7aaa6e2
+      internalID: 1529149561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_142
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1807
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede05029af6e7dd499d80bb2291a1655
+      internalID: 941420291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_143
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1807
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500e161c8e266494782c84bfb5dad665
+      internalID: -1471719247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_144
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1744
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f9194714561f24db1b1c5791709b0d
+      internalID: 125346081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_145
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1729
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27636df169127a040b1132103fe79e48
+      internalID: -896903777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_146
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1743
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503daad8655cebb44b3380ae950d2a3e
+      internalID: -1469278006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_147
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1728
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f898affd64a24d843afc68b3a484b2b0
+      internalID: -379536592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_148
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1732
+        width: 48
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb52ee4e4aad0248a4f55796c3ec484
+      internalID: 1943012940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_149
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1744
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af7b6ddb594f4841856b4302cc92288
+      internalID: 1114715669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_150
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1678
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a9273b7040c48469c744e23aa5e972
+      internalID: 1863207813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_151
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1664
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c3a6287fd4d094ebbd62cfddfe0731
+      internalID: -353800656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_152
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1664
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a094bf300666a744f8ff735e3b49c0f9
+      internalID: 283517506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_153
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 1663
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e848d8a13de66fb4497f9a8fd8ff87d8
+      internalID: 1058619708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_154
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1663
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8c64ffb82887c4093a6f1c7f70d475
+      internalID: -2143405233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_155
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1615
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202b0a6f15dc9b247bb508368b6e87c7
+      internalID: -669235936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_156
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1615
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badde7af285775542a14da1fc2d0cb71
+      internalID: -820181181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_157
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1600
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a25c7df37969224aacea4a9b6f4d04d
+      internalID: 1197253783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_158
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1615
+        width: 49
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0048f41f05e5ff9489f9a2c2c59da01e
+      internalID: -698104140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_159
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1615
+        width: 49
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c7733c1652f164c929879919c96892
+      internalID: -418610413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_160
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1551
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222efd8884dd03d4b98760344d2cc050
+      internalID: -1448787767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_161
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1551
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef982134df803214da88ef0ba91609a4
+      internalID: 165999184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_162
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1536
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17abe6c69e4e6df40bada01474455d6d
+      internalID: 1006272163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_163
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1536
+        width: 65
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a757f145ff890547b433b12f1deffec
+      internalID: -1411607416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_164
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1536
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69196b7c09fbc87448a02fa887ee5fa9
+      internalID: -2031068942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_165
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1536
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94cc182b7ddd714bb9ebae1c898570e
+      internalID: -507931473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_166
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1536
+        width: 35
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bac3e85cd687f42be8dbf047548439
+      internalID: -877046429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_167
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1536
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b1222e556e6574fb1a50c959372157
+      internalID: -1151818344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_168
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1488
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50d5928b562ab340b95220f9fc72ae8
+      internalID: -447698170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_169
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1492
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3019bcd728ffe6d49b633858651ad7ad
+      internalID: -401579346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_170
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1489
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50ab4c6e2cdb424d99b52cc41dfacd4
+      internalID: -2109484593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_171
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1423
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938486c56404efe4c811f5f9ad8174f6
+      internalID: 1160899861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_172
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1423
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be91bdc10a9d8f54cae1a19c35bdd3dd
+      internalID: -397450960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_173
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1423
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea80ea3a46a92dc4497bf6abf71fc087
+      internalID: 455017593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_174
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1359
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d672379e129eb8d4b99c2147a253dae4
+      internalID: -1963602723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_175
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1359
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ba4aa3b254fcd4cac3c9b6ca4ff273
+      internalID: -2109572364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_176
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1357
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d1b22f1b267bc43a9f69644c9c30aa
+      internalID: 194789688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_177
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1296
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173de718eb5c3bd4eb9ecbe50bccceba
+      internalID: -587210507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_178
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1296
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cb43085bca9a44ca3cbaee46456ba9
+      internalID: 657338452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_179
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1296
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2acaa14931c6c4e89888b895bf1957
+      internalID: 1296232049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_180
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1231
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0304dc8bf80bff04eb3dece5c782cf9c
+      internalID: 1860647829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_181
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1231
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaab59641b9cb3f4c9c9f3adb32f5e91
+      internalID: 959511360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_182
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1168
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71db944b10cf2774a908680986e3fbab
+      internalID: -919777360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_183
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1168
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3475b0c72825a5c48a581020fa3751f8
+      internalID: 1615503706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_184
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1104
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2cdba2e9f049e4cb9e475b71cb52c5
+      internalID: -1866923635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_185
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 1104
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda626f93bd8bd8418b9d58090d46937
+      internalID: 255803363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_186
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1039
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431fff9833dda2947a90085a880a4c36
+      internalID: 1745981588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_187
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1039
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f425712cbd16c4dbea1e99df119e80
+      internalID: -2031079027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_188
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 976
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f554e995785141f46a7e24e4f18673f6
+      internalID: 1345047013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_189
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 976
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d783e59a32e616c48b52dd02d18079ee
+      internalID: 99694239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_190
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 976
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59244d717dcc82c47bc0891736fc8368
+      internalID: -475176570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_191
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 976
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f649c37df01645d4ab2599b3eeafb982
+      internalID: 2122030112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_192
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 976
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd06c42b903122d4688e4530d2e03d71
+      internalID: 1197476629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_193
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 976
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e90d7a7f403d14438c9625137c7064a
+      internalID: -456945691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_194
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 976
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9818eeba65df9d4393a80902f946f8d
+      internalID: -1106589594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_195
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 976
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60db23f728ed92749b7066570f114549
+      internalID: 953989073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_196
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 912
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5257b6fc16ce94f886832424b6b136
+      internalID: 1621514838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_197
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 912
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c41cfee12e50243bab4209e029805f
+      internalID: -647228311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_198
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 912
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f90e5eb8a067243923bd488603b126
+      internalID: 1013737999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_199
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 912
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27fa4ac3c18d38479371d018e73c28e
+      internalID: -1301144452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_200
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 912
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea5e6253874e3845b396a91357a2a93
+      internalID: -255402864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_201
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 912
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696c5904b6b4ce847ac303e61cfa1382
+      internalID: -1388666209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_202
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 912
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acbffa5a0a12ea4da7ae68206398592
+      internalID: -1016839637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_203
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 912
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b35e206445e3a4687313fbc18e4cfa
+      internalID: -524316264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_204
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 847
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498b8b796c68d4944ab6c4b4f5479414
+      internalID: 1542015929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_205
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 847
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd6eeaf8983f904a8ac3df4b1f51977
+      internalID: -358494724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_206
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 847
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444c1faa74950684c8e6aa4c29cf7517
+      internalID: 778470861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_207
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 847
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68429867a3a649547aed5223d8fa9c32
+      internalID: 1119634666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_208
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 847
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5632b9befe6e0dc46ab1a3a1ff49ffb2
+      internalID: -860642577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_209
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 847
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3faf505fbff48498bba0ec3d1ef941
+      internalID: 837828305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_210
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 847
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f899faf899605c47b0ced2bc66ecef0
+      internalID: 75826399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_211
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 847
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e66162ecc84b84baaec1ea9d0f599c
+      internalID: 2076417604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_212
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 784
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc83984f9fa3aa41b05ec0d43fa22cb
+      internalID: 1046203721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_213
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 784
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25cc4a41dac76048964dec56a844b28
+      internalID: -32426245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_214
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 784
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4565438dd1db904bb6c2a01701bfc9b
+      internalID: 52339994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_215
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 784
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891a7d40562171d40ac4041f292d00ac
+      internalID: -1811089321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_216
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 784
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2894635060c002419dcf3f9e7d21a2a
+      internalID: -980720409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_217
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 784
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd921b45be289eb498bb7d5ebdfeada4
+      internalID: 434854193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_218
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 784
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3ae26f53635314aa6115d9b72e9503
+      internalID: -1036366805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_219
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 784
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf588fa5b2abc2429b8421e230f14e5
+      internalID: -1550716697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_220
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 720
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df4b6d19dd9abf48b37a0ec5458646d
+      internalID: 694202177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_221
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 721
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24de6f8028af044693bcd4971ebd62c
+      internalID: -105862817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_222
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 721
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458a10f672ecb51469c183770cfe1a5d
+      internalID: 54007965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_223
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 723
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0b72a4d84e35345becfb15720636bf
+      internalID: -1755386802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_224
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 720
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f9c871d3f2339408eb28d1cc8217dd
+      internalID: 2039918317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_225
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 721
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adda241af8c10bf489f0beb7ea20801c
+      internalID: -1421071549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_226
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 721
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec49ca7d7db2b4428254ff660eff674
+      internalID: 1437004985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_227
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 723
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfe2ad4e4f45d24391ca7f4bb6b91dd
+      internalID: -1042684018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_228
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 655
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb7dc68f0e930044b71fb67d991424e
+      internalID: -1975604183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_229
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 655
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29d449ad5d9ace45a807930e10a2e7f
+      internalID: 961972921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_230
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 655
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3916f68bc9038469d8991757ab1275
+      internalID: 1056246175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_231
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 655
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a3089af1a840d498856044060d3a19
+      internalID: 478577531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_232
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 655
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53229600b947ac45bfe28baf751fec7
+      internalID: 887881210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_233
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 655
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf69f415f201fb346988dc7a82bb1bb1
+      internalID: -1469626379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_234
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 655
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34db9571ad3dc0d49a958ce9df393b54
+      internalID: 1388492173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_235
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 655
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8753ecd1ac5faf945a64e72a864f7258
+      internalID: -1202572245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_236
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 592
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84ad49c8a5e88645b0d5009af7f746d
+      internalID: 2079868013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_237
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 592
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e875550177633f42bbdddf603892a55
+      internalID: -228538388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_238
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 591
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3206205904bf4a4184df7b874a82f72
+      internalID: -1649409823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_239
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 591
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3b8c344fa3d3a41b82881ff029f313
+      internalID: -1026074208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_240
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 592
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8a415b03d08864d9e4c0a48cb98998
+      internalID: 929634290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_241
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 592
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599bb566a966b3e44b654afd86199192
+      internalID: 2068557591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_242
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 591
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165273903cd25d04ebd39c1aa8c33db6
+      internalID: 1850304450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_243
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 591
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac7f24bd78ac584d9de9877966cc53e
+      internalID: -1313429748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_244
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 528
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c167a43c0900af4eb45368600bee819
+      internalID: 1321414996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_245
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 528
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3834b1bd74cbab24b8ffeff826452b2a
+      internalID: 994312845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_246
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 528
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0727e660432404143b281e61e11d3107
+      internalID: -567071547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_247
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 528
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d8e82eee78dbc429abd97475fb3d49
+      internalID: -467544649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_248
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 528
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dac474e98bd890439411eb7dcb321e4
+      internalID: -2105148151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_249
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 528
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c84f20ec33b9d4298b093566f6293c
+      internalID: 902469718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_250
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 528
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318f3d45e256862478fc5d6bc2024dfe
+      internalID: 90585782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_251
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 528
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5216695769e4dab459743bcda46c0af8
+      internalID: -665242804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_252
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 462
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c24db987bdafc5429f5f294b8df4c29
+      internalID: 907348011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_253
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 468
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002810332f58cfe4cb53ce93927e5ca9
+      internalID: -1424402601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_254
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 465
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a65ae371e1f7ca4e9664e5a31626561
+      internalID: 669836623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_255
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 400
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d31631a25d782a4fb125b35c93d8748
+      internalID: 1138424381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_256
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 400
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c78270ccbd8baf47b7423a6372162b5
+      internalID: 1598152012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_257
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 400
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc522f3a41073d479d23e0a65bbea66
+      internalID: 1316678194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_258
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 334
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efaa64a9c2fe1bc42ae99845d9e3ac79
+      internalID: 327077117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_259
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 334
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd25f3604fa612941bc4ea72dc195aad
+      internalID: -54178251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_260
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 331
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ac297b4373d1247ad4305efa3c771f
+      internalID: 2139359672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_261
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 271
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d175a995322e94586d763b8c9720f3
+      internalID: 849895246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_262
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 271
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4773c8b44757787439fc9fe7a230a262
+      internalID: -982001587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_263
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 271
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e331b3183c5b1b4b8ca5cb1edceefe1
+      internalID: -327561393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_264
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 208
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dd563e43b3a05488023ffe6624d130
+      internalID: -912164587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_265
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 208
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26d16b892f6c5543b3c8975bc3ccb3f
+      internalID: -355584655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_266
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 144
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e755bda577961f64392f2b4a7ab212dc
+      internalID: -479696943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_267
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 144
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfed6c7d6a086c74d8cb09ce0271eb74
+      internalID: -599037565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_268
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 79
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437d15da564523d448899d50b19b99ee
+      internalID: 285813934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_269
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 79
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5080d7740f54d24b9a06bda27cebb3d
+      internalID: 883727976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_270
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 16
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21759955a36aa34b9eaaf343990db60
+      internalID: -1126084184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_271
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 16
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efa9e897fc7f734292e7a73620e6490
+      internalID: -733734482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_272
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1728
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f413d6d0fe63e4fae7b5ea5a9927ba
+      internalID: -2038216473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_273
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1728
+        width: 61
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334c00b219a723f4aa49e62e908b050e
+      internalID: 1369506589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_274
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1611
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2688925508c674d9a7924001db3d65
+      internalID: 66581925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_275
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1608
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2321608a4caebd947927bb3f4eb0f03a
+      internalID: -410749303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_276
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1665
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1e32db317aaad4fb488135fe57d60d
+      internalID: 624353333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_277
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1679
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d240afb80870b4d80aba8e987898d8
+      internalID: -564186265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_278
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1729
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69309ee3b7a4c7a46a2d7676f7434f8c
+      internalID: 1218165540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_279
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1729
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd66f078c2d627d4997cdab9926d17fa
+      internalID: -1078928276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_280
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1679
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf7f092d12e281438913ca66dd40485
+      internalID: 1160714003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_281
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1665
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b1869ddcd99504c8b64b0291e747c6
+      internalID: -207988411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_282
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1665
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d409b8ebd5bcc504287d4f8eae3a1d3c
+      internalID: -1015932412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_283
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1615
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20de050c189d094409c67778da899cc6
+      internalID: 2094273198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_284
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1601
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bedf66e1c362e4484068d781c5d182
+      internalID: 2108546287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_285
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1601
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39172885519b3764797174e288890e49
+      internalID: 1945897729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_286
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1550
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339cf2d9908865143bcfdf1cf2864ca6
+      internalID: 176814110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUMDROP.GBC_287
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1537
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6522d34c587b4744fb65d7ed86259e00
+      internalID: 1237412040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GUMDROP.GBC_0: 1417861129
+      GUMDROP.GBC_1: -1219755776
+      GUMDROP.GBC_10: -1490249946
+      GUMDROP.GBC_100: 1676255953
+      GUMDROP.GBC_101: 1395719607
+      GUMDROP.GBC_102: 1570510393
+      GUMDROP.GBC_103: 1949109809
+      GUMDROP.GBC_104: -1589154026
+      GUMDROP.GBC_105: 1562047632
+      GUMDROP.GBC_106: 1579067902
+      GUMDROP.GBC_107: 1547753908
+      GUMDROP.GBC_108: 2121600008
+      GUMDROP.GBC_109: 105324235
+      GUMDROP.GBC_11: 1848173965
+      GUMDROP.GBC_110: 179862253
+      GUMDROP.GBC_111: 1503888401
+      GUMDROP.GBC_112: 1074420356
+      GUMDROP.GBC_113: 1075373390
+      GUMDROP.GBC_114: 480094328
+      GUMDROP.GBC_115: 1605245083
+      GUMDROP.GBC_116: -331991842
+      GUMDROP.GBC_117: 1401502738
+      GUMDROP.GBC_118: 1181167749
+      GUMDROP.GBC_119: 1070005762
+      GUMDROP.GBC_12: -177831324
+      GUMDROP.GBC_120: 1219751138
+      GUMDROP.GBC_121: 1609201032
+      GUMDROP.GBC_122: 47508745
+      GUMDROP.GBC_123: 2126790697
+      GUMDROP.GBC_124: -1629445036
+      GUMDROP.GBC_125: -702811559
+      GUMDROP.GBC_126: -357988900
+      GUMDROP.GBC_127: 721984130
+      GUMDROP.GBC_128: -2146861239
+      GUMDROP.GBC_129: -268408388
+      GUMDROP.GBC_13: 1307400156
+      GUMDROP.GBC_130: -356089892
+      GUMDROP.GBC_131: 801763910
+      GUMDROP.GBC_132: 238063986
+      GUMDROP.GBC_133: 806641082
+      GUMDROP.GBC_134: -515696113
+      GUMDROP.GBC_135: -1558651062
+      GUMDROP.GBC_136: -1497508576
+      GUMDROP.GBC_137: -1116139665
+      GUMDROP.GBC_138: -473080616
+      GUMDROP.GBC_139: -952983742
+      GUMDROP.GBC_14: 373184770
+      GUMDROP.GBC_140: 1131353868
+      GUMDROP.GBC_141: 1529149561
+      GUMDROP.GBC_142: 941420291
+      GUMDROP.GBC_143: -1471719247
+      GUMDROP.GBC_144: 125346081
+      GUMDROP.GBC_145: -896903777
+      GUMDROP.GBC_146: -1469278006
+      GUMDROP.GBC_147: -379536592
+      GUMDROP.GBC_148: 1943012940
+      GUMDROP.GBC_149: 1114715669
+      GUMDROP.GBC_15: 1646669806
+      GUMDROP.GBC_150: 1863207813
+      GUMDROP.GBC_151: -353800656
+      GUMDROP.GBC_152: 283517506
+      GUMDROP.GBC_153: 1058619708
+      GUMDROP.GBC_154: -2143405233
+      GUMDROP.GBC_155: -669235936
+      GUMDROP.GBC_156: -820181181
+      GUMDROP.GBC_157: 1197253783
+      GUMDROP.GBC_158: -698104140
+      GUMDROP.GBC_159: -418610413
+      GUMDROP.GBC_16: 1299677067
+      GUMDROP.GBC_160: -1448787767
+      GUMDROP.GBC_161: 165999184
+      GUMDROP.GBC_162: 1006272163
+      GUMDROP.GBC_163: -1411607416
+      GUMDROP.GBC_164: -2031068942
+      GUMDROP.GBC_165: -507931473
+      GUMDROP.GBC_166: -877046429
+      GUMDROP.GBC_167: -1151818344
+      GUMDROP.GBC_168: -447698170
+      GUMDROP.GBC_169: -401579346
+      GUMDROP.GBC_17: 1444685784
+      GUMDROP.GBC_170: -2109484593
+      GUMDROP.GBC_171: 1160899861
+      GUMDROP.GBC_172: -397450960
+      GUMDROP.GBC_173: 455017593
+      GUMDROP.GBC_174: -1963602723
+      GUMDROP.GBC_175: -2109572364
+      GUMDROP.GBC_176: 194789688
+      GUMDROP.GBC_177: -587210507
+      GUMDROP.GBC_178: 657338452
+      GUMDROP.GBC_179: 1296232049
+      GUMDROP.GBC_18: 1176150462
+      GUMDROP.GBC_180: 1860647829
+      GUMDROP.GBC_181: 959511360
+      GUMDROP.GBC_182: -919777360
+      GUMDROP.GBC_183: 1615503706
+      GUMDROP.GBC_184: -1866923635
+      GUMDROP.GBC_185: 255803363
+      GUMDROP.GBC_186: 1745981588
+      GUMDROP.GBC_187: -2031079027
+      GUMDROP.GBC_188: 1345047013
+      GUMDROP.GBC_189: 99694239
+      GUMDROP.GBC_19: -240625620
+      GUMDROP.GBC_190: -475176570
+      GUMDROP.GBC_191: 2122030112
+      GUMDROP.GBC_192: 1197476629
+      GUMDROP.GBC_193: -456945691
+      GUMDROP.GBC_194: -1106589594
+      GUMDROP.GBC_195: 953989073
+      GUMDROP.GBC_196: 1621514838
+      GUMDROP.GBC_197: -647228311
+      GUMDROP.GBC_198: 1013737999
+      GUMDROP.GBC_199: -1301144452
+      GUMDROP.GBC_2: 25193451
+      GUMDROP.GBC_20: 1451923160
+      GUMDROP.GBC_200: -255402864
+      GUMDROP.GBC_201: -1388666209
+      GUMDROP.GBC_202: -1016839637
+      GUMDROP.GBC_203: -524316264
+      GUMDROP.GBC_204: 1542015929
+      GUMDROP.GBC_205: -358494724
+      GUMDROP.GBC_206: 778470861
+      GUMDROP.GBC_207: 1119634666
+      GUMDROP.GBC_208: -860642577
+      GUMDROP.GBC_209: 837828305
+      GUMDROP.GBC_21: -723056982
+      GUMDROP.GBC_210: 75826399
+      GUMDROP.GBC_211: 2076417604
+      GUMDROP.GBC_212: 1046203721
+      GUMDROP.GBC_213: -32426245
+      GUMDROP.GBC_214: 52339994
+      GUMDROP.GBC_215: -1811089321
+      GUMDROP.GBC_216: -980720409
+      GUMDROP.GBC_217: 434854193
+      GUMDROP.GBC_218: -1036366805
+      GUMDROP.GBC_219: -1550716697
+      GUMDROP.GBC_22: -1912208738
+      GUMDROP.GBC_220: 694202177
+      GUMDROP.GBC_221: -105862817
+      GUMDROP.GBC_222: 54007965
+      GUMDROP.GBC_223: -1755386802
+      GUMDROP.GBC_224: 2039918317
+      GUMDROP.GBC_225: -1421071549
+      GUMDROP.GBC_226: 1437004985
+      GUMDROP.GBC_227: -1042684018
+      GUMDROP.GBC_228: -1975604183
+      GUMDROP.GBC_229: 961972921
+      GUMDROP.GBC_23: -2083151879
+      GUMDROP.GBC_230: 1056246175
+      GUMDROP.GBC_231: 478577531
+      GUMDROP.GBC_232: 887881210
+      GUMDROP.GBC_233: -1469626379
+      GUMDROP.GBC_234: 1388492173
+      GUMDROP.GBC_235: -1202572245
+      GUMDROP.GBC_236: 2079868013
+      GUMDROP.GBC_237: -228538388
+      GUMDROP.GBC_238: -1649409823
+      GUMDROP.GBC_239: -1026074208
+      GUMDROP.GBC_24: -286866954
+      GUMDROP.GBC_240: 929634290
+      GUMDROP.GBC_241: 2068557591
+      GUMDROP.GBC_242: 1850304450
+      GUMDROP.GBC_243: -1313429748
+      GUMDROP.GBC_244: 1321414996
+      GUMDROP.GBC_245: 994312845
+      GUMDROP.GBC_246: -567071547
+      GUMDROP.GBC_247: -467544649
+      GUMDROP.GBC_248: -2105148151
+      GUMDROP.GBC_249: 902469718
+      GUMDROP.GBC_25: 188290804
+      GUMDROP.GBC_250: 90585782
+      GUMDROP.GBC_251: -665242804
+      GUMDROP.GBC_252: 907348011
+      GUMDROP.GBC_253: -1424402601
+      GUMDROP.GBC_254: 669836623
+      GUMDROP.GBC_255: 1138424381
+      GUMDROP.GBC_256: 1598152012
+      GUMDROP.GBC_257: 1316678194
+      GUMDROP.GBC_258: 327077117
+      GUMDROP.GBC_259: -54178251
+      GUMDROP.GBC_26: -494950372
+      GUMDROP.GBC_260: 2139359672
+      GUMDROP.GBC_261: 849895246
+      GUMDROP.GBC_262: -982001587
+      GUMDROP.GBC_263: -327561393
+      GUMDROP.GBC_264: -912164587
+      GUMDROP.GBC_265: -355584655
+      GUMDROP.GBC_266: -479696943
+      GUMDROP.GBC_267: -599037565
+      GUMDROP.GBC_268: 285813934
+      GUMDROP.GBC_269: 883727976
+      GUMDROP.GBC_27: -178953054
+      GUMDROP.GBC_270: -1126084184
+      GUMDROP.GBC_271: -733734482
+      GUMDROP.GBC_272: -2038216473
+      GUMDROP.GBC_273: 1369506589
+      GUMDROP.GBC_274: 66581925
+      GUMDROP.GBC_275: -410749303
+      GUMDROP.GBC_276: 624353333
+      GUMDROP.GBC_277: -564186265
+      GUMDROP.GBC_278: 1218165540
+      GUMDROP.GBC_279: -1078928276
+      GUMDROP.GBC_28: -1378969180
+      GUMDROP.GBC_280: 1160714003
+      GUMDROP.GBC_281: -207988411
+      GUMDROP.GBC_282: -1015932412
+      GUMDROP.GBC_283: 2094273198
+      GUMDROP.GBC_284: 2108546287
+      GUMDROP.GBC_285: 1945897729
+      GUMDROP.GBC_286: 176814110
+      GUMDROP.GBC_287: 1237412040
+      GUMDROP.GBC_29: 631454175
+      GUMDROP.GBC_3: -2095110078
+      GUMDROP.GBC_30: -134444881
+      GUMDROP.GBC_31: 119023644
+      GUMDROP.GBC_32: -1672303974
+      GUMDROP.GBC_33: 707545610
+      GUMDROP.GBC_34: -1099583001
+      GUMDROP.GBC_35: -1635269278
+      GUMDROP.GBC_36: -70259781
+      GUMDROP.GBC_37: -1239504729
+      GUMDROP.GBC_38: -697448162
+      GUMDROP.GBC_39: -97491827
+      GUMDROP.GBC_4: -1057456214
+      GUMDROP.GBC_40: 1633995960
+      GUMDROP.GBC_41: -1513780303
+      GUMDROP.GBC_42: -306936244
+      GUMDROP.GBC_43: -245967955
+      GUMDROP.GBC_44: 1718414787
+      GUMDROP.GBC_45: 781503606
+      GUMDROP.GBC_46: -28309958
+      GUMDROP.GBC_47: 843939521
+      GUMDROP.GBC_48: -2059091182
+      GUMDROP.GBC_49: -733410567
+      GUMDROP.GBC_5: -255962446
+      GUMDROP.GBC_50: 815342663
+      GUMDROP.GBC_51: -2064850370
+      GUMDROP.GBC_52: 253380121
+      GUMDROP.GBC_53: -1619061849
+      GUMDROP.GBC_54: -280313419
+      GUMDROP.GBC_55: 796045968
+      GUMDROP.GBC_56: 1011738472
+      GUMDROP.GBC_57: -745968083
+      GUMDROP.GBC_58: 1930672181
+      GUMDROP.GBC_59: -540550229
+      GUMDROP.GBC_6: 135397965
+      GUMDROP.GBC_60: 1418184545
+      GUMDROP.GBC_61: 418364342
+      GUMDROP.GBC_62: 278992261
+      GUMDROP.GBC_63: -2078017066
+      GUMDROP.GBC_64: -833408575
+      GUMDROP.GBC_65: -1954169263
+      GUMDROP.GBC_66: -923467173
+      GUMDROP.GBC_67: -1131483544
+      GUMDROP.GBC_68: 884025298
+      GUMDROP.GBC_69: -794348252
+      GUMDROP.GBC_7: 1239937010
+      GUMDROP.GBC_70: 185109685
+      GUMDROP.GBC_71: -2057318341
+      GUMDROP.GBC_72: -367604184
+      GUMDROP.GBC_73: 2128117750
+      GUMDROP.GBC_74: 541885141
+      GUMDROP.GBC_75: -2087861361
+      GUMDROP.GBC_76: 285072643
+      GUMDROP.GBC_77: 253357125
+      GUMDROP.GBC_78: -1872646531
+      GUMDROP.GBC_79: -1932378500
+      GUMDROP.GBC_8: -1639784643
+      GUMDROP.GBC_80: -201821788
+      GUMDROP.GBC_81: 1320266719
+      GUMDROP.GBC_82: -1772100353
+      GUMDROP.GBC_83: 271163088
+      GUMDROP.GBC_84: -1812215565
+      GUMDROP.GBC_85: -125092373
+      GUMDROP.GBC_86: -779651736
+      GUMDROP.GBC_87: 1929754111
+      GUMDROP.GBC_88: 785222506
+      GUMDROP.GBC_89: 394464066
+      GUMDROP.GBC_9: -1278198588
+      GUMDROP.GBC_90: -2104984060
+      GUMDROP.GBC_91: -822902226
+      GUMDROP.GBC_92: -2042756175
+      GUMDROP.GBC_93: -522557890
+      GUMDROP.GBC_94: -1107283712
+      GUMDROP.GBC_95: 1773897754
+      GUMDROP.GBC_96: 1982765827
+      GUMDROP.GBC_97: -954573454
+      GUMDROP.GBC_98: -1775994658
+      GUMDROP.GBC_99: -1136248759
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

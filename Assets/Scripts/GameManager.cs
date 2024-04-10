@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
             }
         }*/
 
-        if (SceneManager.GetActiveScene().buildIndex != 4)
+        if (SceneManager.GetActiveScene().name != "Overworld")
         {
             GameControls();
         }
@@ -112,19 +112,23 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene("Level 0");
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene("Demo");
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene("Level 3");
             }
             if (Input.GetKeyDown(KeyCode.Alpha4))
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene("Level 2");
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha5))
+            {
+                SceneManager.LoadScene("Scene1");
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -143,12 +147,13 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene("Overworld");
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        // Currently bugged and crashing game for some reason
         if (Input.GetKeyDown(KeyCode.Comma))
         {
             devMode = !devMode;

@@ -26,33 +26,19 @@ public class PlayerAnimator : MonoBehaviour
     void Update()
     {
         // Idle Orientation
-        if (player_movement.last_moved_vector.x == 0 && player_movement.last_moved_vector.y > 0 && isIdle)
+        if (player_movement.last_moved_vector.y > 0 && isIdle)
         {
             animator.SetBool("Diff_Idle_Up", true);
             animator.SetBool("Diff_Idle_Down", false);
             animator.SetBool("Diff_Idle_UD", false);
             animator.SetBool("Diff_Idle_DD", false);
         }
-        else if (player_movement.last_moved_vector.x == 0 && player_movement.last_moved_vector.y < 0 && isIdle)
+        else if (player_movement.last_moved_vector.y < 0 && isIdle)
         {
             animator.SetBool("Diff_Idle_Down", true);
             animator.SetBool("Diff_Idle_Up", false);
             animator.SetBool("Diff_Idle_UD", false);
             animator.SetBool("Diff_Idle_DD", false);
-        }
-        else if (player_movement.last_moved_vector.x != 0 && player_movement.last_moved_vector.y > 0 && isIdle)
-        {
-            animator.SetBool("Diff_Idle_UD", true);
-            animator.SetBool("Diff_Idle_Up", false);
-            animator.SetBool("Diff_Idle_Down", false);
-            animator.SetBool("Diff_Idle_DD", false);
-        }
-        else if (player_movement.last_moved_vector.x != 0 && player_movement.last_moved_vector.y < 0 && isIdle)
-        {
-            animator.SetBool("Diff_Idle_DD", true);
-            animator.SetBool("Diff_Idle_Up", false);
-            animator.SetBool("Diff_Idle_Down", false);
-            animator.SetBool("Diff_Idle_UD", false);
         }
         else
         {
@@ -71,7 +57,7 @@ public class PlayerAnimator : MonoBehaviour
             isIdle = true;
         }
 
-        if (player_movement.movement_dir.x == 0 && player_movement.movement_dir.y > 0)
+        if (player_movement.movement_dir.y > 0)
         {
             animator.SetBool("Move_Up", true);
             isIdle = false;
@@ -82,7 +68,7 @@ public class PlayerAnimator : MonoBehaviour
             isIdle = true;
         }
 
-        if (player_movement.movement_dir.x == 0 && player_movement.movement_dir.y < 0)
+        if (player_movement.movement_dir.y < 0)
         {
             animator.SetBool("Move_Down", true);
             isIdle = false;
@@ -93,7 +79,7 @@ public class PlayerAnimator : MonoBehaviour
             isIdle = true;
         }
 
-        if (player_movement.movement_dir.x != 0 && player_movement.movement_dir.y > 0)
+        /*if (player_movement.movement_dir.x != 0 && player_movement.movement_dir.y > 0)
         {
             animator.SetBool("Move_UD", true);
             isIdle = false;
@@ -113,7 +99,7 @@ public class PlayerAnimator : MonoBehaviour
         {
             animator.SetBool("Move_DD", false);
             isIdle = true;
-        }
+        }*/
 
 
         // Stationary Attacking
@@ -179,7 +165,7 @@ public class PlayerAnimator : MonoBehaviour
             }
         }
 
-        if (player_movement.last_moved_vector.x != 0 && player_movement.last_moved_vector.y > 0 && Input.GetMouseButtonDown(0))
+        /*if (player_movement.last_moved_vector.x != 0 && player_movement.last_moved_vector.y > 0 && Input.GetMouseButtonDown(0))
         {
             DisableIdleOrientations();
             animator.SetBool("Attack_UD", true);
@@ -227,7 +213,7 @@ public class PlayerAnimator : MonoBehaviour
                 player_stats.isAttacking = false;
                 player_stats.atkDur = 0f;
             }
-        }
+        }*/
 
         // Change color -- FOR TESTING PURPOSES ONLY
         switch (player_stats.currState)
@@ -239,7 +225,7 @@ public class PlayerAnimator : MonoBehaviour
             case "blue":
                 sprite_renderer.color = Color.blue; break;
             default:
-                sprite_renderer.color = Color.white; break;
+                sprite_renderer.color = new Color(.35f, .28f, .28f, 1f); break;
         }
 
         SpriteDirectionCheck();

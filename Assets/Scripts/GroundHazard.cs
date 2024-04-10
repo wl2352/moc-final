@@ -6,8 +6,8 @@ public class GroundHazard : MonoBehaviour
 {
     float timer = 0;
     // set this up in the inspector!
-    public float damageTime = 2;
-    public float damageAmount = 4;
+    public float damageTime = 2f;
+    public float damageAmount = 4f;
     /*private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.gameObject.GetComponent<PlayerStats>().TakeDamage(2.0f * timeOn);
@@ -30,7 +30,7 @@ public class GroundHazard : MonoBehaviour
             }
             timer += Time.deltaTime;*/
 
-            InvokeRepeating("DamagePlayer", 1f, 1f);
+            InvokeRepeating("DamagePlayer", damageTime, damageTime);
         }
     }
 
