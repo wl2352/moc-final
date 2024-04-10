@@ -225,7 +225,7 @@ public class PlayerAnimator : MonoBehaviour
             case "blue":
                 sprite_renderer.color = Color.blue; break;
             default:
-                break;
+                sprite_renderer.color = new Color(.35f, .28f, .28f, 1f); break;
         }
 
         SpriteDirectionCheck();

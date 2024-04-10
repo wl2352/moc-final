@@ -12,18 +12,24 @@ EditorBuildSettings:
     path: Assets/Jada stuff/Assets/Scenes/intro scene.unity
     guid: b125ec020e1234e4f8f266c25c19eff5
   - enabled: 1
+    path: Assets/Allan's Assets/Allan's Scenes/Overworld.unity
+    guid: 935a58a5d29e41d4991bc84064875930
+  - enabled: 1
     path: Assets/Scenes/Demo.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Allan's Assets/Allan's Scenes/Level 0.unity
     guid: 671c2d3d4edcfa44298e36e60205251a
   - enabled: 1
+    path: Assets/Allan's Assets/Allan's Scenes/Level 2.unity
+    guid: 6e8cb5da3a6c8e744925d97818ac83ca
+  - enabled: 1
     path: Assets/Allan's Assets/Allan's Scenes/Level 3.unity
     guid: e3e908b3c97945648bdd0cfaf89b0016
   - enabled: 1
+    path: Assets/Will Stuff/Scene1.unity
+    guid: 715c917611ad57b46b145d6d789f42a0
+  - enabled: 1
     path: Assets/Scenes/Demo2.unity
     guid: 31f94503e747e0a4a8e0d8b39e991846
-  - enabled: 1
-    path: Assets/Allan's Assets/Allan's Scenes/Overworld.unity
-    guid: 935a58a5d29e41d4991bc84064875930
   m_configObjects: {}

@@ -55,7 +55,8 @@ public class PlayerStats : MonoBehaviour
             ApplyAbility("blue");
         }
         
-        if (gameManager.devMode)
+        // Currently bugged and is breaking game
+        /*if (gameManager.devMode)
         {
             // Testing Adding New Ability
             if (Input.GetKeyDown(KeyCode.I))
@@ -93,20 +94,10 @@ public class PlayerStats : MonoBehaviour
                 health += 1.0f;
                 if (currState != "blue") prevHealth = health;
             }
-        }
+        }*/
         
 
         // Attacking Action
-        // Meant to test if attacking state is tracking properly and also test ability to spawn an object as a result
-        // of the player attack. If an item spawns, this means we can spawn some type of collider
-        /*if (isAttacking && GameObject.FindGameObjectWithTag("atk") == null)
-        {
-            Instantiate(attackPrefab, new Vector2(gameObject.transform.position.x + 1, gameObject.transform.position.y + 1), Quaternion.identity);
-        }
-        else if(!isAttacking && GameObject.FindGameObjectWithTag("atk") != null)
-        {
-            DestroyImmediate(GameObject.FindGameObjectWithTag("atk"), true);
-        }*/
         if (isAttacking && atkDur == 0f)
         {
             Attack();

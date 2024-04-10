@@ -236,7 +236,7 @@ SpriteRenderer:
   m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: -286866954, guid: 6a43c6c7c45634245b6cc46527acc746, type: 3}
-  m_Color: {r: 0.3584906, g: 0.2756319, b: 0.2756319, a: 1}
+  m_Color: {r: 0.35, g: 0.28, b: 0.28, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -350,6 +350,7 @@ MonoBehaviour:
   canDash: 1
   isDashing: 0
   tr: {fileID: 0}
+  pauseScript: {fileID: 0}
 --- !u!114 &7916276236866252240
 MonoBehaviour:
   m_ObjectHideFlags: 0
