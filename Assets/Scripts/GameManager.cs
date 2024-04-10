@@ -102,6 +102,7 @@ public class GameManager : MonoBehaviour
                 devMode = !devMode;
             }
         }*/
+
         if (SceneManager.GetActiveScene().buildIndex != 4)
         {
             GameControls();
