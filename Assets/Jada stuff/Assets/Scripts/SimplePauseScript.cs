@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SimplePauseScript : MonoBehaviour
 {
-    public GameObject Maingame;
+    //public GameObject Maingame;
     public GameObject PauseUI;
 
     public bool isPaused = false;
