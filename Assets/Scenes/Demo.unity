@@ -2196,6 +2196,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1982461603}
+    - target: {fileID: 1216953502764211701, guid: 61e49580feedd9348bad5dc741c53c75, type: 3}
+      propertyPath: followDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5846318472912269119, guid: 61e49580feedd9348bad5dc741c53c75, type: 3}
       propertyPath: m_Name
       value: Wolf_2

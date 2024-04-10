@@ -46,6 +46,7 @@ public class E_Attack : MonoBehaviour
             animator.SetBool("Attacking", true);
         }
 
+        player.GetComponent<PlayerStats>().TakeDamage(gameObject.GetComponent<E_Stats>().damage);
         Debug.Log("Attacked");
     }
 

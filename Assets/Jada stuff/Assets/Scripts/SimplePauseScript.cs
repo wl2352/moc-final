@@ -21,7 +21,7 @@ public class SimplePauseScript : MonoBehaviour
         isPaused = !isPaused;
         Time.timeScale = isPaused ? 0 : 1; // Pause or resume time
 
-        Maingame.SetActive(!isPaused); // Enable or disable main game objects
+        // Maingame.SetActive(!isPaused); // Enable or disable main game objects
         PauseUI.SetActive(isPaused); // Enable or disable pause UI
         AudioListener.pause = isPaused; // Pause or resume audio
     }
