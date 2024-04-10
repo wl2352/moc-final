@@ -112,21 +112,9 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                SceneManager.LoadScene("Level 0");
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
                 SceneManager.LoadScene("Demo");
             }
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                SceneManager.LoadScene("Level 3");
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha4))
-            {
-                SceneManager.LoadScene("Level 2");
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha5))
+            if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 SceneManager.LoadScene("Scene1");
             }
