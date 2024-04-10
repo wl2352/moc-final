@@ -1369,7 +1369,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5256931868612434073, guid: 9b0efa6499c3b7f40800c67336c22df9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b0efa6499c3b7f40800c67336c22df9, type: 3}
@@ -2682,9 +2683,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: QuitGame
+      - m_Target: {fileID: 105730277}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: QuitGameBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6751,7 +6752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 602b4c88312d49a45beb12691eeca09f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Maingame: {fileID: 0}
+  Maingame: {fileID: 1648431872}
   PauseUI: {fileID: 1877078733}
   isPaused: 0
 --- !u!4 &2013904751
