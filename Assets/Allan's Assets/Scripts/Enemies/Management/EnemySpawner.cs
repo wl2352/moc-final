@@ -10,14 +10,13 @@ public class EnemySpawner : MonoBehaviour
     public int MaxEnemies = 5;
     public float SpawnTime = 0;
 
-    void Awake()
+    public void Spawn()
     {
-        gameManager = FindObjectOfType<GameManager>();
-        InvokeRepeating("Spawn", 0f, SpawnTime);
-        
+        if (SpawnedEnemies >= MaxEnemies) { CancelInvoke(); return; }
+        InvokeRepeating("SpawnEnemies", 0f, SpawnTime);
     }
 
-    void Spawn()
+    void SpawnEnemies()
     {
         if (SpawnedEnemies < MaxEnemies)
         {
@@ -29,5 +28,13 @@ public class EnemySpawner : MonoBehaviour
             SpawnedEnemies++;
         }
 
+    }
+
+    public void ReInitialize(int newMaxEnemies, float newSpawnTime)
+    {
+        SpawnedEnemies = 0;
+        SpawnTime += newSpawnTime;
+        MaxEnemies += newMaxEnemies;
+        CancelInvoke();
     }
 }

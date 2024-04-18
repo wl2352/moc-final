@@ -16,6 +16,7 @@ public class E_Movement : MonoBehaviour
     void Start()
     {
         enemy = GetComponent<Rigidbody2D>();
+        target = FindObjectOfType<PlayerStats>().transform;
     }
 
     // Update is called once per frame

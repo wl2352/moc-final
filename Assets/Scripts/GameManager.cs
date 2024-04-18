@@ -9,7 +9,19 @@ public class GameManager : MonoBehaviour
 {
     public bool devMode = false;
     TextMeshProUGUI textMeshProUGUI;
-    List<E_Stats> enemies = new List<E_Stats>();
+    [Header("Enemies")]
+    [SerializeField] List<E_Stats> enemies = new List<E_Stats>();
+    [SerializeField] List<EnemySpawner> enemySpawners = new List<EnemySpawner>();
+
+    [Space(5f)]
+    [Header("Wave Configs")]
+    public bool levelPassed = false;
+    public int enemiesToKillGoal = 0;
+    public int enemiesKilled = 0;
+    public int maxWaves;
+    public int currWave = 0;
+    public int spawnerMaxEnemiesIncrement;
+    public int spawnerSpawnTimeFactor;
 
     private void OnEnable()
     {
@@ -21,91 +33,47 @@ public class GameManager : MonoBehaviour
         E_Stats.OnEnemyKilled -= HandleEnemyDefeated;
     }
 
-    void Start()
+    void Awake()
     {
         enemies = FindObjectsOfType<E_Stats>().ToList();
         textMeshProUGUI = GetComponent<TextMeshProUGUI>();
+
+        SetWaveEnemyStats();
     }
+
 
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log($"{enemiesToKillGoal} at Update() in gameobject: {gameObject}");
         enemies = FindObjectsOfType<E_Stats>().ToList();
-        /*if (SceneManager.GetActiveScene().buildIndex == 0)
+
+        if (levelPassed)
         {
-            if (Input.GetKeyDown(KeyCode.M))
-            {
-                SceneManager.LoadScene(4);
-            }
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-            if (Input.GetKeyDown(KeyCode.Comma))
-            {
-                devMode = !devMode;
-            }
-            if (gameObject.name == "Enemies Left")
-            {
-                textMeshProUGUI.text = enemies.Count.ToString();
-            }
-            if (FindObjectsOfType<PlayerStats>().ToList().Count == 0)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
+            Debug.Log("Level has been passed");
         }
 
-        else if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (enemiesKilled < enemiesToKillGoal)
         {
-            if (Input.GetKeyDown(KeyCode.M))
-            {
-                SceneManager.LoadScene(4);
-            }
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-            if (Input.GetKeyDown(KeyCode.Comma))
-            {
-                devMode = !devMode;
-            }
+            SpawnEnemies();
         }
-
-        else if (SceneManager.GetActiveScene().buildIndex == 2)
+        else
         {
-            if (Input.GetKeyDown(KeyCode.M))
+            if (currWave >= maxWaves)
             {
-                SceneManager.LoadScene(4);
+                levelPassed = true;
             }
-            if (Input.GetKeyDown(KeyCode.R))
+            else
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                IncrementWave();
             }
-            if (Input.GetKeyDown(KeyCode.Comma))
-            {
-                devMode = !devMode;
-            }
+            //Debug.Log($"Reached\t Enemies killed: {enemiesKilled}\t Goal: {enemiesToKillGoal}");
         }
-
-        else if (SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            if (Input.GetKeyDown(KeyCode.M))
-            {
-                SceneManager.LoadScene(4);
-            }
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-            if (Input.GetKeyDown(KeyCode.Comma))
-            {
-                devMode = !devMode;
-            }
-        }*/
 
         if (SceneManager.GetActiveScene().name != "Overworld")
         {
             GameControls();
+
         }
 
         else 
@@ -128,7 +96,20 @@ public class GameManager : MonoBehaviour
 
     void HandleEnemyDefeated(E_Stats enemy)
     {
+        enemiesKilled += 1;
         enemies.Remove(enemy);
+    }
+
+    void SetWaveEnemyStats()
+    {
+        enemiesKilled = 0;
+        enemiesToKillGoal = 0;
+        foreach (EnemySpawner spawner in enemySpawners)
+        {
+            //Debug.Log(spawner.MaxEnemies);
+            enemiesToKillGoal += spawner.MaxEnemies;
+            Debug.Log(enemiesToKillGoal);
+        }
     }
 
     void GameControls()
@@ -153,6 +134,43 @@ public class GameManager : MonoBehaviour
         if (FindObjectsOfType<PlayerStats>().ToList().Count == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+
+    void SpawnEnemies()
+    {
+        foreach (EnemySpawner spawner in enemySpawners)
+        {
+            spawner.Spawn();
+        }
+    }
+
+    void IncrementWave()
+    {
+        if (currWave < maxWaves)
+        {
+            // Increment current wave
+            currWave++;
+
+            // Destroy existing enemies
+            List<E_Stats> remainingEnemies = FindObjectsOfType<E_Stats>().ToList();
+            if (remainingEnemies.Count > 0)
+            {
+                foreach(E_Stats e in remainingEnemies)
+                {
+                    Destroy(e.gameObject);
+                }
+            }
+
+            // Increase the maximum amount each spawner can spawn an enemy by the desired enemy increase value
+            // Also, refresh each enemy spawner with their new values
+            foreach (EnemySpawner spawner in enemySpawners)
+            {
+                spawner.ReInitialize(spawnerMaxEnemiesIncrement, spawnerSpawnTimeFactor);
+            }
+
+            // Reset enemy killed and get new enemy kill goal
+            SetWaveEnemyStats();
         }
     }
 }
