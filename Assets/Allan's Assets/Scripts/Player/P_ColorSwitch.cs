@@ -1,26 +1,57 @@
 using UnityEngine;
 
-public class PlayerColorSwitch : MonoBehaviour
+public class P_ColorSwitch : MonoBehaviour
 {
     public float colorDuration = 3f; // Duration for which the color effect lasts
-    public float boost = 10f; // Amount by which the stat increases when affected by color
+    public float buff = 10f; // Amount by which the stat increases when affected by color
+    public float debuff = 10f; // Amount by which the stat decreases when affected by color
+    public float colorCooldown = 5f; // Cooldown between color switches
 
     private Stats playerStats; // Reference to the player's Stats script
     private Color currentColor; // Current color of the player
+    private Color activeColor; // Active color that is affecting the player
     private float colorEffectTimer = 0f; // Timer to track color effect duration
     private bool colorEffectActive = false; // Flag to track if color effect is active
+    private float TempAtk = 0f;
+    private float TempDef = 0f;
+    private float TempSpd = 0f;
+    private bool canSwitchColor = true; // Flag to track if color switching is allowed
+    private float colorCooldownTimer = 0f; // Timer to track color switch cooldown
+
+    public bool redUnlocked = false; // Flag to track if red color is unlocked
+    public bool blueUnlocked = false; // Flag to track if blue color is unlocked
+    public bool yellowUnlocked = false; // Flag to track if yellow color is unlocked
 
     private void Start()
     {
         // Find the player's Stats script
         playerStats = GetComponent<Stats>();
 
+        TempAtk = playerStats.Attack;
+        TempDef = playerStats.Defense;
+        TempSpd = playerStats.Speed;
+
         // Set the initial color to white (no color)
         currentColor = Color.white;
+        activeColor = Color.white;
+
+        // Unlock red color by default
+        redUnlocked = true;
     }
 
     private void Update()
     {
+        // Update color switch cooldown timer
+        if (!canSwitchColor)
+        {
+            colorCooldownTimer -= Time.deltaTime;
+            if (colorCooldownTimer <= 0f)
+            {
+                canSwitchColor = true;
+                colorCooldownTimer = 0f;
+            }
+        }
+
         // Check if the color effect is active
         if (colorEffectActive)
         {
@@ -36,27 +67,40 @@ public class PlayerColorSwitch : MonoBehaviour
 
                 // Reset player's color to white (no color)
                 SetPlayerColor(Color.white);
+
+                // Reset the previously affected stat if any
+                ResetTempStatEffect();
+
+                // Start color switch cooldown
+                canSwitchColor = false;
+                colorCooldownTimer = colorCooldown;
             }
         }
 
-        // Check for input to switch colors
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        // Check for input to switch colors if color switch is allowed and color effect is not active
+        if (canSwitchColor && !colorEffectActive)
         {
-            SwitchColor(Color.red);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            SwitchColor(Color.blue);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            SwitchColor(Color.yellow);
+            if (Input.GetKeyDown(KeyCode.Alpha1) && redUnlocked)
+            {
+                SwitchColor(Color.red);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2) && blueUnlocked)
+            {
+                SwitchColor(Color.blue);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3) && yellowUnlocked)
+            {
+                SwitchColor(Color.yellow);
+            }
         }
     }
 
     // Method to switch player color
     private void SwitchColor(Color newColor)
     {
+        // Set the new active color
+        activeColor = newColor;
+
         // Set player color
         SetPlayerColor(newColor);
 
@@ -68,50 +112,62 @@ public class PlayerColorSwitch : MonoBehaviour
     private void SetPlayerColor(Color newColor)
     {
         // Change player's material color
-        GetComponent<Renderer>().material.color = newColor;
+        GetComponent<SpriteRenderer>().color = newColor;
         currentColor = newColor;
     }
 
     // Method to apply color effect
     private void ApplyColorEffect(Color color)
     {
-        // Reset the previously affected stat if any
-        ResetTempStatEffect();
-
         // Apply different effects based on color
         if (color == Color.red)
         {
             // Increase attack stat temporarily
-            TempIncreaseStat(playerStats.Attack, boost);
+            playerStats.Attack += buff;
+            // Decrease defense stat temporarily
+            playerStats.Defense -= debuff;
         }
         else if (color == Color.blue)
         {
             // Increase defense stat temporarily
-            TempIncreaseStat(playerStats.Defense, boost);
+            playerStats.Defense += buff;
+            // Decrease speed stat temporarily
+            playerStats.Speed -= debuff;
         }
         else if (color == Color.yellow)
         {
             // Increase speed stat temporarily
-            TempIncreaseStat(playerStats.Speed, boost);
+            playerStats.Speed += buff;
+            // Decrease attack stat temporarily
+            playerStats.Attack -= debuff;
         }
 
         // Set color effect active
         colorEffectActive = true;
     }
 
-    // Temporary stat modifiers
-    private float tempstatModifier = 0f;
-
-    // Method to temporarily increase stats
-    public void TempIncreaseStat(float stat, float amount)
-    {
-        tempstatModifier = stat + amount;
-        stat = tempstatModifier;
-    }
-
     // Method to reset temporary stat modifiers
     public void ResetTempStatEffect()
     {
-        tempstatModifier = 0f;
+        playerStats.Attack = TempAtk;
+        playerStats.Defense = TempDef;
+        playerStats.Speed = TempSpd;
+    }
+
+    // Method to unlock colors (could be called when conditions are met)
+    public void UnlockColor(Color color)
+    {
+        if (color == Color.red)
+        {
+            redUnlocked = true;
+        }
+        else if (color == Color.blue)
+        {
+            blueUnlocked = true;
+        }
+        else if (color == Color.yellow)
+        {
+            yellowUnlocked = true;
+        }
     }
 }

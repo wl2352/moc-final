@@ -13,10 +13,6 @@ public class E_Movement : MonoBehaviour
     }
     private void Update()
     {
-        if (player.GetComponent<Stats>().currentHP <= 0){
-            return;
-        }
-
         // Calculate distance between enemy and player
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
