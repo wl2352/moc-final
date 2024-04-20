@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Allan's Assets/Allan's Scenes/Level 3.unity
     guid: e3e908b3c97945648bdd0cfaf89b0016
   - enabled: 1
-    path: Assets/Will Stuff/Scene1.unity
+    path: Assets/Will Stuff/Scenes/Will-Scene1.unity
     guid: 715c917611ad57b46b145d6d789f42a0
   - enabled: 1
     path: Assets/Scenes/Demo2.unity

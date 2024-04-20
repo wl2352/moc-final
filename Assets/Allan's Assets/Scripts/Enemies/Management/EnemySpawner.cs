@@ -1,17 +1,21 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
 
     GameManager gameManager;
-    [SerializeField] private GameObject enemyPrefab;
-    public float offset = 0;
+    [SerializeField] private List<GameObject> enemies = new List<GameObject>();
+    public float offset;
     private int SpawnedEnemies = 0;
     public int MaxEnemies = 5;
-    public float SpawnTime = 0;
+    public float SpawnTime;
+    [SerializeField] private float timer;
 
     public void Spawn()
     {
+        timer += Time.deltaTime;
+        if (timer >= SpawnTime) timer = 0f;
         if (SpawnedEnemies >= MaxEnemies) { CancelInvoke(); return; }
         InvokeRepeating("SpawnEnemies", 0f, SpawnTime);
     }
@@ -20,12 +24,22 @@ public class EnemySpawner : MonoBehaviour
     {
         if (SpawnedEnemies < MaxEnemies)
         {
-            float SpawnPosition = UnityEngine.Random.Range(1f, offset);
+            float randomSpawnOffset = Random.Range(1f, offset);
+            
+            if (enemies.Count != 0)
+            {
+                GameObject enemyPrefab = enemies[Random.Range(0, enemies.Count)];
+                Vector3 spawnPosition = new Vector3(transform.position.x + randomSpawnOffset, transform.position.y + randomSpawnOffset, 0f);
 
-            UnityEngine.Vector3 SpawnerPosition = new UnityEngine.Vector3(transform.position.x + SpawnPosition, transform.position.y + SpawnPosition, 0f);
-
-            Instantiate(enemyPrefab, SpawnerPosition, Quaternion.identity);
-            SpawnedEnemies++;
+                Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+                SpawnedEnemies++;
+            }
+            else
+            {
+                Debug.LogError("No enemies in the spawner. In the inspector, add an enemy prefab to the spawner object.");
+                return;
+            }
+            
         }
 
     }
@@ -36,5 +50,10 @@ public class EnemySpawner : MonoBehaviour
         SpawnTime += newSpawnTime;
         MaxEnemies += newMaxEnemies;
         CancelInvoke();
+    }
+
+    public void AddEnemy(GameObject enemy)
+    {
+        enemies.Add(enemy);
     }
 }
