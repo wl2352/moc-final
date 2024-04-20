@@ -859,7 +859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: offset
-      value: 1
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: SpawnTime
@@ -1114,7 +1114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: offset
-      value: 1
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: SpawnTime
@@ -6017,14 +6017,17 @@ MonoBehaviour:
   - {fileID: 2108634613}
   - {fileID: 725407752}
   levelPassed: 0
-  enemiesToKillGoal: 0
+  enemiesPerWave: 2
   enemiesKilled: 0
-  maxWaves: 0
-  currWave: 0
+  totalWaves: 3
+  currentWave: 0
   hazardWave: 0
   newEnemiesWave: 0
-  spawnerMaxEnemiesIncrement: 1
-  spawnerSpawnTimeFactor: 0
+  enemiesSpawned: 0
+  timer: 0
+  spawningEnabled: 1
+  waveInterval: 10
+  spawnInterval: 2
   barriers: []
   hazards: {fileID: 0}
   newEnemy: {fileID: 0}
@@ -6451,7 +6454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: offset
-      value: 1
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: SpawnTime
@@ -30700,7 +30703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: offset
-      value: 1
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: SpawnTime
@@ -31031,7 +31034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: offset
-      value: 1
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: SpawnTime

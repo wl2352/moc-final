@@ -176,10 +176,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
-      propertyPath: offset
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: SpawnTime
       value: 4
       objectReference: {fileID: 0}
@@ -26425,10 +26421,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
-      propertyPath: offset
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: SpawnTime
       value: 5
       objectReference: {fileID: 0}
@@ -27258,14 +27250,17 @@ MonoBehaviour:
   - {fileID: 481470779}
   - {fileID: 965965521}
   levelPassed: 0
-  enemiesToKillGoal: 0
+  enemiesPerWave: 3
   enemiesKilled: 0
-  maxWaves: 2
-  currWave: 1
+  totalWaves: 3
+  currentWave: 0
   hazardWave: 0
   newEnemiesWave: 0
-  spawnerMaxEnemiesIncrement: 1
-  spawnerSpawnTimeFactor: -1
+  enemiesSpawned: 0
+  timer: 0
+  spawningEnabled: 1
+  waveInterval: 10
+  spawnInterval: 2
   barriers: []
   hazards: {fileID: 0}
   newEnemy: {fileID: 0}

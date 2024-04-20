@@ -17,14 +17,19 @@ public class GameManager : MonoBehaviour
     [Space(5f)]
     [Header("Wave Configs")]
     [SerializeField] private bool levelPassed = false;
-    [SerializeField] private int enemiesToKillGoal = 0;
+    [SerializeField] private int enemiesPerWave = 0;    // Number of enemies per wave
     [SerializeField] private int enemiesKilled = 0;
-    [SerializeField] private int maxWaves;
-    [SerializeField] private int currWave = 1;
+    [SerializeField] private int totalWaves = 3;    // Total number of waves
+    [SerializeField] private int currentWave = 0;   // Current wave number
     [SerializeField] private int hazardWave;
     [SerializeField] private int newEnemiesWave;
-    [SerializeField] private int spawnerMaxEnemiesIncrement;
-    [SerializeField] private int spawnerSpawnTimeFactor;
+    //[SerializeField] private int spawnerMaxEnemiesIncrement;
+    //[SerializeField] private int spawnerSpawnTimeFactor;
+    [SerializeField] private int enemiesSpawned = 0; // Number of enemies spawned in the current wave
+    [SerializeField] private float timer = 0f; // Timer to track spawn intervals
+    [SerializeField] private bool spawningEnabled = true; // Flag to enable/disable spawning
+    [SerializeField] public float waveInterval = 10f; // Time interval between waves
+    [SerializeField] public float spawnInterval = 2f; // Time interval between enemy spawns
 
     [Space(5f)]
     [Header("Map Control")]
@@ -54,20 +59,19 @@ public class GameManager : MonoBehaviour
         levelClearedBarrier = GameObject.FindGameObjectWithTag("Finish");
         barriers = GameObject.FindGameObjectsWithTag("Barrier");
 
-        // Initialize first wave
-        SetWaveEnemyStats();
+        /*// Initialize first wave
+        SetWaveEnemyStats();*/
 
         // Error Handling
-        if (hazardWave > maxWaves)
+        if (hazardWave > totalWaves)
         {
-            Debug.LogError($"Hazard wave value, {hazardWave} cannot be greater than max waves, {maxWaves}");
+            Debug.LogError($"Hazard wave value, {hazardWave} cannot be greater than max waves, {totalWaves}");
         }
-        if (newEnemiesWave > maxWaves)
+        if (newEnemiesWave > totalWaves)
         {
-            Debug.LogError($"Enemies wave value, {newEnemiesWave} cannot be greater than max waves, {maxWaves}");
+            Debug.LogError($"Enemies wave value, {newEnemiesWave} cannot be greater than max waves, {totalWaves}");
         }
     }
-
 
     // Update is called once per frame
     void Update()
@@ -79,8 +83,30 @@ public class GameManager : MonoBehaviour
         {
             LevelCleared();
         }
+        else
+        {
+            if (spawningEnabled)
+            {
+                timer += Time.deltaTime;
 
-        // Logic: If the current wave is less than or at the last wave...
+                // Check if it's time to spawn an enemy
+                if (timer >= spawnInterval && enemiesSpawned < enemiesPerWave)
+                {
+                    SpawnEnemy();
+                    timer = 0f;
+                    enemiesSpawned++;
+                }
+
+                // Check if all enemies in the current wave have been spawned
+                if (enemiesKilled >= (enemiesPerWave * enemySpawners.Count))
+                {
+                    spawningEnabled = false;
+                    Invoke("StartNextWave", waveInterval); // Start next wave after a delay
+                }
+            }
+        }
+        
+        /*// Logic: If the current wave is less than or at the last wave...
         if (currWave <= maxWaves)
         {
             // ...and the player hasn't completed the wave, keep spawning enemies
@@ -98,7 +124,7 @@ public class GameManager : MonoBehaviour
         else
         {
             levelPassed = true;
-        }
+        }*/
 
         // Game controls (may vary per scene)
         if (SceneManager.GetActiveScene().name != "Overworld")
@@ -123,6 +149,54 @@ public class GameManager : MonoBehaviour
             }
         }
 
+    }
+
+    void SpawnEnemy()
+    {
+        // Instantiate enemy prefab at a random position
+        foreach (EnemySpawner spawner in enemySpawners)
+        {
+            // spawner.Spawn();
+            spawner.Spawn();
+        }
+
+    }
+
+    void StartNextWave()
+    {
+        currentWave++;
+        enemiesKilled = 0;
+        // Destroy existing enemies
+        List<E_Stats> remainingEnemies = FindObjectsOfType<E_Stats>().ToList();
+        if (remainingEnemies.Count > 0)
+        {
+            foreach (E_Stats e in remainingEnemies)
+            {
+                Destroy(e.gameObject);
+            }
+        }
+        if (currentWave <= totalWaves)
+        {
+            enemiesSpawned = 0;
+            spawningEnabled = true;
+            if (currentWave == newEnemiesWave)
+            {
+                foreach (EnemySpawner spawner in enemySpawners)
+                {
+                    AddEnemyToSpawner(spawner);
+                }
+            }
+
+            if (currentWave == hazardWave)
+            {
+                ActivateGroundHazards();
+            }
+        }
+        else
+        {
+            levelPassed = true;
+            Debug.Log("All waves completed!");
+        }
     }
 
     // Function to check if two GameObjects are colliding
@@ -177,7 +251,7 @@ public class GameManager : MonoBehaviour
         enemies.Remove(enemy);
     }
 
-    void SetWaveEnemyStats()
+    /*void SetWaveEnemyStats()
     {
         enemiesKilled = 0;
         enemiesToKillGoal = 0;
@@ -186,7 +260,7 @@ public class GameManager : MonoBehaviour
             enemiesToKillGoal += spawner.MaxEnemies;
             Debug.Log(enemiesToKillGoal);
         }
-    }
+    }*/
 
     void GameControls()
     {
@@ -219,10 +293,10 @@ public class GameManager : MonoBehaviour
 
     void IncrementWave()
     {
-        if (currWave <= maxWaves)
+        if (currentWave <= totalWaves)
         {
             // Increment current wave
-            currWave++;
+            currentWave++;
 
             // Destroy existing enemies
             List<E_Stats> remainingEnemies = FindObjectsOfType<E_Stats>().ToList();
@@ -234,7 +308,19 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-            // Increase the maximum amount each spawner can spawn an enemy by the desired enemy increase value
+            if (currentWave == newEnemiesWave)
+            {
+                foreach (EnemySpawner spawner in enemySpawners)
+                {
+                    AddEnemyToSpawner(spawner);
+                }
+            }
+
+            if (currentWave == hazardWave)
+            {
+                ActivateGroundHazards();
+            }
+            /*// Increase the maximum amount each spawner can spawn an enemy by the desired enemy increase value
             // Also, refresh each enemy spawner with their new values
             foreach (EnemySpawner spawner in enemySpawners)
             {
@@ -254,7 +340,7 @@ public class GameManager : MonoBehaviour
             }
 
             // Reset enemy killed and get new enemy kill goal
-            SetWaveEnemyStats();
+            SetWaveEnemyStats();*/
         }
     }
 }
