@@ -170,6 +170,9 @@ GameObject:
   - component: {fileID: 7916276236866252240}
   - component: {fileID: 1213241277588235063}
   - component: {fileID: 7716762336859651156}
+  - component: {fileID: 6853966127530060490}
+  - component: {fileID: 8253847269543733910}
+  - component: {fileID: -6735518533187411346}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -373,7 +376,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4276061521971893057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcab03a0427cacc4486af2e6592ffaf8, type: 3}
   m_Name: 
@@ -495,6 +498,59 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6853966127530060490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4276061521971893057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32f3435b5267d48838e93ef8de1cd6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1.5
+  attackCooldown: 2
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &8253847269543733910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4276061521971893057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7827f67b22264d4685995a4e3a9d1c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 3
+  buff: 10
+  debuff: 10
+  colorCooldown: 5
+  redUnlocked: 0
+  blueUnlocked: 0
+  yellowUnlocked: 0
+--- !u!114 &-6735518533187411346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4276061521971893057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0afa1f025e554467181cfa4555457181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+  currentHP: 100
+  Attack: 10
+  Defense: 5
+  Speed: 5
 --- !u!1 &8111218588339143063
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,9 +21,9 @@ public class WolfAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(enemyMovement.E_direction);
+        Debug.Log(enemyMovement.direction);
         // State handling
-        if (enemyMovement.E_direction.y > 0)
+        if (enemyMovement.direction.y > 0)
         {
             up = true;
         }
@@ -33,7 +33,7 @@ public class WolfAnimation : MonoBehaviour
         }
         Debug.Log(up);
 
-        if (enemyMovement.E_velocity == Vector2.zero)
+        if (enemyMovement.direction == Vector3.zero)
         {
             Debug.Log("is idling");
             if (up)
@@ -135,7 +135,7 @@ public class WolfAnimation : MonoBehaviour
 
     void SpriteDirectionCheck()
     {
-        if (enemyMovement.E_direction.x < 0)
+        if (enemyMovement.direction.x < 0)
         {
             sprite_renderer.flipX = false;
         }

@@ -1,72 +1,48 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class E_Attack : MonoBehaviour
 {
-    public int damage = 1;
-    public float attackCooldown = 2f;
-    public float attackRange = 0.5f;
-    public Transform attackPoint;
-    public LayerMask playerLayer;
+    public float attackRange = 1.5f; // Range within which the enemy can attack
+    public float attackCooldown = 2f; // Cooldown between attacks
+    private Transform player; // Reference to the player's transform
+    private Stats stats;
+    public bool canAttack = true; // Flag to control attack cooldown
 
-    public bool canAttack = true;
-    private Animator animator;
-    private Rigidbody2D enemy;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        animator = GetComponent<Animator>();
+        // Find the Stats script attached to the same GameObject
+        stats = GetComponent<Stats>();
+        player = GameObject.FindGameObjectWithTag("Player").transform; // Find the player
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (canAttack) 
+        if (player.GetComponent<Stats>().currentHP <= 0){
+            return;
+        }
+
+        // Calculate distance between enemy and player
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        // Check if player is within attack range and attack cooldown is over
+        if (distanceToPlayer <= attackRange && canAttack)
         {
-            Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
-
-            foreach (Collider2D player in hitPlayer)
-            {
-                Attack(player.gameObject);
-                Cooldown();
-            }
+            AttackPlayer();
         }
     }
 
-    void Attack(GameObject player)
+    private void AttackPlayer()
     {
-        if (GetComponent<E_Movement>().E_direction.y > 0) {
-            animator.SetBool("AttackingUp", true);
-        }
-        else {
-            animator.SetBool("Attacking", true);
-        }
+        // Deal damage to the player
+        player.GetComponent<Stats>().TakeDamage(stats.Attack);
 
-        player.GetComponent<PlayerStats>().TakeDamage(gameObject.GetComponent<E_Stats>().damage);
-        Debug.Log("Attacked");
-    }
-
-    void Cooldown()
-    {
+        // Set attack cooldown
         canAttack = false;
-        Invoke("ResetAttack", attackCooldown);
-    } 
+        Invoke("ResetAttackCooldown", attackCooldown);
+    }
 
-    void ResetAttack()
+    private void ResetAttackCooldown()
     {
         canAttack = true;
-        animator.SetBool("AttackingUp", false);
-        animator.SetBool("Attacking", false);
-    }
-
-    void gizmo()
-    {
-        if (attackPoint != null)
-        {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-        }
     }
 }
