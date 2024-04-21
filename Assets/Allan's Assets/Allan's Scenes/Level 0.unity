@@ -24188,7 +24188,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024727003}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29b79264cc4dad34e9283d55c08b3e33, type: 3}
   m_Name: 
@@ -24210,9 +24210,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 0
-  Attack: 5
-  Defense: 5
-  Speed: 5
+  Attack: 10
+  Defense: 10
+  Speed: 10
 --- !u!114 &1024727008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24220,7 +24220,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024727003}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eede62e1b631f5b418cae15193a85554, type: 3}
   m_Name: 
@@ -24319,9 +24319,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5154c95e6cb429390d667d398c00eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: blue
-  buff: 10
-  debuff: 10
+  color: red
+  buff: 5
+  debuff: 5
 --- !u!1 &1462067239
 GameObject:
   m_ObjectHideFlags: 0
@@ -26667,9 +26667,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 0
-  Attack: 5
-  Defense: 5
-  Speed: 5
+  Attack: 10
+  Defense: 10
+  Speed: 10
 --- !u!212 &1699916638
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26874,9 +26874,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorDuration: 3
-  buff: 10
-  debuff: 10
+  buff: 30
+  debuff: 5
   colorCooldown: 3
+  redUnlocked: 0
+  blueUnlocked: 0
+  yellowUnlocked: 0
 --- !u!1001 &654369933357214835
 PrefabInstance:
   m_ObjectHideFlags: 0
