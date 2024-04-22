@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - atk
-  - Wolf
   - YellowBoost
   - RedBoost
   - BlueBoost
+  - Enemy
+  - Wolf
   layers:
   - Default
   - TransparentFX
