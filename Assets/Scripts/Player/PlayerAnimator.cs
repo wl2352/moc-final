@@ -7,7 +7,8 @@ public class PlayerAnimator : MonoBehaviour
     Animator animator;
     PlayerMovement player_movement;
     SpriteRenderer sprite_renderer;
-    PlayerStats player_stats;
+    P_Attack player_attack;
+    P_ColorSwitch player_colorSwitch;
     bool isIdle = true;
     [SerializeField] private Transform attackPoint;
     [SerializeField] private AudioSource attackSound;
@@ -16,10 +17,11 @@ public class PlayerAnimator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player_stats = FindObjectOfType<PlayerStats>();
+        player_attack = FindObjectOfType<P_Attack>();
         animator = GetComponent<Animator>();
-        player_movement = GetComponent<PlayerMovement>();
-        sprite_renderer = GetComponent<SpriteRenderer>();
+        player_movement = player_attack.GetComponent<PlayerMovement>();
+        sprite_renderer = player_attack.GetComponent<SpriteRenderer>();
+        player_colorSwitch = player_attack.GetComponent<P_ColorSwitch>();
     }
 
     // Update is called once per frame
@@ -107,7 +109,7 @@ public class PlayerAnimator : MonoBehaviour
         {
             DisableIdleOrientations();
             animator.SetBool("Attack_H", true);
-            player_stats.isAttacking = true;
+            player_attack.canAttack = false;
             if (player_movement.last_moved_vector.x <= 0)
             {
                 attackPoint.transform.position = new Vector3(player_movement.transform.position.x - 1.0f, player_movement.transform.position.y, 0);
@@ -124,8 +126,8 @@ public class PlayerAnimator : MonoBehaviour
             if (isAnimationFinished())
             {
                 animator.SetBool("Attack_H", false);
-                player_stats.isAttacking = false;
-                player_stats.atkDur = 0f;
+                player_attack.canAttack = true;
+                //player_attack.atkDur = 0f;
             }
         }
 
@@ -133,7 +135,7 @@ public class PlayerAnimator : MonoBehaviour
         {
             DisableIdleOrientations();
             animator.SetBool("Attack_Up", true);
-            player_stats.isAttacking = true;
+            player_attack.canAttack = false;
             attackPoint.transform.position = new Vector3(player_movement.transform.position.x, player_movement.transform.position.y + 1.0f, 0);
             attackSound.PlayOneShot(attackClip);
         }
@@ -142,8 +144,8 @@ public class PlayerAnimator : MonoBehaviour
             if (isAnimationFinished())
             {
                 animator.SetBool("Attack_Up", false);
-                player_stats.isAttacking = false;
-                player_stats.atkDur = 0f;
+                player_attack.canAttack = true;
+                //player_attack.atkDur = 0f;
             }
         }
 
@@ -151,7 +153,7 @@ public class PlayerAnimator : MonoBehaviour
         {
             DisableIdleOrientations();
             animator.SetBool("Attack_Down", true);
-            player_stats.isAttacking = true;
+            player_attack.canAttack = false;
             attackPoint.transform.position = new Vector3(player_movement.transform.position.x, player_movement.transform.position.y - 1.0f, 0);
             attackSound.PlayOneShot(attackClip);
         }
@@ -160,8 +162,8 @@ public class PlayerAnimator : MonoBehaviour
             if (isAnimationFinished())
             {
                 animator.SetBool("Attack_Down", false);
-                player_stats.isAttacking = false;
-                player_stats.atkDur = 0f;
+                player_attack.canAttack = true;
+                //player_attack.atkDur = 0f;
             }
         }
 
@@ -216,7 +218,7 @@ public class PlayerAnimator : MonoBehaviour
         }*/
 
         // Change color -- FOR TESTING PURPOSES ONLY
-        switch (player_stats.currState)
+        /*switch (player_colorSwitch.active)
         {
             case "red":
                 sprite_renderer.color = Color.red; break;
@@ -226,7 +228,7 @@ public class PlayerAnimator : MonoBehaviour
                 sprite_renderer.color = Color.blue; break;
             default:
                 sprite_renderer.color = new Color(.35f, .28f, .28f, 1f); break;
-        }
+        }*/
 
         SpriteDirectionCheck();
     }

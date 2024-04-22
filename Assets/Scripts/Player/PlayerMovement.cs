@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-    PlayerStats stats;
+    Stats stats;
     [SerializeField]
     float sprintSpeedMultiplier = 1.4f;
     public float movementSpeed;
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        stats = FindObjectOfType<PlayerStats>();
+        stats = FindObjectOfType<Stats>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -59,39 +59,16 @@ public class PlayerMovement : MonoBehaviour
         {
             last_moved_vector = new Vector2(last_horizontal_vector, last_vertical_vector);
         }
-        
-        
+
+
         if (Input.GetKey(KeyCode.LeftShift))
-            {
-                rb.velocity = movement_dir * stats.movementSpeed * sprintSpeedMultiplier;
-            }
-        
+        {
+            rb.velocity = movement_dir * stats.Speed * sprintSpeedMultiplier;
+        }
+
         else
         {
-            rb.velocity = movement_dir * stats.movementSpeed;
+            rb.velocity = movement_dir * stats.Speed;
         }
-
-        // Does not work
-        if (Input.GetKeyDown(KeyCode.Space) && canDash)
-        {
-            StartCoroutine(Dash());
-        }
-        
-    }
-
-    // Does not work
-    private IEnumerator Dash()
-    {
-        Debug.Log("reached");
-        canDash = false;
-        isDashing = true;
-        rb.velocity = new Vector2(transform.localScale.x * last_horizontal_vector * dashingPower, 0f);
-        tr.emitting = true;
-        yield return new WaitForSeconds(dashingTime);
-        tr.emitting = false;
-        isDashing = false;
-        yield return new WaitForSeconds(dashingCooldown);
-        canDash = true;
-
     }
 }

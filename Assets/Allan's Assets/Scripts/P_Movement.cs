@@ -2,50 +2,24 @@ using UnityEngine;
 
 public class P_Movement : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Movement speed of the character
-    public float attackCooldown = 1f; // Cooldown time between attacks
-
+    private Stats stats;
     private Rigidbody2D rb;
-    private bool canAttack = true;
-
     private void Start()
     {
+        // Find the Stats script attached to the same GameObject
+        stats = GetComponent<Stats>();
         rb = GetComponent<Rigidbody2D>();
     }
-
     private void Update()
     {
-        // Movement input
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-        Vector2 movementDirection = new Vector2(horizontalInput, verticalInput);
-
-        
-
-        // Attack input
-        if (Input.GetKeyDown(KeyCode.Space) && canAttack)
-        {
-            Attack();
+        if (stats.currentHP <= 0){
+            return;
         }
 
-        // Calculate movement velocity
-        Vector2 movementVelocity = movementDirection * moveSpeed;
-        rb.velocity = movementVelocity;
-        FindObjectOfType<P_Animation>().SetDirection(movementDirection);
-    }
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
-    private void Attack()
-    {
-        // Perform attack logic here
-        Debug.Log("Attacking!");
-
-        // Disable attack temporarily to prevent rapid attacks
-        canAttack = false;
-        Invoke("ResetAttackCooldown", attackCooldown);
-    }
-
-    private void ResetAttackCooldown()
-    {
-        canAttack = true;
+        Vector2 movement = new Vector2(horizontalInput, verticalInput) * stats.Speed * Time.fixedDeltaTime;
+        rb.MovePosition(rb.position + movement);
     }
 }
