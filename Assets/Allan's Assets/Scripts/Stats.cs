@@ -32,7 +32,7 @@ public class Stats : MonoBehaviour
                 isEnemy = false;
                 break;
             case "Wolf":
-                Attack = 2.0f;
+                Attack = 5.0f;
                 Defense = 4.0f;
                 Speed = 1.0f;
                 isEnemy = true;

@@ -25,6 +25,7 @@ public class E_Movement : MonoBehaviour
             // Move towards the player
             direction = (player.position - transform.position).normalized;
             transform.Translate(direction * stats.Speed * Time.deltaTime);
+            //transform.position += direction * stats.Speed * Time.deltaTime;
         }
 
         else if (distanceToPlayer <= stopDistance)

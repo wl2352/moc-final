@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eede62e1b631f5b418cae15193a85554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 0.5
+  attackRange: 1.5
   attackCooldown: 2
   canAttack: 1
 --- !u!114 &1216953502764211701
@@ -186,8 +186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  followDistance: 3.5
-  stopDistance: 1.5
+  followDistance: 6
+  stopDistance: 1
   direction: {x: 0, y: 0, z: 0}
 --- !u!114 &1135345672236491359
 MonoBehaviour:

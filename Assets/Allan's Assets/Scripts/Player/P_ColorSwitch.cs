@@ -86,13 +86,13 @@ public class P_ColorSwitch : MonoBehaviour
             {
                 SwitchColor(Color.red);
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha2) && blueUnlocked)
-            {
-                SwitchColor(Color.blue);
-            }
-            else if (Input.GetKeyDown(KeyCode.Alpha3) && yellowUnlocked)
+            else if (Input.GetKeyDown(KeyCode.Alpha2) && yellowUnlocked)
             {
                 SwitchColor(Color.yellow);
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3) && blueUnlocked)
+            {
+                SwitchColor(Color.blue);
             }
         }
     }
@@ -125,23 +125,23 @@ public class P_ColorSwitch : MonoBehaviour
         if (color == Color.red)
         {
             // Increase attack stat temporarily
-            playerStats.Attack += buff;
+            playerStats.Attack += playerStats.Attack * (buff / 100f);
             // Decrease defense stat temporarily
-            playerStats.Defense -= debuff;
+            playerStats.Defense -= playerStats.Defense * (debuff / 100f);
         }
         else if (color == Color.blue)
         {
             // Increase defense stat temporarily
-            playerStats.Defense += buff;
+            playerStats.Defense += playerStats.Defense * (buff / 100f);
             // Decrease speed stat temporarily
-            playerStats.Speed -= debuff;
+            playerStats.Speed -= playerStats.Speed * (debuff / 100f);
         }
         else if (color == Color.yellow)
         {
             // Increase speed stat temporarily
-            playerStats.Speed += buff;
+            playerStats.Speed += playerStats.Speed * (buff / 100f);
             // Decrease attack stat temporarily
-            playerStats.Attack -= debuff;
+            playerStats.Attack -= playerStats.Attack * (debuff / 100f);
         }
 
         // Set color effect active

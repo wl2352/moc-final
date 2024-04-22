@@ -49,23 +49,23 @@ public class E_Colors : MonoBehaviour
         if (color == Color.red)
         {
             // Increase attack stat temporarily
-            stats.Attack += buff;
+            stats.Attack += stats.Attack * (buff / 100f);
             // Decrease defense stat temporarily
-            stats.Defense -= debuff;
+            stats.Defense -= stats.Defense * (debuff / 100f);
         }
         else if (color == Color.blue)
         {
             // Increase defense stat temporarily
-            stats.Defense += buff;
+            stats.Defense += stats.Defense * (buff / 100f);
             // Decrease speed stat temporarily
-            stats.Speed -= debuff;
+            stats.Speed -= stats.Speed * (debuff / 100f);
         }
         else if (color == Color.yellow)
         {
             // Increase speed stat temporarily
-            stats.Speed += buff;
+            stats.Speed += stats.Speed * (buff / 100f);
             // Decrease attack stat temporarily
-            stats.Attack -= debuff;
+            stats.Attack -= stats.Attack * (debuff / 100f);
         }
     }
 }
