@@ -34,9 +34,6 @@ public class P_ColorSwitch : MonoBehaviour
         // Set the initial color to white (no color)
         currentColor = Color.white;
         activeColor = Color.white;
-
-        // Unlock red color by default
-        redUnlocked = true;
     }
 
     private void Update()
