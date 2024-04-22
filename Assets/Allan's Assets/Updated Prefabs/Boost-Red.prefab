@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -8310606074741882025}
   - component: {fileID: 4314035174519367563}
   m_Layer: 0
-  m_Name: Boost Red
+  m_Name: Boost-Red
   m_TagString: RedBoost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

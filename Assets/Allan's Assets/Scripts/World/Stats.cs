@@ -28,12 +28,16 @@ public class Stats : MonoBehaviour
             Die(); // Implement this method to handle player death
         }
     }
-
+    
     private void Die()
     {
-        // Implement your death logic here, such as respawning or game over
-        
         Debug.Log("Object has died!");
+
+        // Only drop loot if the gameObject is an enemy
+        if (CompareTag("Enemy")) {
+            GetComponent<E_Drop>().DropLoot();
+        }
+        
         Destroy(gameObject);
     }
 }
