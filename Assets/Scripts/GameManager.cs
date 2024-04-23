@@ -37,6 +37,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject hazards;
     [SerializeField] private GameObject newEnemy;
     [SerializeField] private GameObject levelClearedBarrier;
+    [SerializeField] private GameObject shop;
+    bool shopIsActive = false;
+
+    [Space(5f)]
+    [Header("Currency")]
+    public int timeoutCost;
+    public int redCost;
+    public int yellowCost;
+    public int blueCost;
 
 
     private void OnEnable()
@@ -58,6 +67,7 @@ public class GameManager : MonoBehaviour
         // Map Objects
         levelClearedBarrier = GameObject.FindGameObjectWithTag("Finish");
         barriers = GameObject.FindGameObjectsWithTag("Barrier");
+        // shop = GameObject.FindGameObjectWithTag("ShopPanel");
 
         /*// Initialize first wave
         SetWaveEnemyStats();*/
@@ -230,17 +240,6 @@ public class GameManager : MonoBehaviour
         enemies.Remove(enemy);
     }
 
-    /*void SetWaveEnemyStats()
-    {
-        enemiesKilled = 0;
-        enemiesToKillGoal = 0;
-        foreach (EnemySpawner spawner in enemySpawners)
-        {
-            enemiesToKillGoal += spawner.MaxEnemies;
-            Debug.Log(enemiesToKillGoal);
-        }
-    }*/
-
     void GameControls()
     {
         if (Input.GetKeyDown(KeyCode.M))
@@ -251,6 +250,11 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            shopIsActive = !shopIsActive;
+            shop.SetActive(shopIsActive);
+        }
         // Currently bugged and crashing game for some reason
         if (Input.GetKeyDown(KeyCode.Comma))
         {
@@ -259,59 +263,6 @@ public class GameManager : MonoBehaviour
         if (playerStats == null)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-    }
-
-    void IncrementWave()
-    {
-        if (currentWave <= totalWaves)
-        {
-            // Increment current wave
-            currentWave++;
-
-            // Destroy existing enemies
-            List<EnemyAlive> remainingEnemies = FindObjectsOfType<EnemyAlive>().ToList();
-            if (remainingEnemies.Count > 0)
-            {
-                foreach(EnemyAlive e in remainingEnemies)
-                {
-                    Destroy(e.gameObject);
-                }
-            }
-
-            if (currentWave == newEnemiesWave)
-            {
-                foreach (EnemySpawner spawner in enemySpawners)
-                {
-                    AddEnemyToSpawner(spawner);
-                }
-            }
-
-            if (currentWave == hazardWave)
-            {
-                ActivateGroundHazards();
-            }
-            /*// Increase the maximum amount each spawner can spawn an enemy by the desired enemy increase value
-            // Also, refresh each enemy spawner with their new values
-            foreach (EnemySpawner spawner in enemySpawners)
-            {
-                spawner.ReInitialize(spawnerMaxEnemiesIncrement, spawnerSpawnTimeFactor);
-
-                // Check if the new wave is the new enemies wave, if so, add the new enemy to the spawners
-                if (currWave == newEnemiesWave)
-                {
-                    AddEnemyToSpawner(spawner);
-                }
-            }
-
-            // Check if the new wave is the hazard wave, if so, activate the hazard
-            if (currWave == hazardWave)
-            {
-                ActivateGroundHazards();
-            }
-
-            // Reset enemy killed and get new enemy kill goal
-            SetWaveEnemyStats();*/
         }
     }
 }

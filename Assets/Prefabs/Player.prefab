@@ -345,12 +345,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprintSpeedMultiplier: 1.4
-  movementSpeed: 3
   last_horizontal_vector: 0
   last_vertical_vector: 0
   movement_dir: {x: 0, y: 0}
   last_moved_vector: {x: 0, y: 0}
-  pauseScript: {fileID: 0}
 --- !u!114 &7916276236866252240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,6 +506,14 @@ MonoBehaviour:
   buff: 10
   debuff: 10
   colorCooldown: 5
+  redLevel: 1
+  yellowLevel: 1
+  blueLevel: 1
+  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  activeColor: {r: 0, g: 0, b: 0, a: 0}
+  baseColor: {r: 0.35, g: 0.28, b: 0.28, a: 1}
+  colorEffectTimer: 0
+  colorCooldownTimer: 0
   redUnlocked: 0
   blueUnlocked: 0
   yellowUnlocked: 0
@@ -528,6 +534,8 @@ MonoBehaviour:
   Attack: 30
   Defense: 5
   Speed: 5
+  isPlayer: 1
+  currency: 0
   isEnemy: 0
   loot: []
   lootRate: 2

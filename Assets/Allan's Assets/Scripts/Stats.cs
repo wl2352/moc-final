@@ -9,14 +9,17 @@ public class Stats : MonoBehaviour
     public float Defense = 5;
     public float Speed = 5f;
 
+    [Header("Player Specific")]
+    public bool isPlayer;
+    public int currency = 0;
+
     [Header("Enemy Specific")]
     public bool isEnemy = false;
     [SerializeField]
     List<GameObject> loot = new List<GameObject>();
-    [SerializeField]
-    float lootRate = 2f;
-
-    public static event System.Action<Stats> OnEnemyKilled;
+    [SerializeField] float gemRate = 2f;
+    [SerializeField] float currencyRate = 9f;
+    [SerializeField] GameObject currencyObj;
 
     private void Start()
     {
@@ -45,14 +48,29 @@ public class Stats : MonoBehaviour
         {
             Debug.Log($"{gameObject} has died!");
             float num = Random.Range(0, 10);
-            if (num <= lootRate)
+            if (0 <= num && num <= gemRate)
             {
                 Instantiate(loot[Random.Range(0, loot.Count)], transform.position, Quaternion.identity);
-                OnEnemyKilled?.Invoke(this);
+            }
+            else if (gemRate < num && num < currencyRate)
+            {
+                Instantiate(currencyObj, transform.position, Quaternion.identity);
             }
             return;
         }
 
         Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isPlayer)
+        {
+            if (collision.gameObject.CompareTag("Currency"))
+            {
+                currency++;
+                Destroy(collision.gameObject);
+            }
+        }
     }
 }

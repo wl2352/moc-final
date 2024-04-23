@@ -206,12 +206,17 @@ MonoBehaviour:
   Attack: 10
   Defense: 5
   Speed: 5
+  isPlayer: 0
+  currency: 0
   isEnemy: 1
   loot:
   - {fileID: 433438975439157060, guid: 94456e8c66e03704793b1b550baa410c, type: 3}
   - {fileID: 4180551200742116058, guid: 12373046cf69314449289435903ec147, type: 3}
   - {fileID: 208127681022748249, guid: 3983f19d2029a3145a3e64e9bc7af9d8, type: 3}
   lootRate: 2
+  currencyRate: 9
+  currencyObj: {fileID: 1171980154133279806, guid: 0dfc7e5520382a1488ee8b4623d5785d, type: 3}
+  healthObj: {fileID: 4904075313038183683, guid: 16f1ac52b46ec054a9ab55160c29a6b7, type: 3}
 --- !u!114 &4602070874375340812
 MonoBehaviour:
   m_ObjectHideFlags: 0

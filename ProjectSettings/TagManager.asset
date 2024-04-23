@@ -16,6 +16,8 @@ TagManager:
   - Button Manager
   - Panel
   - Barrier
+  - Currency
+  - ShopPanel
   layers:
   - Default
   - TransparentFX
