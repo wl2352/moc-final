@@ -19,13 +19,6 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public Vector2 last_moved_vector;
 
-    public bool canDash = true;
-    public bool isDashing;
-    float dashingPower = 24f;
-    float dashingTime = .2f;
-    float dashingCooldown = 1f;
-    [SerializeField] private TrailRenderer tr;
-
     public SimplePauseScript pauseScript;
 
     // Start is called before the first frame update
@@ -44,7 +37,6 @@ public class PlayerMovement : MonoBehaviour
         moveY = Input.GetAxisRaw("Vertical");
 
         movement_dir = new Vector2(moveX, moveY).normalized;
-        if (isDashing) return;
         if (movement_dir.x != 0)
         {
             last_horizontal_vector = movement_dir.x;

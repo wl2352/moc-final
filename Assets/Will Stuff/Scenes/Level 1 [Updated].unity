@@ -260,6 +260,18 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1232525325
       objectReference: {fileID: 0}
+    - target: {fileID: 8253847269543733910, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
+      propertyPath: redUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253847269543733910, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
+      propertyPath: blueUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8253847269543733910, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
+      propertyPath: yellowUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27250,16 +27262,16 @@ MonoBehaviour:
   - {fileID: 481470779}
   - {fileID: 965965521}
   levelPassed: 0
-  enemiesPerWave: 3
+  enemiesPerWave: 2
   enemiesKilled: 0
-  totalWaves: 3
+  totalWaves: 1
   currentWave: 0
   hazardWave: 0
   newEnemiesWave: 0
   enemiesSpawned: 0
   timer: 0
   spawningEnabled: 1
-  waveInterval: 10
+  waveInterval: 5
   spawnInterval: 2
   barriers: []
   hazards: {fileID: 0}

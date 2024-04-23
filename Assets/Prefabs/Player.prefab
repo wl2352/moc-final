@@ -350,9 +350,6 @@ MonoBehaviour:
   last_vertical_vector: 0
   movement_dir: {x: 0, y: 0}
   last_moved_vector: {x: 0, y: 0}
-  canDash: 1
-  isDashing: 0
-  tr: {fileID: 0}
   pauseScript: {fileID: 0}
 --- !u!114 &7916276236866252240
 MonoBehaviour:
@@ -381,27 +378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcab03a0427cacc4486af2e6592ffaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currState: 
-  currentStates: []
-  slots: 0
-  damage: 0
-  health: 0
-  block: 0
-  critChance: 0
-  stamina: 0
-  movementSpeed: 0
-  luck: 0
-  duration: 0
-  atkDur: 0
-  prevHealth: 0
-  isAttacking: 0
-  attackPrefab: {fileID: 6311764036690060189, guid: dabd1bb674a944649b4ca12b02594772, type: 3}
-  errorMsg: 
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  attackPoint: {fileID: 7878001397982579242}
-  attackRadius: 1
 --- !u!82 &7716762336859651156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -515,6 +491,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
+  canAttack: 1
 --- !u!114 &8253847269543733910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,9 +525,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 100
-  Attack: 10
+  Attack: 30
   Defense: 5
   Speed: 5
+  isEnemy: 0
+  loot: []
+  lootRate: 2
 --- !u!1 &8111218588339143063
 GameObject:
   m_ObjectHideFlags: 0
