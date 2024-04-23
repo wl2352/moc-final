@@ -20,33 +20,7 @@ public class Stats : MonoBehaviour
 
     private void Start()
     {
-        currentHP = maxHP; // Initialize current HP to max HP when the game starts
-
-        
-        switch (gameObject.tag)
-        {
-            case "Player":
-                Attack = 10;
-                Defense = 5;
-                Speed = 5f;
-                isEnemy = false;
-                break;
-            case "Wolf":
-                Attack = 5.0f;
-                Defense = 4.0f;
-                Speed = 1.0f;
-                isEnemy = true;
-                break;
-            case "Flyer":
-                Attack = 1.0f;
-                Defense = 3.0f;
-                Speed = 1.5f;
-                isEnemy = true;
-                break;
-            default:
-                return;
-        }
-        
+        currentHP = maxHP; // Initialize current HP to max HP when the game starts  
     }
 
     // You can add methods to modify stats, such as taking damage, dealing damage, etc.
@@ -66,19 +40,17 @@ public class Stats : MonoBehaviour
     }
 
     private void Die()
-    {
-        // Implement your death logic here, such as respawning or game over
-        
-        Debug.Log($"{gameObject} has died!");
-
+    {    
         if (isEnemy)
         {
+            Debug.Log($"{gameObject} has died!");
             float num = Random.Range(0, 10);
             if (num <= lootRate)
             {
                 Instantiate(loot[Random.Range(0, loot.Count)], transform.position, Quaternion.identity);
                 OnEnemyKilled?.Invoke(this);
             }
+            return;
         }
 
         Destroy(gameObject);

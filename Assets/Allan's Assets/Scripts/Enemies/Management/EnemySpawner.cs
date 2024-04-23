@@ -6,13 +6,17 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private List<GameObject> enemies = new List<GameObject>();
     [SerializeField] public float offset;
     P_ColorSwitch P_ColorSwitch;
-    List<Color> availableColors = new List<Color>();
+    List<Color> availableColors = new List<Color>(){
+        Color.red,
+        Color.blue,
+        Color.yellow
+    };
 
     private void Start()
     {
         P_ColorSwitch = FindObjectOfType<P_ColorSwitch>();
 
-        if (P_ColorSwitch != null)
+        /*if (P_ColorSwitch != null)
         {
             if (P_ColorSwitch.redUnlocked)
             {
@@ -26,7 +30,7 @@ public class EnemySpawner : MonoBehaviour
             {
                 availableColors.Add(Color.blue);
             }
-        }
+        }*/
     }
 
     public void Spawn()

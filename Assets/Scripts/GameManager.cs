@@ -9,9 +9,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public bool devMode = false;
-    PlayerStats playerStats;
+    Stats playerStats;
     [Header("Enemies")]
-    [SerializeField] List<E_Stats> enemies = new List<E_Stats>();
+    [SerializeField] List<EnemyAlive> enemies = new List<EnemyAlive>();
     [SerializeField] List<EnemySpawner> enemySpawners = new List<EnemySpawner>();
 
     [Space(5f)]
@@ -41,19 +41,19 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        E_Stats.OnEnemyKilled += HandleEnemyDefeated;
+        EnemyAlive.OnEnemyKilled += HandleEnemyDefeated;
     }
 
     private void OnDisable()
     {
-        E_Stats.OnEnemyKilled -= HandleEnemyDefeated;
+        EnemyAlive.OnEnemyKilled -= HandleEnemyDefeated;
     }
 
     void Awake()
     {
         // Entities
-        playerStats = FindObjectOfType<PlayerStats>();
-        enemies = FindObjectsOfType<E_Stats>().ToList();
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
+        enemies = FindObjectsOfType<EnemyAlive>().ToList();
 
         // Map Objects
         levelClearedBarrier = GameObject.FindGameObjectWithTag("Finish");
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         // Track current amount of enemies
-        enemies = FindObjectsOfType<E_Stats>().ToList();
+        enemies = FindObjectsOfType<EnemyAlive>().ToList();
 
         if (levelPassed)
         {
@@ -105,32 +105,11 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        
-        /*// Logic: If the current wave is less than or at the last wave...
-        if (currWave <= maxWaves)
-        {
-            // ...and the player hasn't completed the wave, keep spawning enemies
-            if (enemiesKilled < enemiesToKillGoal)
-            {
-                SpawnEnemies();
-            }
-            // ...and the player has completed the wave, start the next wave
-            else
-            {
-                IncrementWave();
-            }
-        }
-        // If the player completed all waves, they passed the level
-        else
-        {
-            levelPassed = true;
-        }*/
 
         // Game controls (may vary per scene)
         if (SceneManager.GetActiveScene().name != "Overworld")
         {
             GameControls();
-
         }
 
         else 
@@ -167,10 +146,10 @@ public class GameManager : MonoBehaviour
         currentWave++;
         enemiesKilled = 0;
         // Destroy existing enemies
-        List<E_Stats> remainingEnemies = FindObjectsOfType<E_Stats>().ToList();
+        List<EnemyAlive> remainingEnemies = FindObjectsOfType<EnemyAlive>().ToList();
         if (remainingEnemies.Count > 0)
         {
-            foreach (E_Stats e in remainingEnemies)
+            foreach (EnemyAlive e in remainingEnemies)
             {
                 Destroy(e.gameObject);
             }
@@ -240,12 +219,12 @@ public class GameManager : MonoBehaviour
     private void AddEnemyToSpawner(EnemySpawner spawner)
     {
         if (newEnemy == null) return;
-        if (!newEnemy.TryGetComponent(out E_Stats enemy)) return;
+        if (!newEnemy.TryGetComponent(out EnemyAlive enemy)) return;
 
         spawner.AddEnemy(newEnemy);
     }
 
-    void HandleEnemyDefeated(E_Stats enemy)
+    void HandleEnemyDefeated(EnemyAlive enemy)
     {
         enemiesKilled += 1;
         enemies.Remove(enemy);
@@ -277,17 +256,9 @@ public class GameManager : MonoBehaviour
         {
             devMode = !devMode;
         }
-        if (FindObjectsOfType<PlayerStats>().ToList().Count == 0)
+        if (playerStats == null)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-    }
-
-    void SpawnEnemies()
-    {
-        foreach (EnemySpawner spawner in enemySpawners)
-        {
-            spawner.Spawn();
         }
     }
 
@@ -299,10 +270,10 @@ public class GameManager : MonoBehaviour
             currentWave++;
 
             // Destroy existing enemies
-            List<E_Stats> remainingEnemies = FindObjectsOfType<E_Stats>().ToList();
+            List<EnemyAlive> remainingEnemies = FindObjectsOfType<EnemyAlive>().ToList();
             if (remainingEnemies.Count > 0)
             {
-                foreach(E_Stats e in remainingEnemies)
+                foreach(EnemyAlive e in remainingEnemies)
                 {
                     Destroy(e.gameObject);
                 }

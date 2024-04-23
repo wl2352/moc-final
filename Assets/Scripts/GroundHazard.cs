@@ -10,11 +10,11 @@ public class GroundHazard : MonoBehaviour
     [SerializeField] private float timer; // Timer to track damage intervals
     [SerializeField] private bool playerOnObject; // Flag to track if player is on the object
 
-    private PlayerStats player;
+    private Stats player;
 
     private void Start()
     {
-        player = FindObjectOfType<PlayerStats>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Stats>();
     }
     void Update()
     {

@@ -7,19 +7,19 @@ using UnityEngine;
 public class EnemiesLeft : MonoBehaviour
 {
     TextMeshProUGUI textMeshProUGUI;
-    [SerializeField] List<E_Stats> enemies = new List<E_Stats>();
+    [SerializeField] List<EnemyAlive> enemies = new List<EnemyAlive>();
 
     // Start is called before the first frame update
     void Start()
     {
-        enemies = FindObjectsOfType<E_Stats>().ToList();
+        enemies = FindObjectsOfType<EnemyAlive>().ToList();
         textMeshProUGUI = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        enemies = FindObjectsOfType<E_Stats>().ToList();
+        enemies = FindObjectsOfType<EnemyAlive>().ToList();
         textMeshProUGUI.text = enemies.Count.ToString();
     }
 }
