@@ -152,7 +152,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5846318472912269119}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f0d4eecbeda91741a36a9773a5ebaf0, type: 3}
   m_Name: 
@@ -209,6 +209,7 @@ MonoBehaviour:
   damageNumberPrefab: {fileID: 1765874356154417946, guid: 18a05dfe9b46453498592c8bdf5dab47, type: 3}
   isPlayer: 0
   currency: 0
+  levelsCleared: 0
   isEnemy: 1
   loot:
   - {fileID: 433438975439157060, guid: 94456e8c66e03704793b1b550baa410c, type: 3}

@@ -73,7 +73,7 @@ public class WolfAnimation : MonoBehaviour
             }
         }
 
-        /*if (enemyMovement.isAttacking)
+        if (enemyAttack.canAttack)
         {
             if (up)
             {
@@ -92,26 +92,7 @@ public class WolfAnimation : MonoBehaviour
             animator.SetBool("Attacking", false);
         }
 
-        if (enemyMovement.isHowling)
-        {
-            if (up)
-            {
-                animator.SetBool("HowlingUp", true);
-                animator.SetBool("Howling", false);
-            }
-            else
-            {
-                animator.SetBool("Howling", true);
-                animator.SetBool("HowlingUp", false);
-            }
-        }
-        else
-        {
-            animator.SetBool("HowlingUp", false);
-            animator.SetBool("Howling", false);
-        }
-
-        if (enemyMovement.isRunning)
+        if (enemyMovement.direction.magnitude > 0)
         {
             if (up)
             {
@@ -128,7 +109,7 @@ public class WolfAnimation : MonoBehaviour
         {
             animator.SetBool("RunningUp", false);
             animator.SetBool("Running", false);
-        }*/
+        }
 
         SpriteDirectionCheck();
     }
