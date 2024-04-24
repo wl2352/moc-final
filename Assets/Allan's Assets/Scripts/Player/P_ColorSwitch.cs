@@ -44,10 +44,33 @@ public class P_ColorSwitch : MonoBehaviour
         activeColor = baseColor;
 
         // Unlock red color by default
-        redUnlocked = true;
+        /*redUnlocked = true;
         redLevel = 1;
         yellowLevel = 0;
-        blueLevel = 0;
+        blueLevel = 0;*/
+        redLevel = PlayerPrefs.GetInt("RedLevel");
+        yellowLevel = PlayerPrefs.GetInt("YellowLevel");
+        blueLevel = PlayerPrefs.GetInt("BlueLevel");
+
+        if (redLevel > 0)
+        {
+            redUnlocked = true;
+        }
+        if (yellowLevel > 0)
+        {
+            yellowUnlocked = true;
+        }
+        if (blueLevel > 0)
+        {
+            blueUnlocked = true;
+        }
+
+        colorCooldown = PlayerPrefs.GetFloat("ColorCooldown");
+        if (colorCooldown == 0)
+        {
+            colorCooldown = 5f;
+            PlayerPrefs.SetFloat("ColorCooldown", colorCooldown);
+        }
     }
 
     private void Update()
@@ -172,16 +195,19 @@ public class P_ColorSwitch : MonoBehaviour
         {
             redUnlocked = true;
             redLevel = 1;
+            PlayerPrefs.SetInt("RedLevel", redLevel);
         }
         else if (color == Color.blue)
         {
             blueUnlocked = true;
             blueLevel = 1;
+            PlayerPrefs.SetInt("BlueLevel", blueLevel);
         }
         else if (color == Color.yellow)
         {
             yellowUnlocked = true;
             yellowLevel = 1;
+            PlayerPrefs.SetInt("YellowLevel", yellowLevel);
         }
     }
 
@@ -189,6 +215,28 @@ public class P_ColorSwitch : MonoBehaviour
     public void DecreaseCooldown()
     {
         colorCooldown = colorCooldown - (colorCooldown * .10f);
+        PlayerPrefs.SetFloat("ColorCooldown", colorCooldown);
+    }
+    public void IncrementColorLevel(string level)
+    {
+        switch (level)
+        {
+            case "red":
+                redLevel++;
+                PlayerPrefs.SetInt("RedLevel", redLevel);
+                break;
+            case "yellow":
+                yellowLevel++;
+                PlayerPrefs.SetInt("YellowLevel", yellowLevel);
+                break;
+            case "blue":
+                blueLevel++;
+                PlayerPrefs.SetInt("BlueLevel", blueLevel);
+                break;
+            default:
+                Debug.LogError("Incorrect color passed in");
+                break;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -197,7 +245,7 @@ public class P_ColorSwitch : MonoBehaviour
         {
             if (redUnlocked)
             {
-                redLevel++;
+                IncrementColorLevel("red");
             }
             else
             {
@@ -209,7 +257,7 @@ public class P_ColorSwitch : MonoBehaviour
         {
             if (yellowUnlocked)
             {
-                yellowLevel++;
+                IncrementColorLevel("yellow");
             }
             else
             {
@@ -221,7 +269,7 @@ public class P_ColorSwitch : MonoBehaviour
         {
             if (blueUnlocked)
             {
-                blueLevel++;
+                IncrementColorLevel("blue");
             }
             else
             {

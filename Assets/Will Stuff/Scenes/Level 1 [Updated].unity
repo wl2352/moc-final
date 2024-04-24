@@ -260,18 +260,6 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1232525325
       objectReference: {fileID: 0}
-    - target: {fileID: 8253847269543733910, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
-      propertyPath: redUnlocked
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253847269543733910, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
-      propertyPath: blueUnlocked
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8253847269543733910, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
-      propertyPath: yellowUnlocked
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27211,10 +27199,10 @@ MonoBehaviour:
   newEnemy: {fileID: 0}
   levelClearedBarrier: {fileID: 0}
   shop: {fileID: 923744059}
-  timeoutCost: 0
-  redCost: 0
-  yellowCost: 0
-  blueCost: 0
+  timeoutCost: 20
+  redCost: 8
+  yellowCost: 8
+  blueCost: 8
 --- !u!4 &2140338056
 Transform:
   m_ObjectHideFlags: 0

@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
         }
 
         // Game controls (may vary per scene)
-        if (SceneManager.GetActiveScene().name != "Overworld")
+        if (SceneManager.GetActiveScene().name != "Overworld [Updated]")
         {
             GameControls();
         }
@@ -126,11 +126,23 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                SceneManager.LoadScene("Demo");
+                SceneManager.LoadScene("Level 0 [Updated]");
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                SceneManager.LoadScene("Scene1");
+                SceneManager.LoadScene("Level 1 [Updated]");
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                SceneManager.LoadScene("Level 2 [Updated]");
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                SceneManager.LoadScene("Level 3 [Updated]");
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha5))
+            {
+                SceneManager.LoadScene("Will-Scene1");
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -214,7 +226,7 @@ public class GameManager : MonoBehaviour
 
         if (levelClearedBarrier != null && levelClearedBarrier.CompareTag("Finish") && AreObjectsColliding(playerStats.gameObject, levelClearedBarrier))
         {
-            SceneManager.LoadScene("Overworld");
+            SceneManager.LoadScene("Overworld [Updated]");
         }
     }
 
@@ -244,7 +256,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            SceneManager.LoadScene("Overworld");
+            SceneManager.LoadScene("Overworld [Updated]");
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -252,8 +264,11 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            shopIsActive = !shopIsActive;
-            shop.SetActive(shopIsActive);
+            if (shop != null)
+            {
+                shopIsActive = !shopIsActive;
+                shop.SetActive(shopIsActive);
+            }
         }
         // Currently bugged and crashing game for some reason
         if (Input.GetKeyDown(KeyCode.Comma))

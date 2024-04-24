@@ -22,28 +22,28 @@ public class BuyItem : MonoBehaviour
                 if (playerStats.currency >= gameManager.timeoutCost)
                 {
                     playerStats.currency -= gameManager.timeoutCost;
-                    p_ColorSwitch.colorCooldown = p_ColorSwitch.colorCooldown - (p_ColorSwitch.colorCooldown * 0.1f);
+                    p_ColorSwitch.DecreaseCooldown();
                 }
                 break;
             case 1:
                 if (playerStats.currency >= gameManager.redCost)
                 {
                     playerStats.currency -= gameManager.redCost;
-                    p_ColorSwitch.redLevel++;
+                    p_ColorSwitch.IncrementColorLevel("red");
                 }
                 break;
             case 2:
                 if (playerStats.currency >= gameManager.yellowCost)
                 {
                     playerStats.currency -= gameManager.yellowCost;
-                    p_ColorSwitch.yellowLevel++;
+                    p_ColorSwitch.IncrementColorLevel("yellow");
                 }
                 break;
             case 3:
                 if (playerStats.currency >= gameManager.blueCost)
                 {
                     playerStats.currency -= gameManager.blueCost;
-                    p_ColorSwitch.blueLevel++;
+                    p_ColorSwitch.IncrementColorLevel("blue");
                 }
                 break;
         }

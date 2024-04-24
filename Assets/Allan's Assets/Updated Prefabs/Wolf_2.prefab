@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eede62e1b631f5b418cae15193a85554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1.5
+  attackRange: 1
   attackCooldown: 2
   canAttack: 1
 --- !u!114 &1216953502764211701
@@ -213,10 +213,9 @@ MonoBehaviour:
   - {fileID: 433438975439157060, guid: 94456e8c66e03704793b1b550baa410c, type: 3}
   - {fileID: 4180551200742116058, guid: 12373046cf69314449289435903ec147, type: 3}
   - {fileID: 208127681022748249, guid: 3983f19d2029a3145a3e64e9bc7af9d8, type: 3}
-  lootRate: 2
+  gemRate: 2
   currencyRate: 9
   currencyObj: {fileID: 1171980154133279806, guid: 0dfc7e5520382a1488ee8b4623d5785d, type: 3}
-  healthObj: {fileID: 4904075313038183683, guid: 16f1ac52b46ec054a9ab55160c29a6b7, type: 3}
 --- !u!114 &4602070874375340812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e5154c95e6cb429390d667d398c00eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 1, g: 0, b: 0, a: 1}
   buff: 10
   debuff: 3
 --- !u!114 &3758784861374258432

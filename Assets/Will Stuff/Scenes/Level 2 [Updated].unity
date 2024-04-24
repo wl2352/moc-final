@@ -2811,10 +2811,10 @@ MonoBehaviour:
   newEnemy: {fileID: 0}
   levelClearedBarrier: {fileID: 0}
   shop: {fileID: 399027265}
-  timeoutCost: 4
-  redCost: 3
-  yellowCost: 3
-  blueCost: 3
+  timeoutCost: 50
+  redCost: 10
+  yellowCost: 10
+  blueCost: 10
 --- !u!4 &832517025
 Transform:
   m_ObjectHideFlags: 0
