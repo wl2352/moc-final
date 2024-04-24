@@ -17,7 +17,7 @@ public class E_Attack : MonoBehaviour
 
     private void Update()
     {
-        if (player.GetComponent<Stats>().currentHP <= 0){
+        if (player == null){
             return;
         }
 

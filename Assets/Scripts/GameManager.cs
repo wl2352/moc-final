@@ -118,11 +118,6 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (playerStats.currentHP <= 0)
-        {
-            SceneManager.LoadScene(7);
-        }
-
         // Game controls (may vary per scene)
         if (SceneManager.GetActiveScene().name != "Overworld [Updated]")
         {
@@ -286,7 +281,7 @@ public class GameManager : MonoBehaviour
         }
         if (playerStats == null)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(8);
         }
     }
 
