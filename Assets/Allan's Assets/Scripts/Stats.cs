@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Stats : MonoBehaviour
@@ -8,6 +9,13 @@ public class Stats : MonoBehaviour
     public float Attack = 10;
     public float Defense = 5;
     public float Speed = 5f;
+
+    public float knockbackForce = 0.1f; // Magnitude of the knockback force
+    public float knockbackDuration = 0.5f;
+    private Vector2 previousDirection; // Store the previous movement direction
+
+    public TextMeshProUGUI damageTextPrefab; // Prefab of the damage text to display
+    public Transform textSpawnPoint; // Spawn point for the damage text
 
     [Header("Enemy Specific")]
     public bool isEnemy = false;
@@ -23,21 +31,59 @@ public class Stats : MonoBehaviour
         currentHP = maxHP; // Initialize current HP to max HP when the game starts  
     }
 
-    // You can add methods to modify stats, such as taking damage, dealing damage, etc.
-
     public void TakeDamage(float damage)
     {
         float damageCalc = damage - Defense;
         damageCalc = Mathf.Clamp(damageCalc, 1, int.MaxValue); // Ensure damage is at least 1
         currentHP -= damageCalc;
+
         // Print a message to the console
         Debug.Log($"{gameObject} was attacked for " + damageCalc + " damage!");
 
+        Vector2 knockbackDirection = (transform.position).normalized;
+
+        // Apply knockback
+        //ApplyKnockback(knockbackDirection);
+
         if (currentHP <= 0)
         {
-            Die(); // Implement this method to handle player death
+            Die(); 
         }
     }
+
+    void ShowDamageText(float damage)
+    {
+        // Instantiate damage text prefab at the spawn point
+        TextMeshProUGUI damageText = Instantiate(damageTextPrefab, textSpawnPoint.position, Quaternion.identity);
+
+        // Set the damage amount
+        damageText.text = "-" + damage;
+
+        // Optionally, you can set the color, size, or other properties of the text here
+    }
+
+    private void ApplyKnockback(Vector2 knockbackDirection)
+    {
+        // Calculate the knockback vector
+        Vector2 knockbackVector = knockbackDirection * knockbackForce;
+
+        // Move the GameObject away from the point of impact
+        transform.position += (Vector3)knockbackVector;
+
+        // Reset position after knockback duration
+        Invoke("ResetPosition", knockbackDuration);
+    }
+
+    private void ResetPosition()
+    {
+        // Reset position to original position or any desired location
+        // For example, you can reset it to the previous position or a spawn point
+
+        // Apply opposite force to move in the opposite direction
+        Vector2 oppositeDirection = -previousDirection;
+        ApplyKnockback(oppositeDirection);
+    }
+
 
     private void Die()
     {    

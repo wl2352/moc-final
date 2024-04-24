@@ -208,6 +208,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2140338056}
     m_Modifications:
+    - target: {fileID: -6735518533187411346, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
+      propertyPath: textSpawnPoint
+      value: 
+      objectReference: {fileID: 71472306}
     - target: {fileID: 4276061521971893057, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
       propertyPath: m_Name
       value: Player (1)
@@ -254,7 +258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6669150870882879082, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6669150870882879082, guid: b51ec20a488831e4687c4f6b10128cb6, type: 3}
       propertyPath: m_SortingLayerID
@@ -26369,6 +26373,10 @@ PrefabInstance:
     - target: {fileID: 7821893166924407880, guid: 9b0efa6499c3b7f40800c67336c22df9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 3.8930054
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663601105959285657, guid: 9b0efa6499c3b7f40800c67336c22df9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 9.11438
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
