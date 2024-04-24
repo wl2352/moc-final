@@ -206,6 +206,7 @@ MonoBehaviour:
   Attack: 10
   Defense: 5
   Speed: 5
+  damageNumberPrefab: {fileID: 1765874356154417946, guid: 18a05dfe9b46453498592c8bdf5dab47, type: 3}
   isPlayer: 0
   currency: 0
   isEnemy: 1

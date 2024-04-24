@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     public int redCost;
     public int yellowCost;
     public int blueCost;
+    public int healthCost;
 
 
     private void OnEnable()
@@ -91,6 +92,7 @@ public class GameManager : MonoBehaviour
 
         if (levelPassed)
         {
+            TrackLevelsCleared();
             LevelCleared();
         }
         else
@@ -116,6 +118,11 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        if (playerStats.currentHP <= 0)
+        {
+            SceneManager.LoadScene(7);
+        }
+
         // Game controls (may vary per scene)
         if (SceneManager.GetActiveScene().name != "Overworld [Updated]")
         {
@@ -128,19 +135,19 @@ public class GameManager : MonoBehaviour
             {
                 SceneManager.LoadScene("Level 0 [Updated]");
             }
-            if (Input.GetKeyDown(KeyCode.Alpha2))
+            if (Input.GetKeyDown(KeyCode.Alpha2) && PlayerPrefs.GetInt("LevelsCleared") >= 1)
             {
                 SceneManager.LoadScene("Level 1 [Updated]");
             }
-            if (Input.GetKeyDown(KeyCode.Alpha3))
+            if (Input.GetKeyDown(KeyCode.Alpha3) && PlayerPrefs.GetInt("LevelsCleared") >= 2)
             {
                 SceneManager.LoadScene("Level 2 [Updated]");
             }
-            if (Input.GetKeyDown(KeyCode.Alpha4))
+            if (Input.GetKeyDown(KeyCode.Alpha4) && PlayerPrefs.GetInt("LevelsCleared") >= 3)
             {
                 SceneManager.LoadScene("Level 3 [Updated]");
             }
-            if (Input.GetKeyDown(KeyCode.Alpha5))
+            if (Input.GetKeyDown(KeyCode.Alpha5) && PlayerPrefs.GetInt("LevelsCleared") >= 4)
             {
                 SceneManager.LoadScene("Will-Scene1");
             }
@@ -198,6 +205,8 @@ public class GameManager : MonoBehaviour
             levelPassed = true;
             Debug.Log("All waves completed!");
         }
+
+        Debug.Log($"PlayerPrefs Cur: {PlayerPrefs.GetInt("Currency")}, LevelsCleared: {PlayerPrefs.GetInt("LevelsCleared")}, HP: {PlayerPrefs.GetFloat("CurrentHP")}");
     }
 
     // Function to check if two GameObjects are colliding
@@ -279,5 +288,31 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
+
+    void TrackLevelsCleared()
+    {
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            playerStats.levelsCleared = 1;
+        }
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            playerStats.levelsCleared = 2;
+        }
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            playerStats.levelsCleared = 3;
+        }
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            playerStats.levelsCleared = 4;
+        }
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            playerStats.levelsCleared = 5;
+        }
+
+        PlayerPrefs.SetInt("LevelsCleared", playerStats.levelsCleared);
     }
 }

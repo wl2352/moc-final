@@ -36468,6 +36468,7 @@ MonoBehaviour:
   redCost: 12
   yellowCost: 10
   blueCost: 8
+  healthCost: 5
 --- !u!4 &2139243915
 Transform:
   m_ObjectHideFlags: 0

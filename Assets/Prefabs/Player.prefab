@@ -534,11 +534,14 @@ MonoBehaviour:
   Attack: 30
   Defense: 5
   Speed: 5
+  damageNumberPrefab: {fileID: 1765874356154417946, guid: 18a05dfe9b46453498592c8bdf5dab47, type: 3}
   isPlayer: 1
   currency: 0
   isEnemy: 0
   loot: []
-  lootRate: 2
+  gemRate: 2
+  currencyRate: 9
+  currencyObj: {fileID: 0}
 --- !u!1 &8111218588339143063
 GameObject:
   m_ObjectHideFlags: 0
