@@ -270,8 +270,13 @@ public class GameManager : MonoBehaviour
         {
             if (shop != null)
             {
+                
+
                 shopIsActive = !shopIsActive;
                 shop.SetActive(shopIsActive);
+                // pause time 
+                Time.timeScale = shopIsActive ? 0 : 1;
+                AudioListener.pause = shopIsActive;
             }
         }
         // Currently bugged and crashing game for some reason
