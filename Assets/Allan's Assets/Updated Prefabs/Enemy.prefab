@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4017397192196466265}
   - component: {fileID: 3699858712324266260}
   - component: {fileID: 6449513229156193307}
+  - component: {fileID: 290883232606103555}
   - component: {fileID: 1254585230496671198}
   - component: {fileID: 8058810976617979215}
   m_Layer: 6
@@ -151,6 +152,31 @@ MonoBehaviour:
   color: red
   buff: 5
   debuff: 5
+--- !u!114 &290883232606103555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159467298561848374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df57a7be1631947aeb6053ccaa89207e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lootTable:
+  - itemName: Red Boost
+    lootPrefab: {fileID: 4180551200742116058, guid: 12373046cf69314449289435903ec147, type: 3}
+    minAmount: 0
+    maxAmount: 1
+  - itemName: Blue Boost
+    lootPrefab: {fileID: 433438975439157060, guid: 94456e8c66e03704793b1b550baa410c, type: 3}
+    minAmount: 0
+    maxAmount: 1
+  - itemName: Yellow Boost
+    lootPrefab: {fileID: 208127681022748249, guid: 3983f19d2029a3145a3e64e9bc7af9d8, type: 3}
+    minAmount: 0
+    maxAmount: 1
 --- !u!58 &1254585230496671198
 CircleCollider2D:
   m_ObjectHideFlags: 0
