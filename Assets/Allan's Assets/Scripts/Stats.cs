@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Stats : MonoBehaviour
 {
@@ -10,12 +11,17 @@ public class Stats : MonoBehaviour
     public float Defense = 5;
     public float Speed = 5f;
 
+    ////camera shake
+    public CameraShake cameraShake;
+    public float shakeDuration;
+    public float shakeMagnitude;
+
     public float knockbackForce = 0.1f; // Magnitude of the knockback force
     public float knockbackDuration = 0.5f;
     private Vector2 previousDirection; // Store the previous movement direction
 
-    public TextMeshProUGUI damageTextPrefab; // Prefab of the damage text to display
-    public Transform textSpawnPoint; // Spawn point for the damage text
+    //public TextMeshProUGUI damageTextPrefab; // Prefab of the damage text to display
+    //public Transform textSpawnPoint; // Spawn point for the damage text
 
     [Header("Enemy Specific")]
     public bool isEnemy = false;
@@ -45,22 +51,27 @@ public class Stats : MonoBehaviour
         // Apply knockback
         //ApplyKnockback(knockbackDirection);
 
+        // Shake the camera when the player takes damage
+  
+        //cameraShake.Shake(shakeDuration, shakeMagnitude);
+        
+
         if (currentHP <= 0)
         {
             Die(); 
         }
     }
 
-    void ShowDamageText(float damage)
-    {
-        // Instantiate damage text prefab at the spawn point
-        TextMeshProUGUI damageText = Instantiate(damageTextPrefab, textSpawnPoint.position, Quaternion.identity);
+    //void ShowDamageText(float damage)
+    //{
+    //    // Instantiate damage text prefab at the spawn point
+    //    TextMeshProUGUI damageText = Instantiate(damageTextPrefab, textSpawnPoint.position, Quaternion.identity);
 
-        // Set the damage amount
-        damageText.text = "-" + damage;
+    //    // Set the damage amount
+    //    damageText.text = "-" + damage;
 
-        // Optionally, you can set the color, size, or other properties of the text here
-    }
+  
+    //}
 
     private void ApplyKnockback(Vector2 knockbackDirection)
     {
@@ -98,7 +109,7 @@ public class Stats : MonoBehaviour
             }
             return;
         }
-
+        SceneManager.LoadScene("Game Over");
         Destroy(gameObject);
     }
 }
