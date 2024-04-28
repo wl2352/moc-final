@@ -171,12 +171,12 @@ MonoBehaviour:
   - {fileID: 476365958}
   - {fileID: 1416215365}
   levelPassed: 0
-  enemiesPerWave: 1
+  enemiesPerWave: 2
   enemiesKilled: 0
   totalWaves: 1
   currentWave: 0
   hazardWave: 0
-  newEnemiesWave: 0
+  newEnemiesWave: 1
   enemiesSpawned: 0
   timer: 0
   spawningEnabled: 1
@@ -184,7 +184,7 @@ MonoBehaviour:
   spawnInterval: 2
   barriers: []
   hazards: {fileID: 0}
-  newEnemy: {fileID: 0}
+  newEnemy: {fileID: 3073391044425270372, guid: 69b63ebbaf917d4448a71824554c3e4b, type: 3}
   levelClearedBarrier: {fileID: 0}
   shop: {fileID: 129087748}
   timeoutCost: 12

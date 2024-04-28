@@ -123,35 +123,6 @@ public class GameManager : MonoBehaviour
         {
             GameControls();
         }
-
-        else 
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                SceneManager.LoadScene("Level 0 [Updated]");
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha2) && PlayerPrefs.GetInt("LevelsCleared") >= 1)
-            {
-                SceneManager.LoadScene("Level 1 [Updated]");
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha3) && PlayerPrefs.GetInt("LevelsCleared") >= 2)
-            {
-                SceneManager.LoadScene("Level 2 [Updated]");
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha4) && PlayerPrefs.GetInt("LevelsCleared") >= 3)
-            {
-                SceneManager.LoadScene("Level 3 [Updated]");
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha5) && PlayerPrefs.GetInt("LevelsCleared") >= 4)
-            {
-                SceneManager.LoadScene("Will-Scene1");
-            }
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-        }
-
     }
 
     void SpawnEnemy()

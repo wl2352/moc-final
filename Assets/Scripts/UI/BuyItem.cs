@@ -19,23 +19,19 @@ public class BuyItem : MonoBehaviour
         switch (objID)
         {
             case 0:
-                p_ColorSwitch.DecreaseCooldown();
+                if (playerStats.OnPurchase(gameManager.timeoutCost)) p_ColorSwitch.DecreaseCooldown();
                 break;
             case 1:
-                playerStats.OnPurchase(gameManager.redCost);
-                p_ColorSwitch.IncrementColorLevel("red");
+                if (playerStats.OnPurchase(gameManager.redCost)) p_ColorSwitch.IncrementColorLevel("red");
                 break;
             case 2:
-                playerStats.OnPurchase(gameManager.yellowCost);
-                p_ColorSwitch.IncrementColorLevel("yellow");
+                if (playerStats.OnPurchase(gameManager.yellowCost)) p_ColorSwitch.IncrementColorLevel("yellow");
                 break;
             case 3: 
-                playerStats.OnPurchase(gameManager.blueCost);
-                p_ColorSwitch.IncrementColorLevel("blue");
+                if (playerStats.OnPurchase(gameManager.blueCost)) p_ColorSwitch.IncrementColorLevel("blue");
                 break;
             case 4:
-                playerStats.OnPurchase(gameManager.healthCost);
-                playerStats.IncreaseHealth(10.0f);
+                if (playerStats.OnPurchase(gameManager.healthCost)) playerStats.IncreaseHealth(10.0f);
                 break;
         }
     }

@@ -94,6 +94,7 @@ public class Stats : MonoBehaviour
         if (isPlayer)
         {
             PlayerPrefs.SetFloat("CurrentHP", currentHP);
+            gameObject.GetComponentInChildren<CameraShake>().ShakeCamera();
         }
         
         // Print a message to the console
@@ -138,13 +139,15 @@ public class Stats : MonoBehaviour
         }
     }
 
-    public void OnPurchase(int cost)
+    public bool OnPurchase(int cost)
     {
         if (currency >= cost)
         {
             currency -= cost;
             PlayerPrefs.SetInt("Currency", currency);
+            return true;
         }
+        return false;
     }
 
     public void IncreaseHealth(float hp)

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5350757278304647079}
   - component: {fileID: 2933630762913666870}
   - component: {fileID: 184076364268365187}
+  - component: {fileID: 1174412463717163321}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -153,6 +154,23 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &1174412463717163321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481080822983498852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd762f42a88fb04da24d90ee102c55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 0}
+  shakeDuration: 0.5
+  shakeAmount: 0.2
+  decreaseFactor: 1
+  shakeCamera: 0
 --- !u!1 &4276061521971893057
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,6 +555,7 @@ MonoBehaviour:
   damageNumberPrefab: {fileID: 1765874356154417946, guid: 18a05dfe9b46453498592c8bdf5dab47, type: 3}
   isPlayer: 1
   currency: 0
+  levelsCleared: 0
   isEnemy: 0
   loot: []
   gemRate: 2
