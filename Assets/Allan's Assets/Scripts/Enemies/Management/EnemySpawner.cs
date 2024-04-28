@@ -6,6 +6,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private List<GameObject> enemies = new List<GameObject>();
     [SerializeField] public float offset;
     P_ColorSwitch P_ColorSwitch;
+    Animator animator;
     List<Color> availableColors = new List<Color>(){
         Color.red,
         Color.blue,
@@ -15,7 +16,6 @@ public class EnemySpawner : MonoBehaviour
     private void Start()
     {
         P_ColorSwitch = FindObjectOfType<P_ColorSwitch>();
-
         /*if (P_ColorSwitch != null)
         {
             if (P_ColorSwitch.redUnlocked)
@@ -39,6 +39,10 @@ public class EnemySpawner : MonoBehaviour
         GameObject enemyPrefab = enemies[Random.Range(0, enemies.Count)];
         Color randomColor = availableColors[Random.Range(0, availableColors.Count)];
         enemyPrefab.GetComponent<E_Colors>().color = randomColor;
+        enemyPrefab.AddComponent<Animator>(); // add each prefab its own Animator component
+
+        animator = enemyPrefab.GetComponent<Animator>();
+        animator.runtimeAnimatorController = (RuntimeAnimatorController)Instantiate(Resources.Load("Assets/Art/Enemies/Animations/WolfAnimations/Wolf.controller"));
         Vector3 spawnPosition = new Vector3(transform.position.x + randomSpawnOffset, transform.position.y + randomSpawnOffset, 0f);
 
         Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);

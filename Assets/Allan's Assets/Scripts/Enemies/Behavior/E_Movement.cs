@@ -30,9 +30,9 @@ public class E_Movement : MonoBehaviour
                 //transform.position += direction * stats.Speed * Time.deltaTime;
             }
 
-            else if (distanceToPlayer <= stopDistance)
+            else if (distanceToPlayer <= stopDistance || distanceToPlayer > followDistance)
             {
-                // Stop moving if close enough to the player
+                direction = Vector3.zero;
             }
         }
         

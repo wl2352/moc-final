@@ -34,10 +34,10 @@ public class Stats : MonoBehaviour
             currency = PlayerPrefs.GetInt("Currency");
             currentHP = PlayerPrefs.GetFloat("CurrentHP");
             levelsCleared = PlayerPrefs.GetInt("LevelsCleared");
-            if (currency == 0)
+            /*if (currency == 0)
             {
                 PlayerPrefs.SetInt("Currency", currency);
-            }
+            }*/
             if (levelsCleared == 0)
             {
                 PlayerPrefs.SetInt("LevelsCleared", levelsCleared);
@@ -47,9 +47,10 @@ public class Stats : MonoBehaviour
             if (currentHP <= 0)
             {
                 currentHP = maxHP;
-                currency = 0;
+                // currency = 0;
                 levelsCleared = 0;
-                PlayerPrefs.SetInt("Currency", currency);
+                // PlayerPrefs.SetInt("Currency", currency);
+                currency = PlayerPrefs.GetInt("Currency");
                 PlayerPrefs.SetFloat("CurrentHP", currentHP);
                 PlayerPrefs.SetInt("LevelsCleared", levelsCleared);
 
