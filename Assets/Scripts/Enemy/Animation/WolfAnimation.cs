@@ -12,7 +12,7 @@ public class WolfAnimation : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = gameObject.GetComponent<Animator>();
         sprite_renderer = GetComponent<SpriteRenderer>();
         enemyMovement = FindObjectOfType<E_Movement>();
         enemyAttack = FindObjectOfType<E_Attack>();
@@ -31,84 +31,58 @@ public class WolfAnimation : MonoBehaviour
         {
             up = false;
         }
-        Debug.Log(up);
 
         if (enemyMovement.direction == Vector3.zero)
         {
+            animator.SetBool("RunningUp", false);
+            animator.SetBool("Running", false);
             Debug.Log("is idling");
             if (up)
             {
                 animator.SetBool("IdleUp", true);
-                //animator.SetBool("Idle", false);
             }
             else
             {
-                //animator.SetBool("Idle", true);
                 animator.SetBool("IdleUp", false);
             }
 
+            if (!enemyAttack.canAttack)
+            {
+                if (up)
+                {
+                    animator.SetBool("AttackingUp", true);
+                    animator.SetBool("Attacking", false);
+                }
+                else
+                {
+                    animator.SetBool("Attacking", true);
+                    animator.SetBool("AttackingUp", false);
+                }
+            }
+            else
+            {
+                animator.SetBool("AttackingUp", false);
+                animator.SetBool("Attacking", false);
+            }
         }
         else
         {
             animator.SetBool("IdleUp", false);
-            if (enemyAttack.canAttack)
-            {
-                if (up)
-                {
-                    animator.SetBool("RunningUp", true);
-                    animator.SetBool("Running", false);
-                    Debug.Log("is moving up");
-                }
-                else
-                {
-                    animator.SetBool("Running", true);
-                    animator.SetBool("RunningUp", false);
-                    Debug.Log("is moving down");
-                }
-            }
-            else
-            {
-                animator.SetBool("RunningUp", false);
-                animator.SetBool("Running", false);
-            }
-        }
-
-        if (enemyAttack.canAttack)
-        {
-            if (up)
-            {
-                animator.SetBool("AttackingUp", true);
-                animator.SetBool("Attacking", false);
-            }
-            else
-            {
-                animator.SetBool("Attacking", true);
-                animator.SetBool("AttackingUp", false);
-            }
-        }
-        else
-        {
             animator.SetBool("AttackingUp", false);
             animator.SetBool("Attacking", false);
-        }
-
-        if (enemyMovement.direction.magnitude > 0)
-        {
+            
             if (up)
             {
                 animator.SetBool("RunningUp", true);
                 animator.SetBool("Running", false);
+                Debug.Log("is moving up");
             }
             else
             {
                 animator.SetBool("Running", true);
                 animator.SetBool("RunningUp", false);
+                Debug.Log("is moving down");
             }
-        }
-        else
-        {
-            animator.SetBool("RunningUp", false);
-            animator.SetBool("Running", false);
         }
 
         SpriteDirectionCheck();
@@ -138,4 +112,3 @@ public class WolfAnimation : MonoBehaviour
         }
     }
 }
-

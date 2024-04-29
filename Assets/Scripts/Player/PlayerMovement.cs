@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     Stats stats;
     [SerializeField]
     float sprintSpeedMultiplier = 1.4f;
-    public float movementSpeed;
     [HideInInspector]
     public float last_horizontal_vector;
     [HideInInspector]
@@ -18,8 +17,6 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 movement_dir;
     [HideInInspector]
     public Vector2 last_moved_vector;
-
-    public SimplePauseScript pauseScript;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     {
         float moveX, moveY;
         moveX = Input.GetAxisRaw("Horizontal");
-        moveY = Input.GetAxisRaw("Vertical");
+        moveY = Input.GetAxisRaw("Vertical") / 2;
 
         movement_dir = new Vector2(moveX, moveY).normalized;
         if (movement_dir.x != 0)

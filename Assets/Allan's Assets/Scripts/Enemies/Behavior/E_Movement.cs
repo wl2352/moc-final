@@ -16,21 +16,25 @@ public class E_Movement : MonoBehaviour
     }
     private void Update()
     {
-        // Calculate distance between enemy and player
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-        // Check if player is within follow distance
-        if (distanceToPlayer <= followDistance && distanceToPlayer > stopDistance)
+        if (player != null)
         {
-            // Move towards the player
-            direction = (player.position - transform.position).normalized;
-            transform.Translate(direction * stats.Speed * Time.deltaTime);
-            //transform.position += direction * stats.Speed * Time.deltaTime;
-        }
+            // Calculate distance between enemy and player
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-        else if (distanceToPlayer <= stopDistance)
-        {
-            // Stop moving if close enough to the player
+            // Check if player is within follow distance
+            if (distanceToPlayer <= followDistance && distanceToPlayer > stopDistance)
+            {
+                // Move towards the player
+                direction = (player.position - transform.position).normalized;
+                transform.Translate(direction * stats.Speed * Time.deltaTime);
+                //transform.position += direction * stats.Speed * Time.deltaTime;
+            }
+
+            else if (distanceToPlayer <= stopDistance || distanceToPlayer > followDistance)
+            {
+                direction = Vector3.zero;
+            }
         }
+        
     }
 }

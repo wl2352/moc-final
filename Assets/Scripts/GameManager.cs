@@ -37,6 +37,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject hazards;
     [SerializeField] private GameObject newEnemy;
     [SerializeField] private GameObject levelClearedBarrier;
+    [SerializeField] private GameObject shop;
+    bool shopIsActive = false;
+
+    [Space(5f)]
+    [Header("Currency")]
+    public int timeoutCost;
+    public int redCost;
+    public int yellowCost;
+    public int blueCost;
+    public int healthCost;
 
 
     private void OnEnable()
@@ -58,6 +68,7 @@ public class GameManager : MonoBehaviour
         // Map Objects
         levelClearedBarrier = GameObject.FindGameObjectWithTag("Finish");
         barriers = GameObject.FindGameObjectsWithTag("Barrier");
+        // shop = GameObject.FindGameObjectWithTag("ShopPanel");
 
         /*// Initialize first wave
         SetWaveEnemyStats();*/
@@ -81,6 +92,7 @@ public class GameManager : MonoBehaviour
 
         if (levelPassed)
         {
+            TrackLevelsCleared();
             LevelCleared();
         }
         else
@@ -107,27 +119,10 @@ public class GameManager : MonoBehaviour
         }
 
         // Game controls (may vary per scene)
-        if (SceneManager.GetActiveScene().name != "Overworld")
+        if (SceneManager.GetActiveScene().name != "Overworld [Updated]")
         {
             GameControls();
         }
-
-        else 
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                SceneManager.LoadScene("Demo");
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                SceneManager.LoadScene("Scene1");
-            }
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-        }
-
     }
 
     void SpawnEnemy()
@@ -176,6 +171,8 @@ public class GameManager : MonoBehaviour
             levelPassed = true;
             Debug.Log("All waves completed!");
         }
+
+        Debug.Log($"PlayerPrefs Cur: {PlayerPrefs.GetInt("Currency")}, LevelsCleared: {PlayerPrefs.GetInt("LevelsCleared")}, HP: {PlayerPrefs.GetFloat("CurrentHP")}");
     }
 
     // Function to check if two GameObjects are colliding
@@ -204,7 +201,7 @@ public class GameManager : MonoBehaviour
 
         if (levelClearedBarrier != null && levelClearedBarrier.CompareTag("Finish") && AreObjectsColliding(playerStats.gameObject, levelClearedBarrier))
         {
-            SceneManager.LoadScene("Overworld");
+            SceneManager.LoadScene("Overworld [Updated]");
         }
     }
 
@@ -230,26 +227,28 @@ public class GameManager : MonoBehaviour
         enemies.Remove(enemy);
     }
 
-    /*void SetWaveEnemyStats()
-    {
-        enemiesKilled = 0;
-        enemiesToKillGoal = 0;
-        foreach (EnemySpawner spawner in enemySpawners)
-        {
-            enemiesToKillGoal += spawner.MaxEnemies;
-            Debug.Log(enemiesToKillGoal);
-        }
-    }*/
-
     void GameControls()
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            SceneManager.LoadScene("Overworld");
+            SceneManager.LoadScene("Overworld [Updated]");
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (shop != null)
+            {
+                
+
+                shopIsActive = !shopIsActive;
+                shop.SetActive(shopIsActive);
+                // pause time 
+                Time.timeScale = shopIsActive ? 0 : 1;
+                AudioListener.pause = shopIsActive;
+            }
         }
         // Currently bugged and crashing game for some reason
         if (Input.GetKeyDown(KeyCode.Comma))
@@ -258,60 +257,33 @@ public class GameManager : MonoBehaviour
         }
         if (playerStats == null)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(8);
         }
     }
 
-    void IncrementWave()
+    void TrackLevelsCleared()
     {
-        if (currentWave <= totalWaves)
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 3)
         {
-            // Increment current wave
-            currentWave++;
-
-            // Destroy existing enemies
-            List<EnemyAlive> remainingEnemies = FindObjectsOfType<EnemyAlive>().ToList();
-            if (remainingEnemies.Count > 0)
-            {
-                foreach(EnemyAlive e in remainingEnemies)
-                {
-                    Destroy(e.gameObject);
-                }
-            }
-
-            if (currentWave == newEnemiesWave)
-            {
-                foreach (EnemySpawner spawner in enemySpawners)
-                {
-                    AddEnemyToSpawner(spawner);
-                }
-            }
-
-            if (currentWave == hazardWave)
-            {
-                ActivateGroundHazards();
-            }
-            /*// Increase the maximum amount each spawner can spawn an enemy by the desired enemy increase value
-            // Also, refresh each enemy spawner with their new values
-            foreach (EnemySpawner spawner in enemySpawners)
-            {
-                spawner.ReInitialize(spawnerMaxEnemiesIncrement, spawnerSpawnTimeFactor);
-
-                // Check if the new wave is the new enemies wave, if so, add the new enemy to the spawners
-                if (currWave == newEnemiesWave)
-                {
-                    AddEnemyToSpawner(spawner);
-                }
-            }
-
-            // Check if the new wave is the hazard wave, if so, activate the hazard
-            if (currWave == hazardWave)
-            {
-                ActivateGroundHazards();
-            }
-
-            // Reset enemy killed and get new enemy kill goal
-            SetWaveEnemyStats();*/
+            playerStats.levelsCleared = 1;
         }
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            playerStats.levelsCleared = 2;
+        }
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            playerStats.levelsCleared = 3;
+        }
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            playerStats.levelsCleared = 4;
+        }
+        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            playerStats.levelsCleared = 5;
+        }
+
+        PlayerPrefs.SetInt("LevelsCleared", playerStats.levelsCleared);
     }
 }

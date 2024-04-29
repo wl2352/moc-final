@@ -3,23 +3,29 @@ using UnityEngine;
 
 public class P_ColorSwitch : MonoBehaviour
 {
+    [Header("Color Stats")]
     public float colorDuration = 3f; // Duration for which the color effect lasts
     public float buff = 10f; // Amount by which the stat increases when affected by color
     public float debuff = 10f; // Amount by which the stat decreases when affected by color
     public float colorCooldown = 5f; // Cooldown between color switches
+    public int redLevel = 1;
+    public int yellowLevel = 0;
+    public int blueLevel = 0;
 
     private Stats playerStats; // Reference to the player's Stats script
-    private Color currentColor; // Current color of the player
-    private Color activeColor; // Active color that is affecting the player
-    private Color baseColor = new Color(.35f, .28f, .28f, 1f); // Base color for the player
-    private float colorEffectTimer = 0f; // Timer to track color effect duration
+    [HideInInspector] public Color currentColor; // Current color of the player
+    [HideInInspector] public Color activeColor; // Active color that is affecting the player
+    [HideInInspector] public Color baseColor = new Color(.35f, .28f, .28f, 1f); // Base color for the player
+    [HideInInspector] public float colorEffectTimer = 0f; // Timer to track color effect duration
     private bool colorEffectActive = false; // Flag to track if color effect is active
     private float TempAtk = 0f;
     private float TempDef = 0f;
     private float TempSpd = 0f;
     private bool canSwitchColor = true; // Flag to track if color switching is allowed
-    private float colorCooldownTimer = 0f; // Timer to track color switch cooldown
+    [HideInInspector] public float colorCooldownTimer = 0f; // Timer to track color switch cooldown
 
+    [Space(3f)]
+    [Header("Unlocked Colors")]
     public bool redUnlocked = false; // Flag to track if red color is unlocked
     public bool blueUnlocked = false; // Flag to track if blue color is unlocked
     public bool yellowUnlocked = false; // Flag to track if yellow color is unlocked
@@ -38,7 +44,33 @@ public class P_ColorSwitch : MonoBehaviour
         activeColor = baseColor;
 
         // Unlock red color by default
-        redUnlocked = true;
+        /*redUnlocked = true;
+        redLevel = 1;
+        yellowLevel = 0;
+        blueLevel = 0;*/
+        redLevel = PlayerPrefs.GetInt("RedLevel");
+        yellowLevel = PlayerPrefs.GetInt("YellowLevel");
+        blueLevel = PlayerPrefs.GetInt("BlueLevel");
+
+        if (redLevel > 0)
+        {
+            redUnlocked = true;
+        }
+        if (yellowLevel > 0)
+        {
+            yellowUnlocked = true;
+        }
+        if (blueLevel > 0)
+        {
+            blueUnlocked = true;
+        }
+
+        colorCooldown = PlayerPrefs.GetFloat("ColorCooldown");
+        if (colorCooldown == 0)
+        {
+            colorCooldown = 5f;
+            PlayerPrefs.SetFloat("ColorCooldown", colorCooldown);
+        }
     }
 
     private void Update()
@@ -125,21 +157,21 @@ public class P_ColorSwitch : MonoBehaviour
         if (color == Color.red)
         {
             // Increase attack stat temporarily
-            playerStats.Attack += playerStats.Attack * (buff / 100f);
+            playerStats.Attack += playerStats.Attack * ((buff * redLevel) / 100f);
             // Decrease defense stat temporarily
             playerStats.Defense -= playerStats.Defense * (debuff / 100f);
         }
         else if (color == Color.blue)
         {
             // Increase defense stat temporarily
-            playerStats.Defense += playerStats.Defense * (buff / 100f);
+            playerStats.Defense += playerStats.Defense * ((buff * blueLevel) / 100f);
             // Decrease speed stat temporarily
             playerStats.Speed -= playerStats.Speed * (debuff / 100f);
         }
         else if (color == Color.yellow)
         {
             // Increase speed stat temporarily
-            playerStats.Speed += playerStats.Speed * (buff / 100f);
+            playerStats.Speed += playerStats.Speed * ((buff * yellowLevel) / 100f);
             // Decrease attack stat temporarily
             playerStats.Attack -= playerStats.Attack * (debuff / 100f);
         }
@@ -162,14 +194,48 @@ public class P_ColorSwitch : MonoBehaviour
         if (color == Color.red)
         {
             redUnlocked = true;
+            redLevel = 1;
+            PlayerPrefs.SetInt("RedLevel", redLevel);
         }
         else if (color == Color.blue)
         {
             blueUnlocked = true;
+            blueLevel = 1;
+            PlayerPrefs.SetInt("BlueLevel", blueLevel);
         }
         else if (color == Color.yellow)
         {
             yellowUnlocked = true;
+            yellowLevel = 1;
+            PlayerPrefs.SetInt("YellowLevel", yellowLevel);
+        }
+    }
+
+    // Decrease cooldown by 10%
+    public void DecreaseCooldown()
+    {
+        colorCooldown = colorCooldown - (colorCooldown * .10f);
+        PlayerPrefs.SetFloat("ColorCooldown", colorCooldown);
+    }
+    public void IncrementColorLevel(string level)
+    {
+        switch (level)
+        {
+            case "red":
+                redLevel++;
+                PlayerPrefs.SetInt("RedLevel", redLevel);
+                break;
+            case "yellow":
+                yellowLevel++;
+                PlayerPrefs.SetInt("YellowLevel", yellowLevel);
+                break;
+            case "blue":
+                blueLevel++;
+                PlayerPrefs.SetInt("BlueLevel", blueLevel);
+                break;
+            default:
+                Debug.LogError("Incorrect color passed in");
+                break;
         }
     }
 
@@ -179,7 +245,7 @@ public class P_ColorSwitch : MonoBehaviour
         {
             if (redUnlocked)
             {
-                // Increase buff for RED
+                IncrementColorLevel("red");
             }
             else
             {
@@ -191,7 +257,7 @@ public class P_ColorSwitch : MonoBehaviour
         {
             if (yellowUnlocked)
             {
-                // Increase buff for YELLOW
+                IncrementColorLevel("yellow");
             }
             else
             {
@@ -203,7 +269,7 @@ public class P_ColorSwitch : MonoBehaviour
         {
             if (blueUnlocked)
             {
-                // Increase buff for BLUE
+                IncrementColorLevel("blue");
             }
             else
             {

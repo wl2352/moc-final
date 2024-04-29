@@ -35,12 +35,12 @@ public class ButtonManager : MonoBehaviour
 
     public void PlayIntroBtn()
     {
-        SceneManager.LoadScene("intro scene"); // menu to intro scene
+        SceneManager.LoadScene(1); // menu to intro scene
     }
 
     public void PlayGameBtn()
     {
-        SceneManager.LoadScene("Demo"); // menu to intro scene
+        SceneManager.LoadScene(3); // menu to intro scene
     }
     public void RestartBtn()
     {
@@ -50,7 +50,7 @@ public class ButtonManager : MonoBehaviour
     }
     public void OverworldBtn()
     {
-        SceneManager.LoadScene("Overworld"); // overworld from menu
+        SceneManager.LoadScene(2); // overworld from menu
     }
 
     public void QuitGameBtn()
