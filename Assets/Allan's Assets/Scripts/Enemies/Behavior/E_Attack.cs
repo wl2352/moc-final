@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class E_Attack : MonoBehaviour
 {
-    public float attackRange = 1.5f; // Range within which the enemy can attack
+    public float attackRange = 1.0f; // Range within which the enemy can attack
     public float attackCooldown = 2f; // Cooldown between attacks
     private Transform player; // Reference to the player's transform
     private Stats stats;
