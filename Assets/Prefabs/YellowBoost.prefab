@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2415121746073869049}
   - component: {fileID: -444919028995866197}
   - component: {fileID: -8850485826499273201}
+  - component: {fileID: -7905564008050365360}
   m_Layer: 0
   m_Name: YellowBoost
   m_TagString: YellowBoost
@@ -158,3 +159,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7905564008050365360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208127681022748249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1cbaed087394d24e94d87ddc456582f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

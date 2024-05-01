@@ -241,8 +241,6 @@ public class GameManager : MonoBehaviour
         {
             if (shop != null)
             {
-                
-
                 shopIsActive = !shopIsActive;
                 shop.SetActive(shopIsActive);
                 // pause time 
@@ -263,26 +261,8 @@ public class GameManager : MonoBehaviour
 
     void TrackLevelsCleared()
     {
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            playerStats.levelsCleared = 1;
-        }
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 4)
-        {
-            playerStats.levelsCleared = 2;
-        }
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 5)
-        {
-            playerStats.levelsCleared = 3;
-        }
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 6)
-        {
-            playerStats.levelsCleared = 4;
-        }
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 7)
-        {
-            playerStats.levelsCleared = 5;
-        }
+        // Increment levels cleared every time the player beats the level for the first time
+        if (levelPassed && playerStats.levelsCleared + 3 == SceneManager.GetActiveScene().buildIndex) playerStats.levelsCleared++;
 
         PlayerPrefs.SetInt("LevelsCleared", playerStats.levelsCleared);
     }

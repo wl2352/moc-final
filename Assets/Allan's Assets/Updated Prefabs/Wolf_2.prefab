@@ -170,8 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eede62e1b631f5b418cae15193a85554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
-  attackCooldown: 2
+  attackRange: 0.75
+  attackCooldown: 2.5
   canAttack: 1
 --- !u!114 &1216953502764211701
 MonoBehaviour:

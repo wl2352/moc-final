@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class OverworldSceneLoader : MonoBehaviour
 {
     private SpriteRenderer sr;
+    private Stats ps;
 
     public int level;
     [SerializeField] private float timeInterval = 2f;
@@ -15,6 +16,7 @@ public class OverworldSceneLoader : MonoBehaviour
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        ps = FindObjectOfType<Stats>();
     }
 
     void Update()
@@ -47,8 +49,13 @@ public class OverworldSceneLoader : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (gameObject.name.Equals("Final Level"))
+        {
+            if (ps.levelsCleared >= 4 && other.CompareTag("Player")) playerOnObject = true;
+            else playerOnObject = false;
+        }
         // Check if the object entering the trigger is the player
-        if (other.CompareTag("Player"))
+        else if (other.CompareTag("Player"))
         {
             // Set playerOnObject flag to true
             playerOnObject = true;
