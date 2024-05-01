@@ -262,7 +262,7 @@ public class GameManager : MonoBehaviour
     void TrackLevelsCleared()
     {
         // Increment levels cleared every time the player beats the level for the first time
-        if (levelPassed && playerStats.levelsCleared + 3 == SceneManager.GetActiveScene().buildIndex) playerStats.levelsCleared++;
+        if (levelPassed && playerStats.levelsCleared + 6 == SceneManager.GetActiveScene().buildIndex) playerStats.levelsCleared++;
 
         PlayerPrefs.SetInt("LevelsCleared", playerStats.levelsCleared);
     }

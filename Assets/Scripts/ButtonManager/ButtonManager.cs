@@ -39,12 +39,12 @@ public class ButtonManager : MonoBehaviour
     }
     public void PlayIntroBtn()
     {
-        SceneManager.LoadScene(1); // menu to intro scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // menu to intro scene
     }
 
     public void PlayGameBtn()
     {
-        SceneManager.LoadScene(3); // menu to intro scene
+        SceneManager.LoadScene(6); // menu to intro scene
     }
     public void RestartBtn()
     {
