@@ -209,7 +209,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SKIP DIALOUGE
+  m_Text: SKIP DIALOGUE
 --- !u!222 &53295753
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -668,8 +668,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: In a world dominated by color, fight wielding the power of speed, defense,
-    and strength.
+  m_Text: "Use WASD to move, \nUse LEFT mouse to attack, \nCollect colored gems to
+    gain special powers "
 --- !u!222 &474125319
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ad27c780de53b4bba00ddad55d6f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeSpeed: 0.1
+  typeSpeed: 0.3
   startDelay: 1
   volumeVariation: 0.4
   startOnStart: 1
@@ -1026,8 +1026,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Use WASD to move, Use mouse to attack, & Collect colored
-            gems to gain special powers
+          m_StringArgument: Collect white gems to buy upgrades for color abilities
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &569843646
@@ -1192,6 +1191,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ce7e275202d4d4cbca1f9072b1401f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelToOpen: {fileID: 0}
+  currentPanel: {fileID: 0}
+  isOpen: 0
+  panelTag: Panel
 --- !u!4 &1626141250
 Transform:
   m_ObjectHideFlags: 0

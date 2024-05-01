@@ -32,7 +32,11 @@ public class ButtonManager : MonoBehaviour
             Debug.LogWarning("Panel to open is not assigned!");
         }
     }
-
+    public void PlayNextDialogue()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(nextSceneIndex);
+    }
     public void PlayIntroBtn()
     {
         SceneManager.LoadScene(1); // menu to intro scene
