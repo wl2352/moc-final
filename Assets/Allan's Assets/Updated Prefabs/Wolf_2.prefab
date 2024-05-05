@@ -170,8 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eede62e1b631f5b418cae15193a85554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
-  attackCooldown: 2
+  attackRange: 0.75
+  attackCooldown: 2.5
   canAttack: 1
 --- !u!114 &1216953502764211701
 MonoBehaviour:
@@ -277,6 +277,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.018378735, y: 0.07972306}
+  m_Offset: {x: 0.015553594, y: -0.09720957}
   serializedVersion: 2
-  m_Radius: 0.52489555
+  m_Radius: 0.30918312

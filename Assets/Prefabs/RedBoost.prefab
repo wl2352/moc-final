@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -477849861292840603}
   - component: {fileID: 22145013272917272}
   - component: {fileID: -7016423380518259688}
+  - component: {fileID: -395200933393850864}
   m_Layer: 0
   m_Name: RedBoost
   m_TagString: RedBoost
@@ -158,3 +159,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-395200933393850864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180551200742116058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1cbaed087394d24e94d87ddc456582f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

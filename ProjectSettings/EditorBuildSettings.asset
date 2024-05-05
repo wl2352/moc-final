@@ -5,12 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Jada stuff/Assets/Scenes/Menu Screne.unity
     guid: c93ac2cfba21ff54a9f866e4b4fa2a69
   - enabled: 1
-    path: Assets/Jada stuff/Assets/Scenes/intro scene.unity
+    path: Assets/Jada stuff/Assets/Scenes/NEW Menu Screne 2.unity
+    guid: f0d24d5198d574d2ba65c4e4256cef7d
+  - enabled: 1
+    path: Assets/Jada stuff/Assets/Scenes/intro 1.unity
     guid: b125ec020e1234e4f8f266c25c19eff5
+  - enabled: 1
+    path: Assets/Jada stuff/Assets/Scenes/intro 2.unity
+    guid: 237cb60e8de144cfc95145bf87782b14
+  - enabled: 1
+    path: Assets/Jada stuff/Assets/Scenes/intro 3.unity
+    guid: 1330d2c8048e14a5a92d5ae2e49587e6
+  - enabled: 1
+    path: Assets/Jada stuff/Assets/Scenes/intro 4.unity
+    guid: 01a40e07bef034944b43d8a52ee364a8
   - enabled: 1
     path: Assets/Will Stuff/Scenes/Overworld [Updated].unity
     guid: a56ab2fa05f854b468eb10771b9beadb
@@ -32,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Will Stuff/Scenes/Game Over Will.unity
     guid: bca97ceae85172d4e80799730e4ca30e
+  - enabled: 1
+    path: Assets/Will Stuff/Scenes/Win Scene.unity
+    guid: be98af781ee86b149a2aad756f4480af
   - enabled: 0
     path: Assets/Allan's Assets/Allan's Scenes/Overworld.unity
     guid: 935a58a5d29e41d4991bc84064875930
@@ -47,7 +62,4 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Allan's Assets/Allan's Scenes/Level 3.unity
     guid: e3e908b3c97945648bdd0cfaf89b0016
-  - enabled: 0
-    path: Assets/Scenes/Demo2.unity
-    guid: 31f94503e747e0a4a8e0d8b39e991846
   m_configObjects: {}

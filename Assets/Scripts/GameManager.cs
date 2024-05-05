@@ -68,6 +68,8 @@ public class GameManager : MonoBehaviour
         // Map Objects
         levelClearedBarrier = GameObject.FindGameObjectWithTag("Finish");
         barriers = GameObject.FindGameObjectsWithTag("Barrier");
+        if (shop != null) shop.SetActive(false);
+        shopIsActive = false;
         // shop = GameObject.FindGameObjectWithTag("ShopPanel");
 
         /*// Initialize first wave
@@ -199,6 +201,18 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        foreach (EnemySpawner spawner in enemySpawners)
+        {
+            // spawner.Spawn();
+            spawner.gameObject.SetActive(false);
+        }
+
+
+        if (playerStats.levelsCleared == 5 && SceneManager.GetActiveScene().name == "Will-Scene1")
+        {
+            SceneManager.LoadScene("Win Scene");
+        }
+
         if (levelClearedBarrier != null && levelClearedBarrier.CompareTag("Finish") && AreObjectsColliding(playerStats.gameObject, levelClearedBarrier))
         {
             SceneManager.LoadScene("Overworld [Updated]");
@@ -239,10 +253,8 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (shop != null)
+            if (shop != null && levelPassed)
             {
-                
-
                 shopIsActive = !shopIsActive;
                 shop.SetActive(shopIsActive);
                 // pause time 
@@ -263,26 +275,8 @@ public class GameManager : MonoBehaviour
 
     void TrackLevelsCleared()
     {
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            playerStats.levelsCleared = 1;
-        }
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 4)
-        {
-            playerStats.levelsCleared = 2;
-        }
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 5)
-        {
-            playerStats.levelsCleared = 3;
-        }
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 6)
-        {
-            playerStats.levelsCleared = 4;
-        }
-        if (levelPassed && SceneManager.GetActiveScene().buildIndex == 7)
-        {
-            playerStats.levelsCleared = 5;
-        }
+        // Increment levels cleared every time the player beats the level for the first time
+        if (levelPassed && playerStats.levelsCleared + 6 == SceneManager.GetActiveScene().buildIndex) playerStats.levelsCleared++;
 
         PlayerPrefs.SetInt("LevelsCleared", playerStats.levelsCleared);
     }

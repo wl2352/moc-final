@@ -32,15 +32,19 @@ public class ButtonManager : MonoBehaviour
             Debug.LogWarning("Panel to open is not assigned!");
         }
     }
-
+    public void PlayNextDialogue()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(nextSceneIndex);
+    }
     public void PlayIntroBtn()
     {
-        SceneManager.LoadScene(1); // menu to intro scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // menu to intro scene
     }
 
     public void PlayGameBtn()
     {
-        SceneManager.LoadScene(3); // menu to intro scene
+        SceneManager.LoadScene(6); // menu to intro scene
     }
     public void RestartBtn()
     {
@@ -57,15 +61,5 @@ public class ButtonManager : MonoBehaviour
     {
         Application.Quit(); // Exits the game. You can't hit the quit button while in Unity Engine. 
     }
-    public void RetryBtn() {
 
-        // Get the index of the current scene
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-        // Get the index of the previous scene
-        int previousSceneIndex = Mathf.Max(0, currentSceneIndex - 1);
-
-        // Reload the previous scene
-        SceneManager.LoadScene(previousSceneIndex);
-    }
 }

@@ -25508,6 +25508,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 911419824055765046, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
+      propertyPath: m_Color.b
+      value: 0.82745105
+      objectReference: {fileID: 0}
+    - target: {fileID: 911419824055765046, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
+      propertyPath: m_Color.g
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 911419824055765046, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
+      propertyPath: m_Color.r
+      value: 0.45098042
+      objectReference: {fileID: 0}
     - target: {fileID: 3112548859215217407, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.99
@@ -25571,7 +25583,7 @@ PrefabInstance:
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: enemies.Array.data[0]
       value: 
-      objectReference: {fileID: 5846318472912269119, guid: 61e49580feedd9348bad5dc741c53c75, type: 3}
+      objectReference: {fileID: 3073391044425270372, guid: 69b63ebbaf917d4448a71824554c3e4b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26013,6 +26025,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 911419824055765046, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
+      propertyPath: m_Color.b
+      value: 0.82745105
+      objectReference: {fileID: 0}
+    - target: {fileID: 911419824055765046, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
+      propertyPath: m_Color.g
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 911419824055765046, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
+      propertyPath: m_Color.r
+      value: 0.45098042
+      objectReference: {fileID: 0}
     - target: {fileID: 3112548859215217407, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.41
@@ -26076,7 +26100,7 @@ PrefabInstance:
     - target: {fileID: 4040902860309284406, guid: cb43d3f44eddf3b47990257f709410b0, type: 3}
       propertyPath: enemies.Array.data[0]
       value: 
-      objectReference: {fileID: 5846318472912269119, guid: 61e49580feedd9348bad5dc741c53c75, type: 3}
+      objectReference: {fileID: 3073391044425270372, guid: 69b63ebbaf917d4448a71824554c3e4b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26230,7 +26254,7 @@ GameObject:
   - component: {fileID: 2055747996}
   - component: {fileID: 2055747995}
   - component: {fileID: 2055747994}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36448,9 +36472,9 @@ MonoBehaviour:
   - {fileID: 1532311471}
   - {fileID: 906710023}
   levelPassed: 0
-  enemiesPerWave: 2
+  enemiesPerWave: 3
   enemiesKilled: 0
-  totalWaves: 1
+  totalWaves: 2
   currentWave: 0
   hazardWave: 0
   newEnemiesWave: 0
