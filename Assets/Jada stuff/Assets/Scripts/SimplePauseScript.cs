@@ -16,7 +16,7 @@ public class SimplePauseScript : MonoBehaviour
         }
     }
 
-    void TogglePause()
+    public void TogglePause()
     {
         isPaused = !isPaused;
         Time.timeScale = isPaused ? 0 : 1; // Pause or resume time

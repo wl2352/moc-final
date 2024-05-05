@@ -5,34 +5,39 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
-    public GameObject panelToOpen;
-    public GameObject currentPanel;
     public bool isOpen = false;
     public string panelTag = "Panel";
 
+    public GameObject pausePanel;
+    public GameObject infoPanel;
+
     public void TogglePanel(GameObject panelToOpen)
     {
-        isOpen = !isOpen; // Toggle the boolean value
-
-        // Find the currently active panel with the specified tag
-        GameObject currentPanel = GameObject.FindWithTag(panelTag);
-
-        if (currentPanel != null)
+        // Close the pause panel if it's open
+        if (pausePanel != null && pausePanel.activeSelf)
         {
-            currentPanel.SetActive(false); // Close the current panel
+            pausePanel.SetActive(false);
         }
 
+        // Close the currently active panel
+        GameObject currentPanel = GameObject.FindWithTag(panelTag);
+        if (currentPanel != null && currentPanel != infoPanel)
+        {
+            currentPanel.SetActive(false);
+        }
+
+        // Open the new panel
         if (panelToOpen != null)
         {
-        
-            panelToOpen.SetActive(isOpen); // Open the new panel
+            panelToOpen.SetActive(true);
         }
         else
         {
             Debug.LogWarning("Panel to open is not assigned!");
         }
     }
-    public void PlayNextDialogue()
+
+public void PlayNextDialogue()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextSceneIndex);
