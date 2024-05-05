@@ -201,6 +201,13 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        foreach (EnemySpawner spawner in enemySpawners)
+        {
+            // spawner.Spawn();
+            spawner.gameObject.SetActive(false);
+        }
+
+
         if (playerStats.levelsCleared == 5 && SceneManager.GetActiveScene().name == "Will-Scene1")
         {
             SceneManager.LoadScene("Win Scene");
