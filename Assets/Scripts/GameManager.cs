@@ -68,6 +68,8 @@ public class GameManager : MonoBehaviour
         // Map Objects
         levelClearedBarrier = GameObject.FindGameObjectWithTag("Finish");
         barriers = GameObject.FindGameObjectsWithTag("Barrier");
+        if (shop != null) shop.SetActive(false);
+        shopIsActive = false;
         // shop = GameObject.FindGameObjectWithTag("ShopPanel");
 
         /*// Initialize first wave
@@ -199,6 +201,11 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        if (playerStats.levelsCleared == 5 && SceneManager.GetActiveScene().name == "Will-Scene1")
+        {
+            SceneManager.LoadScene("Win Scene");
+        }
+
         if (levelClearedBarrier != null && levelClearedBarrier.CompareTag("Finish") && AreObjectsColliding(playerStats.gameObject, levelClearedBarrier))
         {
             SceneManager.LoadScene("Overworld [Updated]");
@@ -239,7 +246,7 @@ public class GameManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (shop != null)
+            if (shop != null && levelPassed)
             {
                 shopIsActive = !shopIsActive;
                 shop.SetActive(shopIsActive);
