@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class TextTyper : MonoBehaviour 
 {	
 	[Header("Settings")]
-	[SerializeField] private float typeSpeed		= 0.1f;
-	[SerializeField] private float startDelay 		= 0.5f;
+	[SerializeField] private float typeSpeed		= 3.0f;
+	[SerializeField] private float startDelay 		= 0.1f;
 	[SerializeField] private float volumeVariation 	= 0.1f;
 	[SerializeField] private bool startOnStart		= false;
 

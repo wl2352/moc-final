@@ -49,7 +49,7 @@ public void PlayNextDialogue()
 
     public void PlayGameBtn()
     {
-        SceneManager.LoadScene(6); // menu to intro scene
+        SceneManager.LoadScene("Level 0 [Updated]"); // menu to intro scene
     }
     public void RestartBtn()
     {
