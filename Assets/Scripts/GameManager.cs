@@ -115,6 +115,7 @@ public class GameManager : MonoBehaviour
 
         if (playerStats != null && playerStats.currentHP <= lowHPThreshold)
         {
+
             coloradjustments.saturation.value = 0;
             vignette1.intensity.value= 0.496f;
             Color vignetteColor;
@@ -126,7 +127,6 @@ public class GameManager : MonoBehaviour
 
         }
        
-
 
         if (levelPassed)
         {
@@ -155,6 +155,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+
 
         // Game controls (may vary per scene)
         if (SceneManager.GetActiveScene().name != "Overworld [Updated]")
