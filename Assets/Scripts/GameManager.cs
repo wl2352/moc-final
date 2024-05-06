@@ -208,7 +208,7 @@ public class GameManager : MonoBehaviour
         }
 
 
-        if (playerStats.levelsCleared >= 5 && SceneManager.GetActiveScene().name == "Final Level")
+        if (playerStats.levelsCleared == 5 && SceneManager.GetActiveScene().name == "Will-Scene1")
         {
             SceneManager.LoadScene("Win Scene");
         }
@@ -269,7 +269,7 @@ public class GameManager : MonoBehaviour
         }
         if (playerStats == null)
         {
-            SceneManager.LoadScene("Game Over Will");
+            SceneManager.LoadScene(8);
         }
     }
 
