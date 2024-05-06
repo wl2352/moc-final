@@ -58,6 +58,7 @@ public class Stats : MonoBehaviour
                 PlayerPrefs.SetInt("YellowLevel", 0);
                 PlayerPrefs.SetInt("BlueLevel", 0);
                 PlayerPrefs.SetFloat("ColorCooldown", gameObject.TryGetComponent<P_ColorSwitch>(out P_ColorSwitch pc) ? pc.colorCooldown : 5f);
+
             }
         }
         else
