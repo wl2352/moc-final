@@ -10,6 +10,9 @@ public class ButtonManager : MonoBehaviour
 
     public GameObject pausePanel;
     public GameObject infoPanel;
+    public AudioSource audioSource; 
+    public AudioClip buttonClickSound; 
+
 
     public void TogglePanel(GameObject panelToOpen)
     {
@@ -41,21 +44,27 @@ public void PlayNextDialogue()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextSceneIndex);
+        audioSource.PlayOneShot(buttonClickSound);
+
     }
     public void PlayIntroBtn()
     {
+        audioSource.PlayOneShot(buttonClickSound);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // menu to intro scene
     }
 
     public void PlayGameBtn()
     {
+        audioSource.PlayOneShot(buttonClickSound);
         SceneManager.LoadScene("Level 0 [Updated]"); // menu to intro scene
     }
     public void RestartBtn()
     {
         Time.timeScale = 1; // Ensure time scale is set to 1 before reloading scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        
+        audioSource.PlayOneShot(buttonClickSound);
+
+
     }
     public void OverworldBtn()
     {
