@@ -5,11 +5,21 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using Vignette = UnityEngine.Rendering.Universal.Vignette;
 
 public class GameManager : MonoBehaviour
 {
     public bool devMode = false;
     Stats playerStats;
+
+    public Volume lowHealthVolume; 
+    public float lowHPThreshold = 40f; // HP threshold to trigger the vignette effect
+    private Vignette vignette1;
+    private ColorAdjustments coloradjustments;
+
     [Header("Enemies")]
     [SerializeField] List<EnemyAlive> enemies = new List<EnemyAlive>();
     [SerializeField] List<EnemySpawner> enemySpawners = new List<EnemySpawner>();
@@ -86,11 +96,33 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        lowHealthVolume.profile.TryGet(out coloradjustments);
+        lowHealthVolume.profile.TryGet(out vignette1);
+
+    }
+
     // Update is called once per frame
     void Update()
     {
         // Track current amount of enemies
         enemies = FindObjectsOfType<EnemyAlive>().ToList();
+
+        if (playerStats != null && playerStats.currentHP <= lowHPThreshold)
+        {
+            coloradjustments.saturation.value = 0;
+            vignette1.intensity.value= 0.496f;
+            Color vignetteColor;
+            if (ColorUtility.TryParseHtmlString("#F11616", out vignetteColor))
+            {
+                // Set the Vignette color
+                vignette1.color.value = vignetteColor;
+            }
+
+        }
+       
+
 
         if (levelPassed)
         {
