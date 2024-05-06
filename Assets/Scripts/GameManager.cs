@@ -98,8 +98,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        lowHealthVolume.profile.TryGet(out coloradjustments);
-        lowHealthVolume.profile.TryGet(out vignette1);
+        if (lowHealthVolume != null)
+        {
+            lowHealthVolume.profile.TryGet(out coloradjustments);
+            lowHealthVolume.profile.TryGet(out vignette1);
+        }
+        
 
     }
 

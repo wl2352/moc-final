@@ -415,30 +415,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 6460191676865497830, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6460191676865497830, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6460191676865497830, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6460191676865497830, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6460191676865497830, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -18
-      objectReference: {fileID: 0}
-    - target: {fileID: 6460191676865497830, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -12
-      objectReference: {fileID: 0}
     - target: {fileID: 6554215933603239040, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
       propertyPath: isOpen
       value: 0
