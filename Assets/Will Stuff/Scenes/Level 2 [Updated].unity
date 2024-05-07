@@ -2868,7 +2868,7 @@ MonoBehaviour:
   hazards: {fileID: 0}
   newEnemy: {fileID: 0}
   levelClearedBarrier: {fileID: 0}
-  shop: {fileID: 0}
+  shop: {fileID: 2117889163}
   timeoutCost: 50
   redCost: 10
   yellowCost: 10
@@ -27565,6 +27565,11 @@ PrefabInstance:
 --- !u!4 &2117889162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4899921413748400135, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
+  m_PrefabInstance: {fileID: 2117889161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2117889163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2879955340967786411, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
   m_PrefabInstance: {fileID: 2117889161}
   m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807

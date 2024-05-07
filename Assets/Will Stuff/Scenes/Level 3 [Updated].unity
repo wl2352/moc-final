@@ -25447,6 +25447,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4899921413748400135, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
   m_PrefabInstance: {fileID: 564029933}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &564029935 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2879955340967786411, guid: d4a1c22203e0e064c840d245e59652f5, type: 3}
+  m_PrefabInstance: {fileID: 564029933}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &730397003
 GameObject:
   m_ObjectHideFlags: 0
@@ -36680,7 +36685,7 @@ MonoBehaviour:
   hazards: {fileID: 0}
   newEnemy: {fileID: 0}
   levelClearedBarrier: {fileID: 0}
-  shop: {fileID: 0}
+  shop: {fileID: 564029935}
   timeoutCost: 75
   redCost: 12
   yellowCost: 10
